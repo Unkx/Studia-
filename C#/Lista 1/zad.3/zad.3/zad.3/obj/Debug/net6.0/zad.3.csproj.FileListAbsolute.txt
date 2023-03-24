@@ -1,0 +1,15 @@
+C:\Users\mi140\Desktop\Studia INF\C#\zad.3\zad.3\bin\Debug\net6.0\zad.3.exe
+C:\Users\mi140\Desktop\Studia INF\C#\zad.3\zad.3\bin\Debug\net6.0\zad.3.deps.json
+C:\Users\mi140\Desktop\Studia INF\C#\zad.3\zad.3\bin\Debug\net6.0\zad.3.runtimeconfig.json
+C:\Users\mi140\Desktop\Studia INF\C#\zad.3\zad.3\bin\Debug\net6.0\zad.3.dll
+C:\Users\mi140\Desktop\Studia INF\C#\zad.3\zad.3\bin\Debug\net6.0\zad.3.pdb
+C:\Users\mi140\Desktop\Studia INF\C#\zad.3\zad.3\obj\Debug\net6.0\zad.3.csproj.AssemblyReference.cache
+C:\Users\mi140\Desktop\Studia INF\C#\zad.3\zad.3\obj\Debug\net6.0\zad.3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mi140\Desktop\Studia INF\C#\zad.3\zad.3\obj\Debug\net6.0\zad.3.AssemblyInfoInputs.cache
+C:\Users\mi140\Desktop\Studia INF\C#\zad.3\zad.3\obj\Debug\net6.0\zad.3.AssemblyInfo.cs
+C:\Users\mi140\Desktop\Studia INF\C#\zad.3\zad.3\obj\Debug\net6.0\zad.3.csproj.CoreCompileInputs.cache
+C:\Users\mi140\Desktop\Studia INF\C#\zad.3\zad.3\obj\Debug\net6.0\zad.3.dll
+C:\Users\mi140\Desktop\Studia INF\C#\zad.3\zad.3\obj\Debug\net6.0\refint\zad.3.dll
+C:\Users\mi140\Desktop\Studia INF\C#\zad.3\zad.3\obj\Debug\net6.0\zad.3.pdb
+C:\Users\mi140\Desktop\Studia INF\C#\zad.3\zad.3\obj\Debug\net6.0\zad.3.genruntimeconfig.cache
+C:\Users\mi140\Desktop\Studia INF\C#\zad.3\zad.3\obj\Debug\net6.0\ref\zad.3.dll
