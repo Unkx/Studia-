@@ -36,7 +36,7 @@
     width: 16% ;
     padding-bottom: 6%;
     min-height: 620px;
-    margin-top: -160px;
+    margin-top: -157px;
 }
 #footer{
     clear:both;
@@ -53,12 +53,35 @@
     font-size: 25px;;
     text-shadow: 2px 2px 2px red, 2px 2px 1px red;
 }
-.tytół{
+.tytuł{
     text-size-adjust: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-shadow: 2px 3px 3px ;
 }
 .text{
     text-shadow: 2px 1px 2px rgb(255, 0, 0);
+}
+.ul,li {
+    display : block;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.ul {
+    width: 100px;
+}
+.ul a:link, .ul a:visited {
+    display: block;
+    width: 160px;
+    text-decoration:solid ;
+    text-align: center;
+    background-color: bisque;
+    color:#108562;
+    padding: 9px;
+    border: 3px outset #cccccc;
+}
+.ul a:hover {
+    border-style:hidden;
+    padding: 5px 3px 3px 2px;
 }
 
