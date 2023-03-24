@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Ankieta</title>
+        <meta name="Ankieta" content="lista 3"/>
+        <link rel="stylesheet" type="text/css" href="styles.css"> 
+    </head>
+    <body>
+        <div id="container">
+            <div id="banner">
+                <p class="p">Sklep komputerowy</p>
+            </div>
+            <div id="nav">
+                
+                <li><a href="ankieta2.html">O nas</a></li>
+                <li><a href="ankieta.html">Sklep</a></li>
+                <li><a href="ankieta4.html">Kontakt</a></li>    
+            </div>
+            <div id="main">
+                <fieldset class="fieldset">
+                    <legend>Ankieta</legend>
+                        Podaj imię : <br>
+                        <input type="text" name="imie"> 
+                        <form action" enctype="text/plain">
+                        Podaj nazwę miejscowości :<br>
+                        <input type="text" name="miejscowosc"> <br>
+                        Podaj swój budżet : <br>
+                        <input type="radio" name="budzet" value="2000-3500">2000-3500<br>
+                        <input type="radio" name="wiek" value="3500-5000">3500-5000<br>
+                        <input type="radio" name="wiek" value="5000-7500">5000-7500<br>
+                        Co ma znajować się w Twoim komputerze ? <br>
+                        <input type="checkbox" name="komputer" value="Dużo pamięci RAM">Dużo pamięci RAM<br>
+                        <input type="checkbox" name="komputer" value="Najnowsza karta Graficzna">Najnowsza karta Graficzna<br>
+                        <input  type="checkbox" name="komputer" value="Wydajny procesor">Wydajny procesor<br>
+                        <input  type="checkbox" name="komputer" value="Świecące elementy">Świecące elementy<br>
+                        Z jakiego sklepu lubisz zamawiać? <br>
+                        <select name="sklep">
+                            <option>Sklep 1</option>
+                            <option>Sklep 2</option>
+                            <option>Sklep 3</option>
+                        </select>
+                        <br>
+                        Czy coś jeszcze powinno znajdować się w Twoim zamówieniu ?<br>
+                        <textarea name="komentarz" cols="50" rows="2">wpisz coś jeszcze ...</textarea>
+                        <br><br>
+                        <input type="submit" value="wyslij">
+                        <input type="reset" value="wyczyść">
+                        
+        
+                    </fieldset>
+                    
+            </div>
+
+            <div id="footer">
+                <b>Sklep&copy; Wszelkie prawa zastrzeżone</b>
+            </div>
+    </body>
+</html>

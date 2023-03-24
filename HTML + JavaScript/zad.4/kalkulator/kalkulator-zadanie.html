@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+
+        <script type="text/javascript" >
+
+            function pole()
+            {
+                var liczba1=document.getElementById('pole1').value;
+                var liczba2=document.getElementById('pole2').value;
+                var liczba3=document.getElementById('pole3').value;
+                var liczba4=document.getElementById('pole4').value;
+                var napis;
+                napis = Math.pow(4,liczba1.length)
+                document.getElementById('wynik').innerHTML = napis;
+            } 
+
+
+
+        </script>
+    </head>
+    <body>
+        <div id="kwadrat">
+        Liczba 1 :
+        <input type="text" id="pole1"/><br>
+        Liczba 2 :
+        <input type="text" id="pole2"/><br>
+
+        <input type="submit" value="*" onclick="pole()"/>
+        <input type="submit" value="-" onclick="odejmowanie()"/>
+        <input type="submit" value="*" onclick="mnożenie()"/>
+        <input type="submit" value="/" onclick="odejmowanie()"/>
+
+        wynik <br> <br>
+        </div>
+
+        /*pole albo obwód*/ 
+        <div id="wynik"></div>
+    </body>
+</html>
