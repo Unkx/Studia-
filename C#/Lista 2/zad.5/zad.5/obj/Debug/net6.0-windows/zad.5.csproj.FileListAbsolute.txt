@@ -1,0 +1,51 @@
+C:\Users\mi140\OneDrive\Pulpit\Programowanie\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad.5.csproj.AssemblyReference.cache
+C:\Users\mi140\OneDrive\Pulpit\Programowanie\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad._5.Form1.resources
+C:\Users\mi140\OneDrive\Pulpit\Programowanie\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad.5.csproj.GenerateResource.cache
+C:\Users\mi140\OneDrive\Pulpit\Programowanie\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad.5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mi140\OneDrive\Pulpit\Programowanie\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad.5.AssemblyInfoInputs.cache
+C:\Users\mi140\OneDrive\Pulpit\Programowanie\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad.5.AssemblyInfo.cs
+C:\Users\mi140\OneDrive\Pulpit\Programowanie\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad.5.csproj.CoreCompileInputs.cache
+C:\Users\mi140\Desktop\Studia INF\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad.5.csproj.AssemblyReference.cache
+C:\Users\mi140\Desktop\Studia INF\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad._5.Form1.resources
+C:\Users\mi140\Desktop\Studia INF\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad.5.csproj.GenerateResource.cache
+C:\Users\mi140\Desktop\Studia INF\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad.5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mi140\Desktop\Studia INF\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad.5.AssemblyInfoInputs.cache
+C:\Users\mi140\Desktop\Studia INF\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad.5.AssemblyInfo.cs
+C:\Users\mi140\Desktop\Studia INF\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad.5.csproj.CoreCompileInputs.cache
+C:\Users\mi140\Desktop\Studia INF\C#\Lista 2\zad.5\zad.5\bin\Debug\net6.0-windows\zad.5.exe
+C:\Users\mi140\Desktop\Studia INF\C#\Lista 2\zad.5\zad.5\bin\Debug\net6.0-windows\zad.5.deps.json
+C:\Users\mi140\Desktop\Studia INF\C#\Lista 2\zad.5\zad.5\bin\Debug\net6.0-windows\zad.5.runtimeconfig.json
+C:\Users\mi140\Desktop\Studia INF\C#\Lista 2\zad.5\zad.5\bin\Debug\net6.0-windows\zad.5.dll
+C:\Users\mi140\Desktop\Studia INF\C#\Lista 2\zad.5\zad.5\bin\Debug\net6.0-windows\zad.5.pdb
+C:\Users\mi140\Desktop\Studia INF\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad.5.dll
+C:\Users\mi140\Desktop\Studia INF\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\refint\zad.5.dll
+C:\Users\mi140\Desktop\Studia INF\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad.5.pdb
+C:\Users\mi140\Desktop\Studia INF\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad.5.genruntimeconfig.cache
+C:\Users\mi140\Desktop\Studia INF\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\ref\zad.5.dll
+F:\Programowanie\C#\Lista 2\zad.5\zad.5\bin\Debug\net6.0-windows\zad.5.exe
+F:\Programowanie\C#\Lista 2\zad.5\zad.5\bin\Debug\net6.0-windows\zad.5.deps.json
+F:\Programowanie\C#\Lista 2\zad.5\zad.5\bin\Debug\net6.0-windows\zad.5.runtimeconfig.json
+F:\Programowanie\C#\Lista 2\zad.5\zad.5\bin\Debug\net6.0-windows\zad.5.dll
+F:\Programowanie\C#\Lista 2\zad.5\zad.5\bin\Debug\net6.0-windows\zad.5.pdb
+F:\Programowanie\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad.5.csproj.AssemblyReference.cache
+F:\Programowanie\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad._5.Form1.resources
+F:\Programowanie\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad.5.csproj.GenerateResource.cache
+F:\Programowanie\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad.5.GeneratedMSBuildEditorConfig.editorconfig
+F:\Programowanie\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad.5.AssemblyInfoInputs.cache
+F:\Programowanie\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad.5.AssemblyInfo.cs
+F:\Programowanie\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad.5.csproj.CoreCompileInputs.cache
+F:\Programowanie\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad.5.dll
+F:\Programowanie\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\refint\zad.5.dll
+F:\Programowanie\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad.5.pdb
+F:\Programowanie\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad.5.genruntimeconfig.cache
+F:\Programowanie\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\ref\zad.5.dll
+C:\Users\mi140\OneDrive\Pulpit\Programowanie\C#\Lista 2\zad.5\zad.5\bin\Debug\net6.0-windows\zad.5.exe
+C:\Users\mi140\OneDrive\Pulpit\Programowanie\C#\Lista 2\zad.5\zad.5\bin\Debug\net6.0-windows\zad.5.deps.json
+C:\Users\mi140\OneDrive\Pulpit\Programowanie\C#\Lista 2\zad.5\zad.5\bin\Debug\net6.0-windows\zad.5.runtimeconfig.json
+C:\Users\mi140\OneDrive\Pulpit\Programowanie\C#\Lista 2\zad.5\zad.5\bin\Debug\net6.0-windows\zad.5.dll
+C:\Users\mi140\OneDrive\Pulpit\Programowanie\C#\Lista 2\zad.5\zad.5\bin\Debug\net6.0-windows\zad.5.pdb
+C:\Users\mi140\OneDrive\Pulpit\Programowanie\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad.5.dll
+C:\Users\mi140\OneDrive\Pulpit\Programowanie\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\refint\zad.5.dll
+C:\Users\mi140\OneDrive\Pulpit\Programowanie\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad.5.pdb
+C:\Users\mi140\OneDrive\Pulpit\Programowanie\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\zad.5.genruntimeconfig.cache
+C:\Users\mi140\OneDrive\Pulpit\Programowanie\C#\Lista 2\zad.5\zad.5\obj\Debug\net6.0-windows\ref\zad.5.dll
