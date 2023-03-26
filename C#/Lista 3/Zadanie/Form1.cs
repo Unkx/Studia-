@@ -12,8 +12,8 @@ namespace Zadanie
 
         private void buttonZatwierdz_Click_1(object sender, EventArgs e)
         {
-            string imie = "x";
-            string nazwisko = "x";
+            string imie = "";
+            string nazwisko = "";
 
             if ((imie == txtImie.Text) && (nazwisko == txtNazwisko.Text))
             {

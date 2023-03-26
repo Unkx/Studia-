@@ -22,6 +22,7 @@ namespace Zadanie
         private void LiczbaCalkowita_Click(object sender, EventArgs e)
         {
             int Liczba;
+            int y = 1;
             if (Int32.TryParse(txtLiczba.Text, out Liczba))
             {
                 for (int i = 1; i <= Liczba; i++)
@@ -30,6 +31,8 @@ namespace Zadanie
                     {
                         listBox1.Visible = true;
                         listBox1.Items.Add("0" + "x" + "1");
+                        listBox1.Items.Add("0" + "x" + y);
+                        y++;
 
                     }
                 }
