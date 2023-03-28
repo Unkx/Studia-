@@ -35,3 +35,4 @@ C:\Users\mi140\Desktop\Studia INF\C#\Lista 3\Zadanie\obj\Debug\net6.0-windows\Za
 C:\Users\mi140\Desktop\Studia INF\C#\Lista 3\Zadanie\obj\Debug\net6.0-windows\Zadanie.genruntimeconfig.cache
 C:\Users\mi140\Desktop\Studia INF\C#\Lista 3\Zadanie\obj\Debug\net6.0-windows\ref\Zadanie.dll
 C:\Users\mi140\Desktop\Studia INF\C#\Lista 3\Zadanie\obj\Debug\net6.0-windows\Zadanie.Form3.resources
+C:\Users\mi140\OneDrive\Pulpit\Programowanie\C#\Lista 3\Zadanie\obj\Debug\net6.0-windows\Zadanie.Form3.resources

@@ -18,32 +18,47 @@ namespace Zadanie
         {
             InitializeComponent();
         }
-
+        int a = 1;
+        int b = 0;
         private void LiczbaCalkowita_Click(object sender, EventArgs e)
         {
-            int Liczba;
-            int y = 1;
-            if (Int32.TryParse(txtLiczba.Text, out Liczba))
+            listBox1.Items.Clear();
+            if (Int32.TryParse(txtLiczba.Text, out int x))
             {
-                for (int i = 1; i <= Liczba; i++)
+                //MessageBox.Show("Podano nieprawidłowe dane");
+                //}
+
+                string wierszabc = "";
+
+                for (int wiersze = 0; wiersze <= x; wiersze++)
                 {
-                    if (Liczba >= i)
+                    for (int kolumny = 0; kolumny <= x; kolumny++)
                     {
-                        listBox1.Visible = true;
-                        listBox1.Items.Add("0" + "x" + "1");
-                        listBox1.Items.Add("0" + "x" + y);
-                        y++;
-
+                        wierszabc = wierszabc + Convert.ToString(a);
+                        Zamien();
                     }
+                    if (x % 2 != 0)
+                    {
+                        Zamien();
+                    }
+                    listBox1.Items.Add(wierszabc);
+                    listBox1.Visible = true;
+                    wierszabc = "";
                 }
-
             }
-            else
+
+
+            void Zamien()
             {
-                MessageBox.Show("Podaj liczbę");
+                int c;
+                c = a;
+                a = b;
+                b = c;
             }
-
 
         }
+
+
     }
+
 }
