@@ -36,10 +36,9 @@
             // 
             // LiczbaCalkowita
             // 
-            LiczbaCalkowita.Location = new Point(415, 213);
-            LiczbaCalkowita.Margin = new Padding(3, 4, 3, 4);
+            LiczbaCalkowita.Location = new Point(363, 160);
             LiczbaCalkowita.Name = "LiczbaCalkowita";
-            LiczbaCalkowita.Size = new Size(86, 31);
+            LiczbaCalkowita.Size = new Size(75, 23);
             LiczbaCalkowita.TabIndex = 0;
             LiczbaCalkowita.Text = "(click)";
             LiczbaCalkowita.UseVisualStyleBackColor = true;
@@ -47,42 +46,39 @@
             // 
             // txtLiczba
             // 
-            txtLiczba.Location = new Point(399, 140);
-            txtLiczba.Margin = new Padding(3, 4, 3, 4);
+            txtLiczba.Location = new Point(349, 105);
             txtLiczba.Name = "txtLiczba";
-            txtLiczba.Size = new Size(114, 27);
+            txtLiczba.Size = new Size(100, 23);
             txtLiczba.TabIndex = 1;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(414, 88);
+            label1.Location = new Point(362, 66);
             label1.Name = "label1";
-            label1.Size = new Size(96, 20);
+            label1.Size = new Size(76, 15);
             label1.TabIndex = 2;
             label1.Text = "Podaj liczbę :";
             // 
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 20;
-            listBox1.Location = new Point(279, 273);
-            listBox1.Margin = new Padding(3, 4, 3, 4);
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(244, 205);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(370, 184);
+            listBox1.Size = new Size(324, 139);
             listBox1.TabIndex = 3;
             listBox1.Visible = false;
             // 
             // Form2
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
+            ClientSize = new Size(800, 450);
             Controls.Add(listBox1);
             Controls.Add(label1);
             Controls.Add(txtLiczba);
             Controls.Add(LiczbaCalkowita);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Form2";
             Text = "Form2";
             ResumeLayout(false);

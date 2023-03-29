@@ -23,22 +23,26 @@ namespace Zadanie
         private void buttonPodajLiczbe_Click(object sender, EventArgs e)
         {
             int a = Convert.ToInt32(Console.ReadLine()); //wczytanie liczby a
-            Draw(a);
+            Rysuj(a);
+
+            
         }
 
-        private void Draw(int n)
+        private void Rysuj(int n)
         {
-            listBox1.Items.Clear();
+            
             for (int i = 1; i <= n; i++)
             {
                 string line = "";
                 for (int j = 1; j <= i; j++)
                 {
-                    line += "1";
+                    line += j;
                 }
                 listBox1.Items.Add(line);
             }
         }
+
+
     }
 
 }

@@ -35,18 +35,16 @@
             // 
             // txtLiczba
             // 
-            txtLiczba.Location = new Point(421, 115);
-            txtLiczba.Margin = new Padding(3, 4, 3, 4);
+            txtLiczba.Location = new Point(368, 86);
             txtLiczba.Name = "txtLiczba";
-            txtLiczba.Size = new Size(114, 27);
+            txtLiczba.Size = new Size(100, 23);
             txtLiczba.TabIndex = 0;
             // 
             // buttonPodajLiczbe
             // 
-            buttonPodajLiczbe.Location = new Point(437, 199);
-            buttonPodajLiczbe.Margin = new Padding(3, 4, 3, 4);
+            buttonPodajLiczbe.Location = new Point(382, 149);
             buttonPodajLiczbe.Name = "buttonPodajLiczbe";
-            buttonPodajLiczbe.Size = new Size(86, 31);
+            buttonPodajLiczbe.Size = new Size(75, 23);
             buttonPodajLiczbe.TabIndex = 1;
             buttonPodajLiczbe.Text = "button";
             buttonPodajLiczbe.UseVisualStyleBackColor = true;
@@ -55,22 +53,20 @@
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 20;
-            listBox1.Location = new Point(371, 271);
-            listBox1.Margin = new Padding(3, 4, 3, 4);
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(325, 203);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(225, 204);
+            listBox1.Size = new Size(197, 154);
             listBox1.TabIndex = 2;
             // 
             // Form3
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
+            ClientSize = new Size(800, 450);
             Controls.Add(listBox1);
             Controls.Add(buttonPodajLiczbe);
             Controls.Add(txtLiczba);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Form3";
             Text = "Form3";
             ResumeLayout(false);

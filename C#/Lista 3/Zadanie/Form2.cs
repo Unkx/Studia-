@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -25,26 +26,30 @@ namespace Zadanie
             listBox1.Items.Clear();
             if (Int32.TryParse(txtLiczba.Text, out int x))
             {
-                //MessageBox.Show("Podano nieprawidłowe dane");
-                //}
 
-                string wierszabc = "";
+                listBox1.Visible = true;
+                string wiersz = "";
 
-                for (int wiersze = 0; wiersze <= x; wiersze++)
+                for (int linie = 0; linie <= x; linie++)
                 {
                     for (int kolumny = 0; kolumny <= x; kolumny++)
                     {
-                        wierszabc = wierszabc + Convert.ToString(a);
+                        wiersz = wiersz + Convert.ToString(a);
                         Zamien();
                     }
                     if (x % 2 != 0)
                     {
                         Zamien();
                     }
-                    listBox1.Items.Add(wierszabc);
+                    listBox1.Items.Add(wiersz);
                     listBox1.Visible = true;
-                    wierszabc = "";
+                    wiersz = "";
                 }
+            }
+            else
+            {
+                MessageBox.Show("Podano nieprawidłowe dane");
+
             }
 
 
@@ -55,10 +60,11 @@ namespace Zadanie
                 a = b;
                 b = c;
             }
-
         }
 
 
-    }
 
+    }
 }
+
+
