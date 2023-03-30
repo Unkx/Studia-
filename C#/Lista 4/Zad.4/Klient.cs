@@ -30,7 +30,7 @@ namespace Zad._4
             this.ulubionyAutor = "-";
             this.ulubionaKsiazka = "-";
             this.kupionaKsiazka = "-";
-            this.rokWydania = 3434;
+            this.rokWydania = 365434;
 
 
         }
