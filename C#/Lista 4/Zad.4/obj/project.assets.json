@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mi140\\OneDrive\\Pulpit\\Programowanie\\C#\\Lista 4\\Zad.4\\Zad.4.csproj",
+      "projectUniqueName": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\C#\\Lista 4\\Zad.4\\Zad.4.csproj",
       "projectName": "Zad.4",
-      "projectPath": "C:\\Users\\mi140\\OneDrive\\Pulpit\\Programowanie\\C#\\Lista 4\\Zad.4\\Zad.4.csproj",
+      "projectPath": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\C#\\Lista 4\\Zad.4\\Zad.4.csproj",
       "packagesPath": "C:\\Users\\mi140\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mi140\\OneDrive\\Pulpit\\Programowanie\\C#\\Lista 4\\Zad.4\\obj\\",
+      "outputPath": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\C#\\Lista 4\\Zad.4\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mi140\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -64,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

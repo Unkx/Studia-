@@ -7,18 +7,11 @@ namespace Zad._4
             InitializeComponent();
         }
 
-        internal class Klient
+        private void buttonKlient_Click(object sender, EventArgs e)
         {
-            int id;
-            string imie;
-            string nazwisko;
-            int rokUrodzenia;
-            static int liczbaOsob = 0;
-            int koszyk;
-            string ulubionyAutor;
-            string ulubionaKsiazka;
-            string kupionaKsiazka;
-            int rokWydania;
+            Klient o1 = new Klient();
+            o1.Wypisz(listBoxKlient);
+
         }
     }
 }
