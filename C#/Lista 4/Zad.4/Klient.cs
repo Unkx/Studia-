@@ -30,7 +30,7 @@ namespace Zad._4
             this.ulubionyAutor = "-";
             this.ulubionaKsiazka = "-";
             this.kupionaKsiazka = "-";
-            this.rokWydania = 365434;
+            this.rokWydania = 2003;
 
 
         }
@@ -72,8 +72,8 @@ namespace Zad._4
             lb.Items.Add("id:\t\t" + id);
             lb.Items.Add("Imię i nazwisko:\t" + imie + " " + nazwisko);
             lb.Items.Add("Rok urodzenia:\t" + rokUrodzenia);
-            lb.Items.Add("Wiek:\t\t" + ObliczWiek()); //wywołanie metody prywatnej
-            lb.Items.Add("");
+            lb.Items.Add("Wiek:\t\t" + ObliczWiek()); 
+            lb.Items.Add("Rok Wydania:\t\t" + rokWydania);
         }
         private int ObliczWiek()
         {
