@@ -73,7 +73,7 @@ namespace Zad._4
             lb.Items.Add("Imię i nazwisko:\t" + imie + " " + nazwisko);
             lb.Items.Add("Rok urodzenia:\t" + rokUrodzenia);
             lb.Items.Add("Wiek:\t\t" + ObliczWiek()); 
-            lb.Items.Add("Rok Wydania:\t\t" + rokWydania);
+            lb.Items.Add("Rok Wydania:\t" + rokWydania);
         }
         private int ObliczWiek()
         {

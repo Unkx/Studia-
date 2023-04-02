@@ -13,5 +13,10 @@ namespace Zad._4
             o1.Wypisz(listBoxKlient);
 
         }
+
+        private void buttonUsun_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Likwidacja obiektu klasy Klient", "Chuj");
+        }
     }
 }
