@@ -13,11 +13,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\C#\\Lista 3\\Zadanie\\Zadanie.csproj",
+      "projectName": "Zadanie",
+      "projectPath": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\C#\\Lista 3\\Zadanie\\Zadanie.csproj",
+      "packagesPath": "C:\\Users\\mi140\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\C#\\Lista 3\\Zadanie\\obj\\",
+=======
       "projectUniqueName": "C:\\Users\\mi140\\OneDrive\\Pulpit\\Programowanie\\C#\\Lista 3\\Zadanie\\Zadanie.csproj",
       "projectName": "Zadanie",
       "projectPath": "C:\\Users\\mi140\\OneDrive\\Pulpit\\Programowanie\\C#\\Lista 3\\Zadanie\\Zadanie.csproj",
       "packagesPath": "C:\\Users\\mi140\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\mi140\\OneDrive\\Pulpit\\Programowanie\\C#\\Lista 3\\Zadanie\\obj\\",
+>>>>>>> c06d24c14e1024825e8705de046e26901dfead8f
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mi140\\AppData\\Roaming\\NuGet\\NuGet.Config",

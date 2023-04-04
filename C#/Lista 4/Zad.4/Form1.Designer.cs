@@ -30,14 +30,14 @@
         {
             button1 = new Button();
             listBoxKlient = new ListBox();
-            buttonUsun = new Button();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(250, 129);
+            button1.Location = new Point(286, 172);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(86, 31);
             button1.TabIndex = 0;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
@@ -46,30 +46,21 @@
             // listBoxKlient
             // 
             listBoxKlient.FormattingEnabled = true;
-            listBoxKlient.ItemHeight = 15;
-            listBoxKlient.Location = new Point(141, 200);
+            listBoxKlient.ItemHeight = 20;
+            listBoxKlient.Location = new Point(161, 267);
+            listBoxKlient.Margin = new Padding(3, 4, 3, 4);
             listBoxKlient.Name = "listBoxKlient";
-            listBoxKlient.Size = new Size(284, 169);
+            listBoxKlient.Size = new Size(324, 224);
             listBoxKlient.TabIndex = 1;
-            // 
-            // buttonUsun
-            // 
-            buttonUsun.Location = new Point(563, 223);
-            buttonUsun.Name = "buttonUsun";
-            buttonUsun.Size = new Size(75, 23);
-            buttonUsun.TabIndex = 2;
-            buttonUsun.Text = "button2";
-            buttonUsun.UseVisualStyleBackColor = true;
-            buttonUsun.Click += buttonUsun_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(buttonUsun);
+            ClientSize = new Size(914, 600);
             Controls.Add(listBoxKlient);
             Controls.Add(button1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -79,6 +70,5 @@
 
         private Button button1;
         private ListBox listBoxKlient;
-        private Button buttonUsun;
     }
 }

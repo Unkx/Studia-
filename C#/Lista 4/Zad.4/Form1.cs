@@ -11,12 +11,8 @@ namespace Zad._4
         {
             Klient o1 = new Klient();
             o1.Wypisz(listBoxKlient);
-
+            Console.WriteLine("----------------");
         }
 
-        private void buttonUsun_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Likwidacja obiektu klasy Klient", "Chuj");
-        }
     }
 }
