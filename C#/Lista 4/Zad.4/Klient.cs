@@ -80,8 +80,8 @@ namespace Zad._4
             lb.Items.Add("Wiek:\t\t" + ObliczWiek());
             lb.Items.Add("Twój koszyk:\t" + koszyk);
             lb.Items.Add("Ulubiony Autor:\t" + ulubionyAutor);
-            lb.Items.Add("Ulubiona książka:" + ulubionaKsiazka);
-            lb.Items.Add("Kupiona książka:" + kupionaKsiazka);
+            lb.Items.Add("Ulubiona książka:\t" + ulubionaKsiazka);
+            lb.Items.Add("Kupiona książka:\t" + kupionaKsiazka);
             lb.Items.Add("Rok wydania:\t" + rokWydania + "\n");
             lb.Items.Add("Przeczytane strony:\t" + przeczytaneStrony + "\n");
         }
