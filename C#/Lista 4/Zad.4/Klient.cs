@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Zad._4
 {
-    internal class Klient
+    public class Klient
     {
         int id;
         string imie;
@@ -19,6 +19,7 @@ namespace Zad._4
         string ulubionaKsiazka;
         string kupionaKsiazka;
         int rokWydania;
+        int przeczytaneStrony;
 
         public Klient()
         {
@@ -32,10 +33,11 @@ namespace Zad._4
             this.ulubionaKsiazka = "-";
             this.kupionaKsiazka = "-";
             this.rokWydania = 2003;
+            this.przeczytaneStrony = 20;
 
 
         }
-        public Klient(int id, string imie, string nazwisko, int rokUrodzenia, int koszyk, string ulubionyAutor, string ulubionaKsiazka, string kupionaKsiazka, int rokWydania)
+        public Klient(int id, string imie, string nazwisko, int rokUrodzenia, int koszyk, string ulubionyAutor, string ulubionaKsiazka, string kupionaKsiazka, int rokWydania, int przeczytaneStrony)
         {
             liczbaOsob += 1;
             this.id = liczbaOsob;
@@ -47,6 +49,7 @@ namespace Zad._4
             this.ulubionaKsiazka = ulubionaKsiazka;
             this.kupionaKsiazka = kupionaKsiazka;
             this.rokWydania = rokWydania;
+            this.przeczytaneStrony = przeczytaneStrony;
         }
 
         public Klient(Klient o)
@@ -61,6 +64,7 @@ namespace Zad._4
             this.ulubionaKsiazka = o.ulubionaKsiazka;
             this.kupionaKsiazka = o.kupionaKsiazka;
             this.rokWydania = o.rokWydania;
+            this.przeczytaneStrony = o.przeczytaneStrony;
         }
 
         ~Klient()
@@ -73,18 +77,37 @@ namespace Zad._4
             lb.Items.Add("id:\t\t" + id);
             lb.Items.Add("Imię i nazwisko:\t" + imie + " " + nazwisko);
             lb.Items.Add("Rok urodzenia:\t" + rokUrodzenia);
-            lb.Items.Add("Wiek:\t\t" + ObliczWiek()); 
+            lb.Items.Add("Wiek:\t\t" + ObliczWiek());
             lb.Items.Add("Twój koszyk:\t" + koszyk);
             lb.Items.Add("Ulubiony Autor:\t" + ulubionyAutor);
             lb.Items.Add("Ulubiona książka:" + ulubionaKsiazka);
             lb.Items.Add("Kupiona książka:" + kupionaKsiazka);
-            lb.Items.Add("Rok wydania:\t"+ rokWydania + "\n");
+            lb.Items.Add("Rok wydania:\t" + rokWydania + "\n");
         }
         private int ObliczWiek()
         {
             return DateTime.Now.Year - rokUrodzenia;
         }
+
+        private void StronyPrzeczytane()
+        {
+            // prywatna metoda dla przeczytanych stron (nie wiem czy potrzebne) // 
+        }
+
+        public void Strony()
+        {
+            if (przeczytaneStrony > 0)
+            {
+
+                Console.WriteLine("Klient przeczytał " + przeczytaneStrony);
+            }
+            else
+            {
+                Console.WriteLine("Klient jeszcze nie przeczytał zakupionej książki");
+            }
+        }
+
     }
 
 }
- 
+
