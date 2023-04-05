@@ -74,7 +74,7 @@ namespace Zad._4
 
         public void Wypisz(ListBox lb)
         {
-            lb.Items.Add("id:\t\t" + id);
+            lb.Items.Add("Id:\t\t" + id);
             lb.Items.Add("Imię i nazwisko:\t" + imie + " " + nazwisko);
             lb.Items.Add("Rok urodzenia:\t" + rokUrodzenia);
             lb.Items.Add("Wiek:\t\t" + ObliczWiek());
@@ -83,6 +83,7 @@ namespace Zad._4
             lb.Items.Add("Ulubiona książka:" + ulubionaKsiazka);
             lb.Items.Add("Kupiona książka:" + kupionaKsiazka);
             lb.Items.Add("Rok wydania:\t" + rokWydania + "\n");
+            lb.Items.Add("Przeczytane strony:\t" + przeczytaneStrony + "\n");
         }
         private int ObliczWiek()
         {

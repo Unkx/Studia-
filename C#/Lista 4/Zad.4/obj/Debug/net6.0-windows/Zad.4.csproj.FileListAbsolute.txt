@@ -49,3 +49,20 @@ C:\Users\mi140\Desktop\Unkx\Studia-\C#\Lista 4\Zad.4\obj\Debug\net6.0-windows\re
 C:\Users\mi140\Desktop\Unkx\Studia-\C#\Lista 4\Zad.4\obj\Debug\net6.0-windows\Zad.4.pdb
 C:\Users\mi140\Desktop\Unkx\Studia-\C#\Lista 4\Zad.4\obj\Debug\net6.0-windows\Zad.4.genruntimeconfig.cache
 C:\Users\mi140\Desktop\Unkx\Studia-\C#\Lista 4\Zad.4\obj\Debug\net6.0-windows\ref\Zad.4.dll
+C:\Users\mi140\Desktop\Studia INF\Unkx\Studia-\C#\Lista 4\Zad.4\bin\Debug\net6.0-windows\Zad.4.exe
+C:\Users\mi140\Desktop\Studia INF\Unkx\Studia-\C#\Lista 4\Zad.4\bin\Debug\net6.0-windows\Zad.4.deps.json
+C:\Users\mi140\Desktop\Studia INF\Unkx\Studia-\C#\Lista 4\Zad.4\bin\Debug\net6.0-windows\Zad.4.runtimeconfig.json
+C:\Users\mi140\Desktop\Studia INF\Unkx\Studia-\C#\Lista 4\Zad.4\bin\Debug\net6.0-windows\Zad.4.dll
+C:\Users\mi140\Desktop\Studia INF\Unkx\Studia-\C#\Lista 4\Zad.4\bin\Debug\net6.0-windows\Zad.4.pdb
+C:\Users\mi140\Desktop\Studia INF\Unkx\Studia-\C#\Lista 4\Zad.4\obj\Debug\net6.0-windows\Zad.4.csproj.AssemblyReference.cache
+C:\Users\mi140\Desktop\Studia INF\Unkx\Studia-\C#\Lista 4\Zad.4\obj\Debug\net6.0-windows\Zad._4.Form1.resources
+C:\Users\mi140\Desktop\Studia INF\Unkx\Studia-\C#\Lista 4\Zad.4\obj\Debug\net6.0-windows\Zad.4.csproj.GenerateResource.cache
+C:\Users\mi140\Desktop\Studia INF\Unkx\Studia-\C#\Lista 4\Zad.4\obj\Debug\net6.0-windows\Zad.4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mi140\Desktop\Studia INF\Unkx\Studia-\C#\Lista 4\Zad.4\obj\Debug\net6.0-windows\Zad.4.AssemblyInfoInputs.cache
+C:\Users\mi140\Desktop\Studia INF\Unkx\Studia-\C#\Lista 4\Zad.4\obj\Debug\net6.0-windows\Zad.4.AssemblyInfo.cs
+C:\Users\mi140\Desktop\Studia INF\Unkx\Studia-\C#\Lista 4\Zad.4\obj\Debug\net6.0-windows\Zad.4.csproj.CoreCompileInputs.cache
+C:\Users\mi140\Desktop\Studia INF\Unkx\Studia-\C#\Lista 4\Zad.4\obj\Debug\net6.0-windows\Zad.4.dll
+C:\Users\mi140\Desktop\Studia INF\Unkx\Studia-\C#\Lista 4\Zad.4\obj\Debug\net6.0-windows\refint\Zad.4.dll
+C:\Users\mi140\Desktop\Studia INF\Unkx\Studia-\C#\Lista 4\Zad.4\obj\Debug\net6.0-windows\Zad.4.pdb
+C:\Users\mi140\Desktop\Studia INF\Unkx\Studia-\C#\Lista 4\Zad.4\obj\Debug\net6.0-windows\Zad.4.genruntimeconfig.cache
+C:\Users\mi140\Desktop\Studia INF\Unkx\Studia-\C#\Lista 4\Zad.4\obj\Debug\net6.0-windows\ref\Zad.4.dll

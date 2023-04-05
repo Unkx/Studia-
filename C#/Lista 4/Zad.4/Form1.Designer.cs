@@ -30,45 +30,55 @@
         {
             button1 = new Button();
             listBoxKlient = new ListBox();
+            label1 = new Label();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(286, 172);
-            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Location = new Point(344, 120);
             button1.Name = "button1";
-            button1.Size = new Size(86, 31);
+            button1.Size = new Size(75, 23);
             button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Text = "CLICK";
             button1.UseVisualStyleBackColor = true;
             button1.Click += buttonKlient_Click;
             // 
             // listBoxKlient
             // 
             listBoxKlient.FormattingEnabled = true;
-            listBoxKlient.ItemHeight = 20;
-            listBoxKlient.Location = new Point(161, 267);
-            listBoxKlient.Margin = new Padding(3, 4, 3, 4);
+            listBoxKlient.ItemHeight = 15;
+            listBoxKlient.Location = new Point(197, 173);
             listBoxKlient.Name = "listBoxKlient";
-            listBoxKlient.Size = new Size(324, 224);
+            listBoxKlient.Size = new Size(390, 229);
             listBoxKlient.TabIndex = 1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(344, 85);
+            label1.Name = "label1";
+            label1.Size = new Size(81, 15);
+            label1.TabIndex = 2;
+            label1.Text = "Pobierz dane :";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
+            ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Controls.Add(listBoxKlient);
             Controls.Add(button1);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button button1;
         private ListBox listBoxKlient;
+        private Label label1;
     }
 }
