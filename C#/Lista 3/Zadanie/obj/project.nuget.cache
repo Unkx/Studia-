@@ -1,14 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "yMaX66LgMq2MO06Sb6ISZ3zJvS9mFsYOYYvcg3AhMingZpLMRAmEl0Lodn+D1c5KVnZzhq/KIST2SfVYd+KBBA==",
+  "dgSpecHash": "gtKob0RkiPL27w3KXJgLQPhQ5VTsDW31xEmRzR452OUWwgevllo+qPjmy5EzJNpYyUxU5N0Jjiedd+EMWmGHyQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\C#\\Lista 3\\Zadanie\\Zadanie.csproj",
-=======
-  "dgSpecHash": "k+8z1CkHr4nSCR/Iv+XelYXX5hToEtogry9cbsn05JXHJLFkeIzLVMlSG7sYBldwQXlCU80pSdv1BZN0ZB5mVg==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\mi140\\OneDrive\\Pulpit\\Programowanie\\C#\\Lista 3\\Zadanie\\Zadanie.csproj",
->>>>>>> c06d24c14e1024825e8705de046e26901dfead8f
+  "projectFilePath": "C:\\Users\\mi140\\Desktop\\Studia INF\\Unkx\\Studia-\\C#\\Lista 3\\Zadanie\\Zadanie.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\mi140\\Desktop\\Studia INF\\Unkx\\Studia-\\C#\\Lista 3\\Zadanie\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

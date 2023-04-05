@@ -13,19 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\C#\\Lista 3\\Zadanie\\Zadanie.csproj",
+      "projectUniqueName": "C:\\Users\\mi140\\Desktop\\Studia INF\\Unkx\\Studia-\\C#\\Lista 3\\Zadanie\\Zadanie.csproj",
       "projectName": "Zadanie",
-      "projectPath": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\C#\\Lista 3\\Zadanie\\Zadanie.csproj",
+      "projectPath": "C:\\Users\\mi140\\Desktop\\Studia INF\\Unkx\\Studia-\\C#\\Lista 3\\Zadanie\\Zadanie.csproj",
       "packagesPath": "C:\\Users\\mi140\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\C#\\Lista 3\\Zadanie\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\mi140\\OneDrive\\Pulpit\\Programowanie\\C#\\Lista 3\\Zadanie\\Zadanie.csproj",
-      "projectName": "Zadanie",
-      "projectPath": "C:\\Users\\mi140\\OneDrive\\Pulpit\\Programowanie\\C#\\Lista 3\\Zadanie\\Zadanie.csproj",
-      "packagesPath": "C:\\Users\\mi140\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mi140\\OneDrive\\Pulpit\\Programowanie\\C#\\Lista 3\\Zadanie\\obj\\",
->>>>>>> c06d24c14e1024825e8705de046e26901dfead8f
+      "outputPath": "C:\\Users\\mi140\\Desktop\\Studia INF\\Unkx\\Studia-\\C#\\Lista 3\\Zadanie\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mi140\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -72,8 +64,16 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\mi140\\Desktop\\Studia INF\\Unkx\\Studia-\\C#\\Lista 3\\Zadanie\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

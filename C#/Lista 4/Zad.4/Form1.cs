@@ -1,3 +1,5 @@
+using System.Windows.Forms;
+
 namespace Zad._4
 {
     public partial class Form1 : Form
@@ -14,5 +16,6 @@ namespace Zad._4
             Console.WriteLine("----------------");
         }
 
+        
     }
 }
