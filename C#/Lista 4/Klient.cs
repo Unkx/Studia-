@@ -82,6 +82,7 @@ namespace Zad._4
         {
             string[] clientInfo = new string[]
             {
+            "ID:\t\t" + id,
             "Imię i nazwisko:\t" + imie + " " + nazwisko,
             "Rok urodzenia:\t" + rokUrodzenia,
             "Wiek:" + wiek,

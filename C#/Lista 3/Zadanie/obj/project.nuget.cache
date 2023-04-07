@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "7Vsh7twEjug22oLGDxqsA6La0o+jXrPuEhrSdG5qATF/I/4/YZeMmrPH3dVsATjRo8d/5GBDbJfUgz76nZQQAw==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\C#\\Lista 3\\Zadanie\\Zadanie.csproj",
-=======
   "dgSpecHash": "gtKob0RkiPL27w3KXJgLQPhQ5VTsDW31xEmRzR452OUWwgevllo+qPjmy5EzJNpYyUxU5N0Jjiedd+EMWmGHyQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\mi140\\Desktop\\Studia INF\\Unkx\\Studia-\\C#\\Lista 3\\Zadanie\\Zadanie.csproj",
->>>>>>> 0dc9357e1b38831120d42dfdccff21844f3ac715
   "expectedPackageFiles": [],
   "logs": [
     {

@@ -1,19 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\C#\\Lista 3\\Zadanie\\Zadanie.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\C#\\Lista 3\\Zadanie\\Zadanie.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\C#\\Lista 3\\Zadanie\\Zadanie.csproj",
-        "projectName": "Zadanie",
-        "projectPath": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\C#\\Lista 3\\Zadanie\\Zadanie.csproj",
-        "packagesPath": "C:\\Users\\mi140\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\C#\\Lista 3\\Zadanie\\obj\\",
-=======
     "C:\\Users\\mi140\\Desktop\\Studia INF\\Unkx\\Studia-\\C#\\Lista 3\\Zadanie\\Zadanie.csproj": {}
   },
   "projects": {
@@ -25,7 +12,6 @@
         "projectPath": "C:\\Users\\mi140\\Desktop\\Studia INF\\Unkx\\Studia-\\C#\\Lista 3\\Zadanie\\Zadanie.csproj",
         "packagesPath": "C:\\Users\\mi140\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mi140\\Desktop\\Studia INF\\Unkx\\Studia-\\C#\\Lista 3\\Zadanie\\obj\\",
->>>>>>> 0dc9357e1b38831120d42dfdccff21844f3ac715
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mi140\\AppData\\Roaming\\NuGet\\NuGet.Config",

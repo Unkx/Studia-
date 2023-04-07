@@ -36,22 +36,3 @@ C:\Users\mi140\Desktop\Studia INF\C#\Lista 3\Zadanie\obj\Debug\net6.0-windows\Za
 C:\Users\mi140\Desktop\Studia INF\C#\Lista 3\Zadanie\obj\Debug\net6.0-windows\ref\Zadanie.dll
 C:\Users\mi140\Desktop\Studia INF\C#\Lista 3\Zadanie\obj\Debug\net6.0-windows\Zadanie.Form3.resources
 C:\Users\mi140\OneDrive\Pulpit\Programowanie\C#\Lista 3\Zadanie\obj\Debug\net6.0-windows\Zadanie.Form3.resources
-C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 3\Zadanie\bin\Debug\net6.0-windows\Zadanie.exe
-C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 3\Zadanie\bin\Debug\net6.0-windows\Zadanie.deps.json
-C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 3\Zadanie\bin\Debug\net6.0-windows\Zadanie.runtimeconfig.json
-C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 3\Zadanie\bin\Debug\net6.0-windows\Zadanie.dll
-C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 3\Zadanie\bin\Debug\net6.0-windows\Zadanie.pdb
-C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 3\Zadanie\obj\Debug\net6.0-windows\Zadanie.csproj.AssemblyReference.cache
-C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 3\Zadanie\obj\Debug\net6.0-windows\Zadanie.Form1.resources
-C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 3\Zadanie\obj\Debug\net6.0-windows\Zadanie.Form2.resources
-C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 3\Zadanie\obj\Debug\net6.0-windows\Zadanie.Form3.resources
-C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 3\Zadanie\obj\Debug\net6.0-windows\Zadanie.csproj.GenerateResource.cache
-C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 3\Zadanie\obj\Debug\net6.0-windows\Zadanie.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 3\Zadanie\obj\Debug\net6.0-windows\Zadanie.AssemblyInfoInputs.cache
-C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 3\Zadanie\obj\Debug\net6.0-windows\Zadanie.AssemblyInfo.cs
-C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 3\Zadanie\obj\Debug\net6.0-windows\Zadanie.csproj.CoreCompileInputs.cache
-C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 3\Zadanie\obj\Debug\net6.0-windows\Zadanie.dll
-C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 3\Zadanie\obj\Debug\net6.0-windows\refint\Zadanie.dll
-C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 3\Zadanie\obj\Debug\net6.0-windows\Zadanie.pdb
-C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 3\Zadanie\obj\Debug\net6.0-windows\Zadanie.genruntimeconfig.cache
-C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 3\Zadanie\obj\Debug\net6.0-windows\ref\Zadanie.dll
