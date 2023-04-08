@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mi140\\Desktop\\Studia INF\\C#\\Lista 5\\BookStore\\BookStore\\BookStore.csproj",
+      "projectUniqueName": "C:\\Users\\mi140\\Source\\Repos\\Unkx\\Studia-\\C#\\Lista 5\\BookStore\\BookStore\\BookStore.csproj",
       "projectName": "BookStore",
-      "projectPath": "C:\\Users\\mi140\\Desktop\\Studia INF\\C#\\Lista 5\\BookStore\\BookStore\\BookStore.csproj",
+      "projectPath": "C:\\Users\\mi140\\Source\\Repos\\Unkx\\Studia-\\C#\\Lista 5\\BookStore\\BookStore\\BookStore.csproj",
       "packagesPath": "C:\\Users\\mi140\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mi140\\Desktop\\Studia INF\\C#\\Lista 5\\BookStore\\BookStore\\obj\\",
+      "outputPath": "C:\\Users\\mi140\\Source\\Repos\\Unkx\\Studia-\\C#\\Lista 5\\BookStore\\BookStore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mi140\\AppData\\Roaming\\NuGet\\NuGet.Config",

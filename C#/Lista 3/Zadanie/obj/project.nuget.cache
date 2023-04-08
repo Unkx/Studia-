@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gtKob0RkiPL27w3KXJgLQPhQ5VTsDW31xEmRzR452OUWwgevllo+qPjmy5EzJNpYyUxU5N0Jjiedd+EMWmGHyQ==",
+  "dgSpecHash": "7Vsh7twEjug22oLGDxqsA6La0o+jXrPuEhrSdG5qATF/I/4/YZeMmrPH3dVsATjRo8d/5GBDbJfUgz76nZQQAw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mi140\\Desktop\\Studia INF\\Unkx\\Studia-\\C#\\Lista 3\\Zadanie\\Zadanie.csproj",
+  "projectFilePath": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\C#\\Lista 3\\Zadanie\\Zadanie.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\mi140\\Desktop\\Studia INF\\Unkx\\Studia-\\C#\\Lista 3\\Zadanie\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

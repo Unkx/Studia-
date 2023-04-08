@@ -9,32 +9,26 @@ namespace BookStore
     internal class Book
     {
         int id;
-        string imie;
-        string nazwisko;
-        int rokUrodzenia;
-        int wiek;
-        static int liczbaOsob = 0;
-        int koszyk;
-        string ulubionyAutor;
-        string ulubionaKsiazka;
-        string kupionaKsiazka;
+        string imieAutora;
+        string nazwiskoAutora;
+        string rokUrodzenia;
         int rokWydania;
+        string KolorOkladki;
+        string kupionaKsiazka;
         int przeczytaneStrony;
 
-        public Book()
+        public Book() : base() { }
+
+        /*public Book()
         {
             liczbaOsob += 1;
             this.id = liczbaOsob;
-            this.imie = "-";
-            this.nazwisko = "-";
-            this.rokUrodzenia = 2000;
-            this.wiek = 23;
-            this.koszyk = 2;
-            this.ulubionyAutor = "-";
-            this.ulubionaKsiazka = "-";
-            this.kupionaKsiazka = "-";
+            this.imieAutora = "-";
+            this.nazwiskoAutora = "-";
             this.rokWydania = 2003;
-            this.przeczytaneStrony = 20;
+            this.KolorOkładki = "-";
+            this.kupionaKsiazka = "-";
+            this.przeczytaneStrony = "-";
 
 
         }
@@ -69,20 +63,17 @@ namespace BookStore
             this.rokWydania = o.rokWydania;
             this.przeczytaneStrony = o.przeczytaneStrony;
         }
-
+        */
         public string[] Wypisz()
         {
             string[] clientInfo = new string[]
             {
             "ID:\t\t" + id,
-            "Imię i nazwisko:\t" + imie + " " + nazwisko,
+            "Imię i nazwisko:\t" + imieAutora + " " + nazwiskoAutora,
             "Rok urodzenia:\t" + rokUrodzenia,
-            "Wiek:" + wiek,
-            "Twój koszyk:\t" + koszyk,
-            "Ulubiony Autor:\t" + ulubionyAutor,
-            "Ulubiona książka:\t" + ulubionaKsiazka,
             "Kupiona książka:\t" + kupionaKsiazka,
             "Rok wydania:\t" + rokWydania,
+            "Kolor okładki:\t" + KolorOkladki,
             "Przeczytane strony:\t" + przeczytaneStrony,
             "=================================="
             };
