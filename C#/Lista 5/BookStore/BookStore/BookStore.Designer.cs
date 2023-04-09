@@ -1,6 +1,6 @@
 ﻿namespace BookStore
 {
-    partial class Form1
+    partial class BookStore
     {
         /// <summary>
         ///  Required designer variable.

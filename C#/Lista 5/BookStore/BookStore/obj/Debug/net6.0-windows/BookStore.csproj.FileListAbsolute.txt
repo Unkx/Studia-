@@ -22,8 +22,6 @@ C:\Users\mi140\Source\Repos\Unkx\Studia-\C#\Lista 5\BookStore\BookStore\bin\Debu
 C:\Users\mi140\Source\Repos\Unkx\Studia-\C#\Lista 5\BookStore\BookStore\bin\Debug\net6.0-windows\BookStore.runtimeconfig.json
 C:\Users\mi140\Source\Repos\Unkx\Studia-\C#\Lista 5\BookStore\BookStore\bin\Debug\net6.0-windows\BookStore.dll
 C:\Users\mi140\Source\Repos\Unkx\Studia-\C#\Lista 5\BookStore\BookStore\obj\Debug\net6.0-windows\BookStore.csproj.AssemblyReference.cache
-C:\Users\mi140\Source\Repos\Unkx\Studia-\C#\Lista 5\BookStore\BookStore\obj\Debug\net6.0-windows\BookStore.Form1.resources
-C:\Users\mi140\Source\Repos\Unkx\Studia-\C#\Lista 5\BookStore\BookStore\obj\Debug\net6.0-windows\BookStore.Form2.resources
 C:\Users\mi140\Source\Repos\Unkx\Studia-\C#\Lista 5\BookStore\BookStore\obj\Debug\net6.0-windows\BookStore.Properties.Resources.resources
 C:\Users\mi140\Source\Repos\Unkx\Studia-\C#\Lista 5\BookStore\BookStore\obj\Debug\net6.0-windows\BookStore.csproj.GenerateResource.cache
 C:\Users\mi140\Source\Repos\Unkx\Studia-\C#\Lista 5\BookStore\BookStore\obj\Debug\net6.0-windows\BookStore.GeneratedMSBuildEditorConfig.editorconfig
@@ -36,3 +34,5 @@ C:\Users\mi140\Source\Repos\Unkx\Studia-\C#\Lista 5\BookStore\BookStore\obj\Debu
 C:\Users\mi140\Source\Repos\Unkx\Studia-\C#\Lista 5\BookStore\BookStore\obj\Debug\net6.0-windows\BookStore.genruntimeconfig.cache
 C:\Users\mi140\Source\Repos\Unkx\Studia-\C#\Lista 5\BookStore\BookStore\obj\Debug\net6.0-windows\ref\BookStore.dll
 C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 5\BookStore\BookStore\bin\Debug\net6.0-windows\BookStore.pdb
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 5\BookStore\BookStore\obj\Debug\net6.0-windows\BookStore.Book.resources
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 5\BookStore\BookStore\obj\Debug\net6.0-windows\BookStore.BookStore.resources

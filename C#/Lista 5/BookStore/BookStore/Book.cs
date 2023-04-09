@@ -1,79 +1,44 @@
-﻿using Microsoft.VisualBasic.ApplicationServices;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace BookStore
 {
-    internal class Book
+    public partial class Book : Form
     {
-        static int liczbaOsob = 0;
-        int id;
-        string imieAutora;
-        string nazwiskoAutora;
-        string rokUrodzenia;
-        int rokWydania;
-        string KolorOkladki;
-        string kupionaKsiazka;
-        int przeczytaneStrony;
-
-
         public Book()
         {
-            liczbaOsob += 1;
-            this.id = liczbaOsob;
-            this.imieAutora = "-";
-            this.nazwiskoAutora = "-";
-            this.rokWydania = 2003;
-            this.KolorOkladki = "-";
-            this.kupionaKsiazka = "-";
-            this.przeczytaneStrony = 2004;
-
-
+            InitializeComponent();
         }
-        public Book(string imieAutora, string nazwiskoAutora, int rokWydania, string KolorOkladki, string kupionaKsiazka , int przeczytaneStrony)
+
+        private void buttonWypisz_Click(object sender, EventArgs e)
         {
-            liczbaOsob += 1;
-            this.id = liczbaOsob;
-            this.imieAutora = imieAutora;
-            this.nazwiskoAutora = nazwiskoAutora;
-            this.rokWydania = rokWydania;
-            this.KolorOkladki = KolorOkladki;
-            this.kupionaKsiazka = kupionaKsiazka;
-            this.przeczytaneStrony = przeczytaneStrony;
+            string Imie = textBoxImie.Text;
+            listBoxDane.Items.Add("Imię:\t" + Imie);
+            string Nazwisko = textBoxNazwisko.Text;
+            listBoxDane.Items.Add(Nazwisko);
+            string Tytul = textBoxTytul.Text;
+            listBoxDane.Items.Add(Tytul);
+            string Strony = textBoxStrony.Text;
+            listBoxDane.Items.Add(Strony);
+            string Kolor = textBoxKolor.Text;
+            listBoxDane.Items.Add(Kolor);
+
+
+
+
+            labelDane.Visible = true;
+            listBoxDane.Visible = true;
+
         }
 
-        public Book(Book o)
-        {
-            liczbaOsob += 1;
-            this.id = liczbaOsob;
-            this.imieAutora = o.imieAutora;
-            this.nazwiskoAutora = o.nazwiskoAutora;
-            this.rokWydania = o.rokWydania;
-            this.KolorOkladki = o.KolorOkladki;
-            this.kupionaKsiazka = o.kupionaKsiazka;
-            this.przeczytaneStrony = o.przeczytaneStrony;
-        }
-        
-        public string[] Wypisz()
-        {
-            string[] clientInfo = new string[]
-            {
-            "ID:\t\t" + id,
-            "Imię i nazwisko:\t" + imieAutora + " " + nazwiskoAutora,
-            "Kupiona książka:\t" + kupionaKsiazka,
-            "Rok wydania:\t" + rokWydania,
-            "Kolor okładki:\t" + KolorOkladki,
-            "Przeczytane strony:\t" + przeczytaneStrony,
-            "=================================="
-            };
-            return clientInfo;
-        }
-
-        
 
     }
 }
-
