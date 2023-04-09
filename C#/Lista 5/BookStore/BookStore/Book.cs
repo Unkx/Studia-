@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.ApplicationServices;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,7 @@ namespace BookStore
 {
     internal class Book
     {
+        static int liczbaOsob = 0;
         int id;
         string imieAutora;
         string nazwiskoAutora;
@@ -17,34 +19,29 @@ namespace BookStore
         string kupionaKsiazka;
         int przeczytaneStrony;
 
-        public Book() : base() { }
 
-        /*public Book()
+        public Book()
         {
             liczbaOsob += 1;
             this.id = liczbaOsob;
             this.imieAutora = "-";
             this.nazwiskoAutora = "-";
             this.rokWydania = 2003;
-            this.KolorOkładki = "-";
+            this.KolorOkladki = "-";
             this.kupionaKsiazka = "-";
-            this.przeczytaneStrony = "-";
+            this.przeczytaneStrony = 2004;
 
 
         }
-        public Book(string imie, string nazwisko, int rokUrodzenia, int wiek, int koszyk, string ulubionyAutor, string ulubionaKsiazka, string kupionaKsiazka, int rokWydania, int przeczytaneStrony)
+        public Book(string imieAutora, string nazwiskoAutora, int rokWydania, string KolorOkladki, string kupionaKsiazka , int przeczytaneStrony)
         {
             liczbaOsob += 1;
             this.id = liczbaOsob;
-            this.imie = imie;
-            this.nazwisko = nazwisko;
-            this.rokUrodzenia = rokUrodzenia;
-            this.wiek = wiek;
-            this.koszyk = koszyk;
-            this.ulubionyAutor = ulubionyAutor;
-            this.ulubionaKsiazka = ulubionaKsiazka;
-            this.kupionaKsiazka = kupionaKsiazka;
+            this.imieAutora = imieAutora;
+            this.nazwiskoAutora = nazwiskoAutora;
             this.rokWydania = rokWydania;
+            this.KolorOkladki = KolorOkladki;
+            this.kupionaKsiazka = kupionaKsiazka;
             this.przeczytaneStrony = przeczytaneStrony;
         }
 
@@ -52,25 +49,20 @@ namespace BookStore
         {
             liczbaOsob += 1;
             this.id = liczbaOsob;
-            this.imie = o.imie;
-            this.nazwisko = o.nazwisko;
-            this.rokUrodzenia = o.rokUrodzenia;
-            this.wiek = o.wiek;
-            this.koszyk = o.koszyk;
-            this.ulubionyAutor = o.ulubionyAutor;
-            this.ulubionaKsiazka = o.ulubionaKsiazka;
-            this.kupionaKsiazka = o.kupionaKsiazka;
+            this.imieAutora = o.imieAutora;
+            this.nazwiskoAutora = o.nazwiskoAutora;
             this.rokWydania = o.rokWydania;
+            this.KolorOkladki = o.KolorOkladki;
+            this.kupionaKsiazka = o.kupionaKsiazka;
             this.przeczytaneStrony = o.przeczytaneStrony;
         }
-        */
+        
         public string[] Wypisz()
         {
             string[] clientInfo = new string[]
             {
             "ID:\t\t" + id,
             "Imię i nazwisko:\t" + imieAutora + " " + nazwiskoAutora,
-            "Rok urodzenia:\t" + rokUrodzenia,
             "Kupiona książka:\t" + kupionaKsiazka,
             "Rok wydania:\t" + rokWydania,
             "Kolor okładki:\t" + KolorOkladki,
@@ -79,6 +71,8 @@ namespace BookStore
             };
             return clientInfo;
         }
+
+        
 
     }
 }

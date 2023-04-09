@@ -21,6 +21,10 @@ namespace BookStore
         {
             Book o1 = new Book();
             listBoxBook.Items.AddRange(o1.Wypisz());
+            Book o2 = new Book("Kuba", "Mickiewicz", 2000, "Czerwień","Stary Śpi", 23);
+            listBoxBook.Items.AddRange(o2.Wypisz());
+            Book o3 = new Book(o2);
+            listBoxBook.Items.AddRange(o3.Wypisz());
         }
     }
 }
