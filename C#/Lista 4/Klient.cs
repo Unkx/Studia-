@@ -95,7 +95,7 @@ namespace Zad._4
             "=================================="
             };
             return clientInfo;
-        }
+         }
 
     }
 
