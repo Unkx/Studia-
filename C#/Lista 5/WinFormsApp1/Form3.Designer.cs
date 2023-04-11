@@ -33,39 +33,57 @@
             txtWiek = new TextBox();
             txtAdres = new TextBox();
             listBoxStore = new ListBox();
-            button1 = new Button();
+            buttonZatwierdz = new Button();
             txtUlubionaKsiazka = new TextBox();
             txtKupionaKsiazka = new TextBox();
             txtRokWydania = new TextBox();
             txtPrzeczytaneStrony = new TextBox();
             txtUlubionyAutor = new TextBox();
             txtKoszyk = new TextBox();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            label10 = new Label();
+            label9 = new Label();
+            label8 = new Label();
+            label7 = new Label();
+            label6 = new Label();
+            txtKsiazki = new TextBox();
+            txtPracownicy = new TextBox();
+            txtSklep = new TextBox();
+            txtEmail = new TextBox();
+            label11 = new Label();
+            label12 = new Label();
+            label13 = new Label();
+            label14 = new Label();
             SuspendLayout();
             // 
             // txtImie
             // 
-            txtImie.Location = new Point(76, 36);
+            txtImie.Location = new Point(189, 44);
             txtImie.Name = "txtImie";
             txtImie.Size = new Size(100, 23);
             txtImie.TabIndex = 0;
             // 
             // txtNazwisko
             // 
-            txtNazwisko.Location = new Point(76, 80);
+            txtNazwisko.Location = new Point(189, 88);
             txtNazwisko.Name = "txtNazwisko";
             txtNazwisko.Size = new Size(100, 23);
             txtNazwisko.TabIndex = 0;
             // 
             // txtWiek
             // 
-            txtWiek.Location = new Point(76, 130);
+            txtWiek.Location = new Point(189, 138);
             txtWiek.Name = "txtWiek";
             txtWiek.Size = new Size(100, 23);
             txtWiek.TabIndex = 0;
             // 
             // txtAdres
             // 
-            txtAdres.Location = new Point(76, 182);
+            txtAdres.Location = new Point(189, 190);
             txtAdres.Name = "txtAdres";
             txtAdres.Size = new Size(100, 23);
             txtAdres.TabIndex = 0;
@@ -74,69 +92,241 @@
             // 
             listBoxStore.FormattingEnabled = true;
             listBoxStore.ItemHeight = 15;
-            listBoxStore.Location = new Point(725, 36);
+            listBoxStore.Location = new Point(918, 57);
             listBoxStore.Name = "listBoxStore";
-            listBoxStore.Size = new Size(516, 514);
+            listBoxStore.Size = new Size(267, 424);
             listBoxStore.TabIndex = 1;
             // 
-            // button1
+            // buttonZatwierdz
             // 
-            button1.Location = new Point(281, 354);
-            button1.Name = "button1";
-            button1.Size = new Size(162, 60);
-            button1.TabIndex = 2;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            buttonZatwierdz.Location = new Point(347, 310);
+            buttonZatwierdz.Name = "buttonZatwierdz";
+            buttonZatwierdz.Size = new Size(162, 60);
+            buttonZatwierdz.TabIndex = 2;
+            buttonZatwierdz.Text = "Zatwierdź";
+            buttonZatwierdz.UseVisualStyleBackColor = true;
+            buttonZatwierdz.Click += buttonZatwierdz_Click;
             // 
             // txtUlubionaKsiazka
             // 
-            txtUlubionaKsiazka.Location = new Point(343, 80);
+            txtUlubionaKsiazka.Location = new Point(654, 91);
             txtUlubionaKsiazka.Name = "txtUlubionaKsiazka";
             txtUlubionaKsiazka.Size = new Size(100, 23);
             txtUlubionaKsiazka.TabIndex = 0;
             // 
             // txtKupionaKsiazka
             // 
-            txtKupionaKsiazka.Location = new Point(343, 130);
+            txtKupionaKsiazka.Location = new Point(654, 141);
             txtKupionaKsiazka.Name = "txtKupionaKsiazka";
             txtKupionaKsiazka.Size = new Size(100, 23);
             txtKupionaKsiazka.TabIndex = 0;
             // 
             // txtRokWydania
             // 
-            txtRokWydania.Location = new Point(343, 182);
+            txtRokWydania.Location = new Point(654, 193);
             txtRokWydania.Name = "txtRokWydania";
             txtRokWydania.Size = new Size(100, 23);
             txtRokWydania.TabIndex = 0;
             // 
             // txtPrzeczytaneStrony
             // 
-            txtPrzeczytaneStrony.Location = new Point(343, 243);
+            txtPrzeczytaneStrony.Location = new Point(654, 254);
             txtPrzeczytaneStrony.Name = "txtPrzeczytaneStrony";
             txtPrzeczytaneStrony.Size = new Size(100, 23);
             txtPrzeczytaneStrony.TabIndex = 0;
             // 
             // txtUlubionyAutor
             // 
-            txtUlubionyAutor.Location = new Point(343, 36);
+            txtUlubionyAutor.Location = new Point(654, 47);
             txtUlubionyAutor.Name = "txtUlubionyAutor";
             txtUlubionyAutor.Size = new Size(100, 23);
             txtUlubionyAutor.TabIndex = 0;
             // 
             // txtKoszyk
             // 
-            txtKoszyk.Location = new Point(76, 243);
+            txtKoszyk.Location = new Point(189, 251);
             txtKoszyk.Name = "txtKoszyk";
             txtKoszyk.Size = new Size(100, 23);
             txtKoszyk.TabIndex = 0;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(97, 254);
+            label5.Name = "label5";
+            label5.Size = new Size(49, 15);
+            label5.TabIndex = 5;
+            label5.Text = "Koszyk :";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(97, 193);
+            label4.Name = "label4";
+            label4.Size = new Size(43, 15);
+            label4.TabIndex = 6;
+            label4.Text = "Adres :";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(84, 144);
+            label3.Name = "label3";
+            label3.Size = new Size(72, 15);
+            label3.TabIndex = 7;
+            label3.Text = "Podaj Wiek :";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(75, 96);
+            label2.Name = "label2";
+            label2.Size = new Size(96, 15);
+            label2.TabIndex = 8;
+            label2.Text = "Podaj Nazwisko :";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(87, 47);
+            label1.Name = "label1";
+            label1.Size = new Size(69, 15);
+            label1.TabIndex = 9;
+            label1.Text = "Podaj Imię :";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(528, 258);
+            label10.Name = "label10";
+            label10.Size = new Size(112, 15);
+            label10.TabIndex = 10;
+            label10.Text = "Przeczytane Strony :";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(548, 196);
+            label9.Name = "label9";
+            label9.Size = new Size(82, 15);
+            label9.TabIndex = 11;
+            label9.Text = "Rok Wydania :";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(532, 144);
+            label8.Name = "label8";
+            label8.Size = new Size(98, 15);
+            label8.TabIndex = 12;
+            label8.Text = "Kupiona Książka :";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(528, 94);
+            label7.Name = "label7";
+            label7.Size = new Size(102, 15);
+            label7.TabIndex = 13;
+            label7.Text = "Ulubiona Książka :";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(536, 50);
+            label6.Name = "label6";
+            label6.Size = new Size(94, 15);
+            label6.TabIndex = 14;
+            label6.Text = "Ulubiony Autor :";
+            // 
+            // txtKsiazki
+            // 
+            txtKsiazki.Location = new Point(189, 388);
+            txtKsiazki.Name = "txtKsiazki";
+            txtKsiazki.Size = new Size(100, 23);
+            txtKsiazki.TabIndex = 15;
+            // 
+            // txtPracownicy
+            // 
+            txtPracownicy.Location = new Point(189, 452);
+            txtPracownicy.Name = "txtPracownicy";
+            txtPracownicy.Size = new Size(100, 23);
+            txtPracownicy.TabIndex = 15;
+            // 
+            // txtSklep
+            // 
+            txtSklep.Location = new Point(654, 383);
+            txtSklep.Name = "txtSklep";
+            txtSklep.Size = new Size(100, 23);
+            txtSklep.TabIndex = 15;
+            // 
+            // txtEmail
+            // 
+            txtEmail.Location = new Point(654, 458);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(100, 23);
+            txtEmail.TabIndex = 15;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(51, 391);
+            label11.Name = "label11";
+            label11.Size = new Size(120, 15);
+            label11.TabIndex = 16;
+            label11.Text = "Książki w magazynie :";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(39, 460);
+            label12.Name = "label12";
+            label12.Size = new Size(138, 15);
+            label12.TabIndex = 16;
+            label12.Text = "Zatrudnieni Pracownicy :";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(560, 388);
+            label13.Name = "label13";
+            label13.Size = new Size(86, 15);
+            label13.TabIndex = 16;
+            label13.Text = "Nazwa Sklepu :";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(585, 463);
+            label14.Name = "label14";
+            label14.Size = new Size(47, 15);
+            label14.TabIndex = 16;
+            label14.Text = "E-mail :";
             // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1333, 610);
-            Controls.Add(button1);
+            Controls.Add(label14);
+            Controls.Add(label13);
+            Controls.Add(label12);
+            Controls.Add(label11);
+            Controls.Add(txtEmail);
+            Controls.Add(txtSklep);
+            Controls.Add(txtPracownicy);
+            Controls.Add(txtKsiazki);
+            Controls.Add(label10);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(buttonZatwierdz);
             Controls.Add(listBoxStore);
             Controls.Add(txtPrzeczytaneStrony);
             Controls.Add(txtKoszyk);
@@ -161,12 +351,30 @@
         private TextBox txtWiek;
         private TextBox txtAdres;
         private ListBox listBoxStore;
-        private Button button1;
+        private Button buttonZatwierdz;
         private TextBox txtUlubionaKsiazka;
         private TextBox txtKupionaKsiazka;
         private TextBox txtRokWydania;
         private TextBox txtPrzeczytaneStrony;
         private TextBox txtUlubionyAutor;
         private TextBox txtKoszyk;
+        private Label label5;
+        private Label label4;
+        private Label label3;
+        private Label label2;
+        private Label label1;
+        private Label label10;
+        private Label label9;
+        private Label label8;
+        private Label label7;
+        private Label label6;
+        private TextBox txtKsiazki;
+        private TextBox txtPracownicy;
+        private TextBox txtSklep;
+        private TextBox txtEmail;
+        private Label label11;
+        private Label label12;
+        private Label label13;
+        private Label label14;
     }
 }

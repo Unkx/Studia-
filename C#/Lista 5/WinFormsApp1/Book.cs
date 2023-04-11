@@ -60,7 +60,7 @@ public class Book : Bookstore
             "Twój Ulubiony Autor :" + UlubionyAutor,
             "Ulubiona Książka :" + UlubionaKsiazka,
             "Kupiona Książka :" + KupionaKsiazka,
-            "Rok Wydania Zakupionej Książki:" + RokWydania,
+            "Rok Wydania :" + RokWydania,
             "Przeczytane Strony :" + PrzeczytaneStrony,
             "==================================",
             "Imie Autora:\t" + imieAutora,
