@@ -28,54 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
+            txtImie = new TextBox();
+            txtNazwisko = new TextBox();
+            txtWiek = new TextBox();
+            txtAdres = new TextBox();
             listBoxStore = new ListBox();
             button1 = new Button();
+            txtUlubionaKsiazka = new TextBox();
+            txtKupionaKsiazka = new TextBox();
+            txtRokWydania = new TextBox();
+            txtPrzeczytaneStrony = new TextBox();
+            txtUlubionyAutor = new TextBox();
+            txtKoszyk = new TextBox();
             SuspendLayout();
             // 
-            // textBox1
+            // txtImie
             // 
-            textBox1.Location = new Point(310, 45);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 0;
+            txtImie.Location = new Point(76, 36);
+            txtImie.Name = "txtImie";
+            txtImie.Size = new Size(100, 23);
+            txtImie.TabIndex = 0;
             // 
-            // textBox2
+            // txtNazwisko
             // 
-            textBox2.Location = new Point(310, 85);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 0;
+            txtNazwisko.Location = new Point(76, 80);
+            txtNazwisko.Name = "txtNazwisko";
+            txtNazwisko.Size = new Size(100, 23);
+            txtNazwisko.TabIndex = 0;
             // 
-            // textBox3
+            // txtWiek
             // 
-            textBox3.Location = new Point(310, 129);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 0;
+            txtWiek.Location = new Point(76, 130);
+            txtWiek.Name = "txtWiek";
+            txtWiek.Size = new Size(100, 23);
+            txtWiek.TabIndex = 0;
             // 
-            // textBox4
+            // txtAdres
             // 
-            textBox4.Location = new Point(310, 171);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(100, 23);
-            textBox4.TabIndex = 0;
+            txtAdres.Location = new Point(76, 182);
+            txtAdres.Name = "txtAdres";
+            txtAdres.Size = new Size(100, 23);
+            txtAdres.TabIndex = 0;
             // 
             // listBoxStore
             // 
             listBoxStore.FormattingEnabled = true;
             listBoxStore.ItemHeight = 15;
-            listBoxStore.Location = new Point(547, 45);
+            listBoxStore.Location = new Point(725, 36);
             listBoxStore.Name = "listBoxStore";
-            listBoxStore.Size = new Size(203, 319);
+            listBoxStore.Size = new Size(516, 514);
             listBoxStore.TabIndex = 1;
             // 
             // button1
             // 
-            button1.Location = new Point(278, 243);
+            button1.Location = new Point(281, 354);
             button1.Name = "button1";
             button1.Size = new Size(162, 60);
             button1.TabIndex = 2;
@@ -83,17 +89,65 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // txtUlubionaKsiazka
+            // 
+            txtUlubionaKsiazka.Location = new Point(343, 80);
+            txtUlubionaKsiazka.Name = "txtUlubionaKsiazka";
+            txtUlubionaKsiazka.Size = new Size(100, 23);
+            txtUlubionaKsiazka.TabIndex = 0;
+            // 
+            // txtKupionaKsiazka
+            // 
+            txtKupionaKsiazka.Location = new Point(343, 130);
+            txtKupionaKsiazka.Name = "txtKupionaKsiazka";
+            txtKupionaKsiazka.Size = new Size(100, 23);
+            txtKupionaKsiazka.TabIndex = 0;
+            // 
+            // txtRokWydania
+            // 
+            txtRokWydania.Location = new Point(343, 182);
+            txtRokWydania.Name = "txtRokWydania";
+            txtRokWydania.Size = new Size(100, 23);
+            txtRokWydania.TabIndex = 0;
+            // 
+            // txtPrzeczytaneStrony
+            // 
+            txtPrzeczytaneStrony.Location = new Point(343, 243);
+            txtPrzeczytaneStrony.Name = "txtPrzeczytaneStrony";
+            txtPrzeczytaneStrony.Size = new Size(100, 23);
+            txtPrzeczytaneStrony.TabIndex = 0;
+            // 
+            // txtUlubionyAutor
+            // 
+            txtUlubionyAutor.Location = new Point(343, 36);
+            txtUlubionyAutor.Name = "txtUlubionyAutor";
+            txtUlubionyAutor.Size = new Size(100, 23);
+            txtUlubionyAutor.TabIndex = 0;
+            // 
+            // txtKoszyk
+            // 
+            txtKoszyk.Location = new Point(76, 243);
+            txtKoszyk.Name = "txtKoszyk";
+            txtKoszyk.Size = new Size(100, 23);
+            txtKoszyk.TabIndex = 0;
+            // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1333, 610);
             Controls.Add(button1);
             Controls.Add(listBoxStore);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtPrzeczytaneStrony);
+            Controls.Add(txtKoszyk);
+            Controls.Add(txtAdres);
+            Controls.Add(txtRokWydania);
+            Controls.Add(txtWiek);
+            Controls.Add(txtKupionaKsiazka);
+            Controls.Add(txtNazwisko);
+            Controls.Add(txtUlubionyAutor);
+            Controls.Add(txtUlubionaKsiazka);
+            Controls.Add(txtImie);
             Name = "Form3";
             Text = "Form3";
             ResumeLayout(false);
@@ -102,11 +156,17 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private TextBox txtImie;
+        private TextBox txtNazwisko;
+        private TextBox txtWiek;
+        private TextBox txtAdres;
         private ListBox listBoxStore;
         private Button button1;
+        private TextBox txtUlubionaKsiazka;
+        private TextBox txtKupionaKsiazka;
+        private TextBox txtRokWydania;
+        private TextBox txtPrzeczytaneStrony;
+        private TextBox txtUlubionyAutor;
+        private TextBox txtKoszyk;
     }
 }

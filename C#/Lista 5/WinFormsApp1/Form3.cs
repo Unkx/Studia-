@@ -19,7 +19,7 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Store o1 = new Store(textBox1.Text, textBox2.Text, Convert.ToInt32(this.textBox3.Text), textBox4.Text, 200, "Księgarnia Maciej", "insert_email@mailbox.com");
+            Store o1 = new Store(txtImie.Text, txtNazwisko.Text, Convert.ToInt32(this.txtWiek.Text), txtAdres.Text, Convert.ToInt32(this.txtKoszyk.Text), txtUlubionyAutor.Text, txtUlubionaKsiazka.Text, txtKupionaKsiazka.Text, Convert.ToInt32(this.txtRokWydania.Text), Convert.ToInt32(this.txtPrzeczytaneStrony.Text),20, 200, "Księgarnia Maciej", "insert_email@mailbox.com");
             listBoxStore.Items.AddRange(o1.Wypisz());
         }
     }
