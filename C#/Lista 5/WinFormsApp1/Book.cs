@@ -1,6 +1,6 @@
 ﻿using System.Xml.Linq;
 
-public class Book : Bookstore
+ class Book : Bookstore
 {
     string imieAutora;
     string nazwiskoAutora;
@@ -42,7 +42,7 @@ public class Book : Bookstore
 
 
 
-    public string[] Wypisz()
+    public override string[] Wypisz()
     {
         string[] clientInfo = new string[]
         {

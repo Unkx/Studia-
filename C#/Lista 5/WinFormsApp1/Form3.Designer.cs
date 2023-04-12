@@ -356,7 +356,7 @@
             Controls.Add(txtImie);
             Margin = new Padding(3, 4, 3, 4);
             Name = "Form3";
-            Text = "Form3";
+            Text = "Sklep";
             ResumeLayout(false);
             PerformLayout();
         }
