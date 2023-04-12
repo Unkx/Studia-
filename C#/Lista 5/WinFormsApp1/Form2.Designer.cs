@@ -59,6 +59,8 @@
             label13 = new Label();
             label14 = new Label();
             label15 = new Label();
+            txtTytul = new TextBox();
+            label16 = new Label();
             SuspendLayout();
             // 
             // listBoxBook
@@ -110,7 +112,7 @@
             buttonZaladuj.Name = "buttonZaladuj";
             buttonZaladuj.Size = new Size(182, 87);
             buttonZaladuj.TabIndex = 2;
-            buttonZaladuj.Text = "Click";
+            buttonZaladuj.Text = "Potwierdź";
             buttonZaladuj.UseVisualStyleBackColor = true;
             buttonZaladuj.Click += buttonZaladuj_Click;
             // 
@@ -180,7 +182,7 @@
             // 
             // txtRokWyd
             // 
-            txtRokWyd.Location = new Point(447, 504);
+            txtRokWyd.Location = new Point(447, 559);
             txtRokWyd.Margin = new Padding(3, 4, 3, 4);
             txtRokWyd.Name = "txtRokWyd";
             txtRokWyd.Size = new Size(114, 27);
@@ -188,7 +190,7 @@
             // 
             // txtPrzeczytaneKs
             // 
-            txtPrzeczytaneKs.Location = new Point(447, 585);
+            txtPrzeczytaneKs.Location = new Point(447, 618);
             txtPrzeczytaneKs.Margin = new Padding(3, 4, 3, 4);
             txtPrzeczytaneKs.Name = "txtPrzeczytaneKs";
             txtPrzeczytaneKs.Size = new Size(114, 27);
@@ -233,11 +235,11 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(104, 348);
+            label5.Location = new Point(40, 349);
             label5.Name = "label5";
-            label5.Size = new Size(61, 20);
+            label5.Size = new Size(133, 20);
             label5.TabIndex = 4;
-            label5.Text = "Koszyk :";
+            label5.Text = "Książki w Koszyku :";
             // 
             // label6
             // 
@@ -314,7 +316,7 @@
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(337, 507);
+            label14.Location = new Point(337, 562);
             label14.Name = "label14";
             label14.Size = new Size(103, 20);
             label14.TabIndex = 5;
@@ -323,17 +325,35 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(247, 588);
+            label15.Location = new Point(258, 621);
             label15.Name = "label15";
             label15.Size = new Size(182, 20);
             label15.TabIndex = 5;
             label15.Text = "Ilość przeczytanych Stron :";
+            // 
+            // txtTytul
+            // 
+            txtTytul.Location = new Point(447, 493);
+            txtTytul.Name = "txtTytul";
+            txtTytul.Size = new Size(114, 27);
+            txtTytul.TabIndex = 7;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(333, 500);
+            label16.Name = "label16";
+            label16.Size = new Size(96, 20);
+            label16.TabIndex = 8;
+            label16.Text = "Tytuł Książki :";
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1563, 864);
+            Controls.Add(label16);
+            Controls.Add(txtTytul);
             Controls.Add(label12);
             Controls.Add(label15);
             Controls.Add(label14);
@@ -367,7 +387,7 @@
             Controls.Add(listBoxBook);
             Margin = new Padding(3, 4, 3, 4);
             Name = "Form2";
-            Text = "Form2";
+            Text = "Dane o Książce";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -405,5 +425,7 @@
         private Label label13;
         private Label label14;
         private Label label15;
+        private TextBox txtTytul;
+        private Label label16;
     }
 }

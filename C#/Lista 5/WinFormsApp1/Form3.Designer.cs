@@ -104,7 +104,7 @@
             // 
             // buttonZatwierdz
             // 
-            buttonZatwierdz.Location = new Point(397, 413);
+            buttonZatwierdz.Location = new Point(385, 412);
             buttonZatwierdz.Margin = new Padding(3, 4, 3, 4);
             buttonZatwierdz.Name = "buttonZatwierdz";
             buttonZatwierdz.Size = new Size(185, 80);
@@ -115,7 +115,7 @@
             // 
             // txtUlubionaKsiazka
             // 
-            txtUlubionaKsiazka.Location = new Point(747, 121);
+            txtUlubionaKsiazka.Location = new Point(747, 122);
             txtUlubionaKsiazka.Margin = new Padding(3, 4, 3, 4);
             txtUlubionaKsiazka.Name = "txtUlubionaKsiazka";
             txtUlubionaKsiazka.Size = new Size(114, 27);
@@ -295,7 +295,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(45, 613);
+            label12.Location = new Point(40, 606);
             label12.Name = "label12";
             label12.Size = new Size(170, 20);
             label12.TabIndex = 16;
@@ -304,7 +304,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(640, 517);
+            label13.Location = new Point(623, 514);
             label13.Name = "label13";
             label13.Size = new Size(109, 20);
             label13.TabIndex = 16;

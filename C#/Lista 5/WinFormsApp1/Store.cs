@@ -45,7 +45,7 @@ public class Store : Bookstore
         }
     }
 
-    public string[] Wypisz()
+    public virtual string[] Wypisz()
     {
         string[] clientInfo = new string[]
         {

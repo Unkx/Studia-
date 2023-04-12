@@ -36,53 +36,56 @@
             // 
             // buttonBook
             // 
-            buttonBook.Location = new Point(145, 261);
+            buttonBook.Location = new Point(166, 348);
+            buttonBook.Margin = new Padding(3, 4, 3, 4);
             buttonBook.Name = "buttonBook";
-            buttonBook.Size = new Size(162, 59);
+            buttonBook.Size = new Size(185, 79);
             buttonBook.TabIndex = 0;
-            buttonBook.Text = "button1";
+            buttonBook.Text = "Kliknij";
             buttonBook.UseVisualStyleBackColor = true;
             buttonBook.Click += buttonBook_Click;
             // 
             // buttonStore
             // 
-            buttonStore.Location = new Point(515, 259);
+            buttonStore.Location = new Point(589, 345);
+            buttonStore.Margin = new Padding(3, 4, 3, 4);
             buttonStore.Name = "buttonStore";
-            buttonStore.Size = new Size(180, 61);
+            buttonStore.Size = new Size(206, 81);
             buttonStore.TabIndex = 1;
-            buttonStore.Text = "button1";
+            buttonStore.Text = "Kliknij";
             buttonStore.UseVisualStyleBackColor = true;
             buttonStore.Click += buttonStore_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(181, 213);
+            label1.Location = new Point(207, 284);
             label1.Name = "label1";
-            label1.Size = new Size(85, 15);
+            label1.Size = new Size(110, 20);
             label1.TabIndex = 2;
             label1.Text = "Dane o Książce";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(587, 213);
+            label2.Location = new Point(671, 284);
             label2.Name = "label2";
-            label2.Size = new Size(35, 15);
+            label2.Size = new Size(45, 20);
             label2.TabIndex = 3;
             label2.Text = "Sklep";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(buttonStore);
             Controls.Add(buttonBook);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Okno Wyboru";
             ResumeLayout(false);
             PerformLayout();
         }
