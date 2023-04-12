@@ -10,10 +10,7 @@ public class Store : Bookstore
     public Store(string Imie, string Nazwisko, int Wiek, string Adres,int Koszyk,string UlubionyAutor,string UlubionaKsiazka,string KupionaKsiazka,int RokWydania,int PrzeczytaneStrony,int Ksiazki, int LiczbaPracownikow, string sklep, string email)
         : base(Imie, Nazwisko, Wiek, Adres, Koszyk, UlubionyAutor, UlubionaKsiazka, KupionaKsiazka, RokWydania, PrzeczytaneStrony)
     {
-        this.Imie = Imie;
-        this.Nazwisko = Nazwisko;
-        this.Wiek = Wiek;
-        this.Adres = Adres;
+
         this.Ksiazki = Ksiazki;
         this.LiczbaPracownikow = LiczbaPracownikow;
         this.Sklep = sklep;
@@ -27,7 +24,7 @@ public class Store : Bookstore
         this.email = "-";
 
     }
-    public Store(Store o)
+    public Store(Store o) :base(o)
     {
         this.LiczbaPracownikow = o.LiczbaPracownikow;
         this.Ksiazki = o.Ksiazki;
@@ -36,16 +33,7 @@ public class Store : Bookstore
 
     }
 
-    public class Class1
-    {
-        public static string SeparateName(string fullName)
-        {
-            string[] wordsInText = fullName.Split(' ');
-            return wordsInText[0];
-        }
-    }
-
-    public virtual string[] Wypisz()
+    public override string[] Wypisz()
     {
         string[] clientInfo = new string[]
         {

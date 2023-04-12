@@ -1,6 +1,4 @@
-﻿using System.Xml.Linq;
-
- class Book : Bookstore
+﻿class Book : Bookstore
 {
     string imieAutora;
     string nazwiskoAutora;
@@ -11,16 +9,7 @@
     public Book(string Imie, string Nazwisko, int Wiek, string Adres,int Koszyk,string UlubionyAutor,string UlubionaKsiazka,string KupionaKsiazka,int RokWydania,int PrzeczytaneStrony ,string imieAutora, string nazwiskoAutora,string tytul, int rokWydania,int przeczytaneStrony)
         : base(Imie, Nazwisko, Wiek, Adres,Koszyk,UlubionyAutor,UlubionaKsiazka,KupionaKsiazka,RokWydania,PrzeczytaneStrony)
     {
-        this.Imie = Imie;
-        this.Nazwisko = Nazwisko;
-        this.Wiek = Wiek;
-        this.Adres = Adres;
-        this.Koszyk = Koszyk;
-        this.UlubionyAutor = UlubionyAutor;
-        this.UlubionaKsiazka = UlubionaKsiazka;
-        this.KupionaKsiazka = KupionaKsiazka;
-        this.RokWydania = RokWydania;
-        this.PrzeczytaneStrony = PrzeczytaneStrony;
+       
         this.imieAutora = imieAutora;
         this.nazwiskoAutora = nazwiskoAutora;
         this.tytul = tytul;
@@ -29,7 +18,7 @@
        
     }
 
-    public Book(Book o)
+    public Book(Book o) : base(o)
     {
         this.imieAutora = o.imieAutora;
         this.nazwiskoAutora = o.nazwiskoAutora;
