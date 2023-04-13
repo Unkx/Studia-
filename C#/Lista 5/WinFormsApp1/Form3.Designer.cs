@@ -58,6 +58,7 @@
             label12 = new Label();
             label13 = new Label();
             label14 = new Label();
+            tableLayoutPanel1 = new TableLayoutPanel();
             SuspendLayout();
             // 
             // txtImie
@@ -96,7 +97,7 @@
             // 
             listBoxStore.FormattingEnabled = true;
             listBoxStore.ItemHeight = 20;
-            listBoxStore.Location = new Point(1049, 76);
+            listBoxStore.Location = new Point(947, 74);
             listBoxStore.Margin = new Padding(3, 4, 3, 4);
             listBoxStore.Name = "listBoxStore";
             listBoxStore.Size = new Size(305, 564);
@@ -319,11 +320,26 @@
             label14.TabIndex = 16;
             label14.Text = "E-mail :";
             // 
+            // tableLayoutPanel1
+            // 
+            tableLayoutPanel1.ColumnCount = 2;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel1.Location = new Point(362, 125);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 2;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 107F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle());
+            tableLayoutPanel1.Size = new Size(224, 234);
+            tableLayoutPanel1.TabIndex = 17;
+            tableLayoutPanel1.Paint += tableLayoutPanel1_Paint;
+            // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1523, 813);
+            Controls.Add(tableLayoutPanel1);
             Controls.Add(label14);
             Controls.Add(label13);
             Controls.Add(label12);
@@ -393,5 +409,6 @@
         private Label label12;
         private Label label13;
         private Label label14;
+        private TableLayoutPanel tableLayoutPanel1;
     }
 }

@@ -11,6 +11,7 @@
     protected int RokWydania;
     protected int PrzeczytaneStrony;
 
+
     public Bookstore(string Imie, string Nazwisko, int Wiek, string Adres, int Koszyk, string UlubionyAutor, string UlubionaKsiazka, string KupionaKsiazka, int RokWydania, int PrzeczytaneStrony)
     {
         this.Imie = Imie;
@@ -23,6 +24,7 @@
         this.KupionaKsiazka = KupionaKsiazka;
         this.RokWydania = RokWydania;
         this.PrzeczytaneStrony = PrzeczytaneStrony;
+
     }
 
     public Bookstore()

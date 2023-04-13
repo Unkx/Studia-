@@ -29,8 +29,6 @@
 
     }
 
-
-
     public override string[] Wypisz()
     {
         string[] clientInfo = new string[]

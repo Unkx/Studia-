@@ -26,6 +26,5 @@ namespace WinFormsApp1
             listBoxBook.Items.AddRange(o1.Wypisz());
         }
 
-
     }
 }

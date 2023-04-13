@@ -28,10 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             buttonBook = new Button();
             buttonStore = new Button();
             label1 = new Label();
             label2 = new Label();
+            pictureBox1 = new PictureBox();
+            dateTimePicker1 = new DateTimePicker();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // buttonBook
@@ -74,11 +78,29 @@
             label2.TabIndex = 3;
             label2.Text = "Sklep";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(476, 61);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(362, 177);
+            pictureBox1.TabIndex = 4;
+            pictureBox1.TabStop = false;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(101, 88);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(287, 27);
+            dateTimePicker1.TabIndex = 5;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(914, 600);
+            Controls.Add(dateTimePicker1);
+            Controls.Add(pictureBox1);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(buttonStore);
@@ -86,6 +108,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Okno Wyboru";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -96,5 +119,7 @@
         private Button buttonStore;
         private Label label1;
         private Label label2;
+        private PictureBox pictureBox1;
+        private DateTimePicker dateTimePicker1;
     }
 }

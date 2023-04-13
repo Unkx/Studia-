@@ -61,6 +61,7 @@
             label15 = new Label();
             txtTytul = new TextBox();
             label16 = new Label();
+            dateTimePicker1 = new DateTimePicker();
             SuspendLayout();
             // 
             // listBoxBook
@@ -347,11 +348,19 @@
             label16.TabIndex = 8;
             label16.Text = "Tytuł Książki :";
             // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(346, 81);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(286, 27);
+            dateTimePicker1.TabIndex = 9;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1563, 864);
+            Controls.Add(dateTimePicker1);
             Controls.Add(label16);
             Controls.Add(txtTytul);
             Controls.Add(label12);
@@ -427,5 +436,6 @@
         private Label label15;
         private TextBox txtTytul;
         private Label label16;
+        private DateTimePicker dateTimePicker1;
     }
 }
