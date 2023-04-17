@@ -12,13 +12,23 @@ namespace WinFormsApp1
         {
             Form2 form2 = new Form2();
             form2.ShowDialog();
+
         }
+
 
         private void buttonStore_Click(object sender, EventArgs e)
         {
             Form3 form3 = new Form3();
             form3.ShowDialog();
+
         }
 
+        private void buttonZdjecie_Click(object sender, EventArgs e)
+        {
+            pictureBox1.ImageLocation = "http://i.imgur.com/7ikw7ye.png";
+            pictureBox1.Load();
+
+        }
     }
+
 }

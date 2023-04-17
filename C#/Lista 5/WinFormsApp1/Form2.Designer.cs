@@ -73,6 +73,7 @@
             listBoxBook.Name = "listBoxBook";
             listBoxBook.Size = new Size(445, 564);
             listBoxBook.TabIndex = 0;
+            listBoxBook.SelectedIndexChanged += listBoxBook_SelectedIndexChanged;
             // 
             // txtImie
             // 
@@ -108,7 +109,7 @@
             // 
             // buttonZaladuj
             // 
-            buttonZaladuj.Location = new Point(416, 176);
+            buttonZaladuj.Location = new Point(404, 133);
             buttonZaladuj.Margin = new Padding(3, 4, 3, 4);
             buttonZaladuj.Name = "buttonZaladuj";
             buttonZaladuj.Size = new Size(182, 87);
@@ -350,9 +351,9 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(346, 81);
+            dateTimePicker1.Location = new Point(333, 12);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(286, 27);
+            dateTimePicker1.Size = new Size(283, 27);
             dateTimePicker1.TabIndex = 9;
             // 
             // Form2

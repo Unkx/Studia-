@@ -58,7 +58,12 @@
             label12 = new Label();
             label13 = new Label();
             label14 = new Label();
-            tableLayoutPanel1 = new TableLayoutPanel();
+            tabControl1 = new TabControl();
+            tabPage1 = new TabPage();
+            label15 = new Label();
+            dateTimePicker1 = new DateTimePicker();
+            tabControl1.SuspendLayout();
+            tabPage1.SuspendLayout();
             SuspendLayout();
             // 
             // txtImie
@@ -320,26 +325,49 @@
             label14.TabIndex = 16;
             label14.Text = "E-mail :";
             // 
-            // tableLayoutPanel1
+            // tabControl1
             // 
-            tableLayoutPanel1.ColumnCount = 2;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.Location = new Point(362, 125);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 2;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 107F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle());
-            tableLayoutPanel1.Size = new Size(224, 234);
-            tableLayoutPanel1.TabIndex = 17;
-            tableLayoutPanel1.Paint += tableLayoutPanel1_Paint;
+            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Location = new Point(347, 100);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new Size(250, 222);
+            tabControl1.TabIndex = 17;
+            // 
+            // tabPage1
+            // 
+            tabPage1.Controls.Add(label15);
+            tabPage1.Location = new Point(4, 29);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Padding = new Padding(3);
+            tabPage1.Size = new Size(242, 189);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "tabPage1";
+            tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(6, 16);
+            label15.Name = "label15";
+            label15.Size = new Size(50, 20);
+            label15.TabIndex = 0;
+            label15.Text = "Oceny";
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(347, 22);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(266, 27);
+            dateTimePicker1.TabIndex = 18;
             // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1523, 813);
-            Controls.Add(tableLayoutPanel1);
+            Controls.Add(dateTimePicker1);
+            Controls.Add(tabControl1);
             Controls.Add(label14);
             Controls.Add(label13);
             Controls.Add(label12);
@@ -373,6 +401,9 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "Form3";
             Text = "Sklep";
+            tabControl1.ResumeLayout(false);
+            tabPage1.ResumeLayout(false);
+            tabPage1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -409,6 +440,9 @@
         private Label label12;
         private Label label13;
         private Label label14;
-        private TableLayoutPanel tableLayoutPanel1;
+        private TabControl tabControl1;
+        private TabPage tabPage1;
+        private Label label15;
+        private DateTimePicker dateTimePicker1;
     }
 }
