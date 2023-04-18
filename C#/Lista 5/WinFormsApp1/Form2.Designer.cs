@@ -71,9 +71,8 @@
             listBoxBook.Location = new Point(977, 81);
             listBoxBook.Margin = new Padding(3, 4, 3, 4);
             listBoxBook.Name = "listBoxBook";
-            listBoxBook.Size = new Size(445, 564);
+            listBoxBook.Size = new Size(507, 564);
             listBoxBook.TabIndex = 0;
-            listBoxBook.SelectedIndexChanged += listBoxBook_SelectedIndexChanged;
             // 
             // txtImie
             // 

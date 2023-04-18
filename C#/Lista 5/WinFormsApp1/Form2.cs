@@ -24,13 +24,11 @@ namespace WinFormsApp1
 
             Book o1 = new Book(txtImie.Text, txtNazwisko.Text, Convert.ToInt32(this.txtWiek.Text), txtAdres.Text, Convert.ToInt32(this.txtKoszyk.Text), txtUlubionyAutor.Text, txtUlubionaKsiazka.Text, txtKupionaKsiazka.Text, Convert.ToInt32(this.txtRokWydania.Text), Convert.ToInt32(this.txtPrzeczytaneStrony.Text), txtImieAutora.Text, txtNazwiskoAutora.Text, txtTytul.Text, Convert.ToInt32(this.txtRokWyd.Text), Convert.ToInt32(this.txtPrzeczytaneKs.Text));
             listBoxBook.Items.AddRange(o1.Wypisz());
-            listBoxBook.Items.Add(dateTimePicker1.ToString());
+            dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            listBoxBook.Items.Add(DateTime.Now.ToString("dd,MM,yy,hh,mm,ss"));
+            //listBoxBook.Add(dateTimePicker1.Value = DateTime.Now);
+            dateTimePicker1.CustomFormat = "dd,MM,yy,hh,mm,ss";
             //załaduj date do listBoxa 
-        }
-
-        private void listBoxBook_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
