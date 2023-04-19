@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp1
 {
-    partial class Form1
+    partial class Okno
     {
         /// <summary>
         ///  Required designer variable.
@@ -34,7 +34,7 @@
             label2 = new Label();
             pictureBox1 = new PictureBox();
             buttonZdjecie = new Button();
-            dateTimePicker1 = new DateTimePicker();
+            dateCzas = new DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -96,19 +96,21 @@
             buttonZdjecie.Text = "Wyświetl zdj";
             buttonZdjecie.Click += buttonZdjecie_Click;
             // 
-            // dateTimePicker1
+            // dateCzas
             // 
-            dateTimePicker1.Location = new Point(324, 12);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(266, 27);
-            dateTimePicker1.TabIndex = 5;
+            dateCzas.Format = DateTimePickerFormat.Custom;
+            dateCzas.Location = new Point(324, 12);
+            dateCzas.Name = "dateCzas";
+            dateCzas.Size = new Size(266, 27);
+            dateCzas.TabIndex = 5;
+            dateCzas.Value = new DateTime(2023, 4, 19, 0, 0, 0, 0);
             // 
-            // Form1
+            // Okno
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(914, 600);
-            Controls.Add(dateTimePicker1);
+            Controls.Add(dateCzas);
             Controls.Add(buttonZdjecie);
             Controls.Add(pictureBox1);
             Controls.Add(label2);
@@ -116,7 +118,7 @@
             Controls.Add(buttonStore);
             Controls.Add(buttonBook);
             Margin = new Padding(3, 4, 3, 4);
-            Name = "Form1";
+            Name = "Okno";
             Text = "Okno Wyboru";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -131,6 +133,6 @@
         private Label label2;
         private PictureBox pictureBox1;
         private Button buttonZdjecie;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dateCzas;
     }
 }

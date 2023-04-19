@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp1
 {
-    partial class Form2
+    partial class BookForm
     {
         /// <summary>
         /// Required designer variable.
@@ -61,7 +61,8 @@
             label15 = new Label();
             txtTytul = new TextBox();
             label16 = new Label();
-            dateTimePicker1 = new DateTimePicker();
+            dateCzas = new DateTimePicker();
+            txtLiczba = new TextBox();
             SuspendLayout();
             // 
             // listBoxBook
@@ -348,19 +349,29 @@
             label16.TabIndex = 8;
             label16.Text = "Tytuł Książki :";
             // 
-            // dateTimePicker1
+            // dateCzas
             // 
-            dateTimePicker1.Location = new Point(333, 12);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(283, 27);
-            dateTimePicker1.TabIndex = 9;
+            dateCzas.Format = DateTimePickerFormat.Custom;
+            dateCzas.Location = new Point(333, 12);
+            dateCzas.Name = "dateCzas";
+            dateCzas.Size = new Size(283, 27);
+            dateCzas.TabIndex = 9;
+            dateCzas.Value = new DateTime(2023, 4, 19, 0, 0, 0, 0);
             // 
-            // Form2
+            // txtLiczba
+            // 
+            txtLiczba.Location = new Point(767, 25);
+            txtLiczba.Name = "txtLiczba";
+            txtLiczba.Size = new Size(125, 27);
+            txtLiczba.TabIndex = 10;
+            // 
+            // BookForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1563, 864);
-            Controls.Add(dateTimePicker1);
+            Controls.Add(txtLiczba);
+            Controls.Add(dateCzas);
             Controls.Add(label16);
             Controls.Add(txtTytul);
             Controls.Add(label12);
@@ -395,7 +406,7 @@
             Controls.Add(txtImie);
             Controls.Add(listBoxBook);
             Margin = new Padding(3, 4, 3, 4);
-            Name = "Form2";
+            Name = "BookForm";
             Text = "Dane o Książce";
             ResumeLayout(false);
             PerformLayout();
@@ -436,6 +447,7 @@
         private Label label15;
         private TextBox txtTytul;
         private Label label16;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dateCzas;
+        private TextBox txtLiczba;
     }
 }

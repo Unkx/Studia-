@@ -1,8 +1,8 @@
 namespace WinFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class Okno : Form
     {
-        public Form1()
+        public Okno()
         {
             InitializeComponent();
         }
@@ -10,7 +10,7 @@ namespace WinFormsApp1
 
         private void buttonBook_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
+            BookForm form2 = new BookForm();
             form2.ShowDialog();
 
         }
@@ -18,7 +18,7 @@ namespace WinFormsApp1
 
         private void buttonStore_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3();
+            Sklep form3 = new Sklep();
             form3.ShowDialog();
 
         }
@@ -26,6 +26,7 @@ namespace WinFormsApp1
         private void buttonZdjecie_Click(object sender, EventArgs e)
         {
             pictureBox1.ImageLocation = "http://i.imgur.com/7ikw7ye.png";
+            //pictureBox1.ImageLocation = "C:\\Users\\mi140\\OneDrive\\Pulpit";
             pictureBox1.Load();
 
         }

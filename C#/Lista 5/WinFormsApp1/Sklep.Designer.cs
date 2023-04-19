@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp1
 {
-    partial class Form3
+    partial class Sklep
     {
         /// <summary>
         /// Required designer variable.
@@ -58,12 +58,9 @@
             label12 = new Label();
             label13 = new Label();
             label14 = new Label();
-            tabControl1 = new TabControl();
-            tabPage1 = new TabPage();
             label15 = new Label();
-            dateTimePicker1 = new DateTimePicker();
-            tabControl1.SuspendLayout();
-            tabPage1.SuspendLayout();
+            textBox1 = new TextBox();
+            dateCzas = new DateTimePicker();
             SuspendLayout();
             // 
             // txtImie
@@ -325,26 +322,6 @@
             label14.TabIndex = 16;
             label14.Text = "E-mail :";
             // 
-            // tabControl1
-            // 
-            tabControl1.Controls.Add(tabPage1);
-            tabControl1.Location = new Point(347, 100);
-            tabControl1.Name = "tabControl1";
-            tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(250, 222);
-            tabControl1.TabIndex = 17;
-            // 
-            // tabPage1
-            // 
-            tabPage1.Controls.Add(label15);
-            tabPage1.Location = new Point(4, 29);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(242, 189);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "tabPage1";
-            tabPage1.UseVisualStyleBackColor = true;
-            // 
             // label15
             // 
             label15.AutoSize = true;
@@ -354,20 +331,28 @@
             label15.TabIndex = 0;
             label15.Text = "Oceny";
             // 
-            // dateTimePicker1
+            // textBox1
             // 
-            dateTimePicker1.Location = new Point(347, 22);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(266, 27);
-            dateTimePicker1.TabIndex = 18;
+            textBox1.Location = new Point(94, 16);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(125, 27);
+            textBox1.TabIndex = 1;
             // 
-            // Form3
+            // dateCzas
+            // 
+            dateCzas.Format = DateTimePickerFormat.Custom;
+            dateCzas.Location = new Point(336, 24);
+            dateCzas.Name = "dateCzas";
+            dateCzas.Size = new Size(278, 27);
+            dateCzas.TabIndex = 21;
+            dateCzas.Value = new DateTime(2023, 4, 19, 0, 0, 0, 0);
+            // 
+            // Sklep
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1523, 813);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(tabControl1);
+            Controls.Add(dateCzas);
             Controls.Add(label14);
             Controls.Add(label13);
             Controls.Add(label12);
@@ -399,11 +384,8 @@
             Controls.Add(txtUlubionaKsiazka);
             Controls.Add(txtImie);
             Margin = new Padding(3, 4, 3, 4);
-            Name = "Form3";
+            Name = "Sklep";
             Text = "Sklep";
-            tabControl1.ResumeLayout(false);
-            tabPage1.ResumeLayout(false);
-            tabPage1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -440,9 +422,8 @@
         private Label label12;
         private Label label13;
         private Label label14;
-        private TabControl tabControl1;
-        private TabPage tabPage1;
         private Label label15;
-        private DateTimePicker dateTimePicker1;
+        private TextBox textBox1;
+        private DateTimePicker dateCzas;
     }
 }

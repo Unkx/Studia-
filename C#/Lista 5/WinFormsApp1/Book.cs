@@ -5,9 +5,10 @@
     string tytul;
     int rokWydania;
     int przeczytaneStrony;
+    string Data;
 
-    public Book(string Imie, string Nazwisko, int Wiek, string Adres,int Koszyk,string UlubionyAutor,string UlubionaKsiazka,string KupionaKsiazka,int RokWydania,int PrzeczytaneStrony ,string imieAutora, string nazwiskoAutora,string tytul, int rokWydania,int przeczytaneStrony)
-        : base(Imie, Nazwisko, Wiek, Adres,Koszyk,UlubionyAutor,UlubionaKsiazka,KupionaKsiazka,RokWydania,PrzeczytaneStrony)
+    public Book(string Imie, string Nazwisko, int Wiek, string Adres,int Koszyk,string UlubionyAutor,string UlubionaKsiazka,string KupionaKsiazka,int RokWydania,int PrzeczytaneStrony ,DateTime Data,string imieAutora, string nazwiskoAutora,string tytul, int rokWydania,int przeczytaneStrony)
+        : base(Imie, Nazwisko, Wiek, Adres,Koszyk,UlubionyAutor,UlubionaKsiazka,KupionaKsiazka,RokWydania,PrzeczytaneStrony,Data)
     {
        
         this.imieAutora = imieAutora;
@@ -15,7 +16,6 @@
         this.tytul = tytul;
         this.rokWydania = rokWydania;
         this.przeczytaneStrony = przeczytaneStrony;
-       
     }
 
     public Book(Book o) : base(o)
@@ -25,8 +25,6 @@
         this.tytul = o.tytul;
         this.rokWydania = o.rokWydania;
         this.przeczytaneStrony = o.przeczytaneStrony;
-
-
     }
 
     public override string[] Wypisz()
@@ -51,6 +49,7 @@
             "Tytuł Książki\t" + tytul,
             "Rok Wydania:\t" + rokWydania,
             "Przeczytane Strony :" + przeczytaneStrony,
+            "Data" + Data,
             "==================================",
 
         };

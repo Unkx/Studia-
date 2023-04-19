@@ -10,9 +10,10 @@
     protected string KupionaKsiazka;
     protected int RokWydania;
     protected int PrzeczytaneStrony;
+    protected DateTime Data;
 
 
-    public Bookstore(string Imie, string Nazwisko, int Wiek, string Adres, int Koszyk, string UlubionyAutor, string UlubionaKsiazka, string KupionaKsiazka, int RokWydania, int PrzeczytaneStrony)
+    public Bookstore(string Imie, string Nazwisko, int Wiek, string Adres, int Koszyk, string UlubionyAutor, string UlubionaKsiazka, string KupionaKsiazka, int RokWydania, int PrzeczytaneStrony,DateTime Data)
     {
         this.Imie = Imie;
         this.Nazwisko = Nazwisko;
@@ -24,13 +25,13 @@
         this.KupionaKsiazka = KupionaKsiazka;
         this.RokWydania = RokWydania;
         this.PrzeczytaneStrony = PrzeczytaneStrony;
-
+        this.Data = Data;
     }
 
     public Bookstore()
     {
         this.Imie = "";
-        this.Nazwisko ="";
+        this.Nazwisko = "";
         this.Wiek = 0;
         this.Adres = "";
         this.Koszyk = 0;
@@ -39,6 +40,7 @@
         this.KupionaKsiazka = "";
         this.RokWydania = 0;
         this.PrzeczytaneStrony = 0;
+
     }
     public Bookstore(Bookstore o) 
     {
@@ -52,8 +54,7 @@
         this.KupionaKsiazka = o.KupionaKsiazka;
         this.RokWydania =   o.RokWydania;
         this.PrzeczytaneStrony = o.PrzeczytaneStrony;
-
-
+        this.Data = o.Data;
     }
 
     public virtual string[] Wypisz()
@@ -61,6 +62,7 @@
         string[] clientInfo = new string[]
         {
             "==================================",
+            "Data :" + Data,
             "\tTwoje dane : ",
             "Imię :\t" + Imie,
             "Nazwisko :\t" + Nazwisko,
