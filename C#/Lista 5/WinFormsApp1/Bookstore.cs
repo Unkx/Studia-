@@ -62,7 +62,6 @@
         string[] clientInfo = new string[]
         {
             "==================================",
-            "Data :" + Data,
             "\tTwoje dane : ",
             "Imię :\t" + Imie,
             "Nazwisko :\t" + Nazwisko,
@@ -74,6 +73,7 @@
             "Kupiona Książka :" + KupionaKsiazka,
             "Rok Wydania :" + RokWydania,
             "Przeczytane Strony :" + PrzeczytaneStrony,
+            "Data :" + Data,
             "=================================="
         };
         return clientInfo;
