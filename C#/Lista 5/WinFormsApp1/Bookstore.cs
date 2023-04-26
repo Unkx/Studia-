@@ -1,4 +1,4 @@
-﻿public class Bookstore
+﻿public abstract class Bookstore
 {
     protected string Imie;
     protected string Nazwisko;
@@ -78,5 +78,12 @@
         };
         return clientInfo;
     }
+
+    public virtual void Write(ListBox chuj)
+    {
+        // Pusta implementacja
+        chuj.Items.Add("Imie" + Imie);
+    }
+
 
 }

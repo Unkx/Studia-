@@ -23,16 +23,16 @@ namespace WinFormsApp1
         private void buttonZatwierdz_Click(object sender, EventArgs e)
         {
 
-            Store o1 = new Store(txtImie.Text, txtNazwisko.Text, Convert.ToInt32(this.txtWiek.Text), txtAdres.Text, Convert.ToInt32(this.txtKoszyk.Text), txtUlubionyAutor.Text, txtUlubionaKsiazka.Text, txtKupionaKsiazka.Text, Convert.ToInt32(this.txtRokWydania.Text), Convert.ToInt32(this.txtPrzeczytaneStrony.Text),dateCzas.Value, Convert.ToInt32(txtKsiazki.Text), Convert.ToInt32(txtPracownicy.Text), txtSklep.Text, txtEmail.Text);
+            Store o1 = new Store(txtImie.Text, txtNazwisko.Text, Convert.ToInt32(this.txtWiek.Text), txtAdres.Text, Convert.ToInt32(this.txtKoszyk.Text), txtUlubionyAutor.Text, txtUlubionaKsiazka.Text, txtKupionaKsiazka.Text, Convert.ToInt32(this.txtRokWydania.Text), Convert.ToInt32(this.txtPrzeczytaneStrony.Text), dateCzas.Value, Convert.ToInt32(txtKsiazki.Text), Convert.ToInt32(txtPracownicy.Text), txtSklep.Text, txtEmail.Text);
             listBoxStore.Items.AddRange(o1.Wypisz());
-            DateTime dt = DateTime.MinValue;
-            dateCzas.Format = DateTimePickerFormat.Custom;
             listBoxStore.Items.Add(DateTime.Now.ToString("dd.MM.yy"));
         }
 
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Bookstore bookstore = new Book("chuj", "chuiński", 18, "43f", 23, "Stary-Pijany", "Po 3 żubrach", "Jak uciec staremu", 2001, 23, dateCzas.Value, "chuj", "chuj", "Chuj", 2001, 244);
 
 
-
-
+        }
     }
 }

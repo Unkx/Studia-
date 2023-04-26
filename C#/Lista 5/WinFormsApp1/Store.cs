@@ -54,12 +54,22 @@ public class Store : Bookstore
             "Liczba Książek :\t"+ Ksiazki,
             "Sklep:\t" + Sklep,
             "Email :\t" + email,
+            "Data :" + Data,
             "==================================",
 
         };
         return clientInfo;
     }
 
-    
+    public override void Write(ListBox chuj)
+    {
+        base.Write(chuj);
+
+        chuj.Items.Add("Wiek " + Wiek);
+    }
+
+    Bookstore bookstore = new Store();
+
+    bookstore.Wypisz(chuj);
 
 }
