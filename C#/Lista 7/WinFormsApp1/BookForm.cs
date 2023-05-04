@@ -1,0 +1,73 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using static Store;
+using static System.Windows.Forms.DataFormats;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
+namespace WinFormsApp1
+{
+    public partial class BookForm : Form
+    {
+        public BookForm()
+        {
+            InitializeComponent();
+        }
+
+
+        private void buttonUzupelnij_Click(object sender, EventArgs e)
+        {
+            txtImie.Text = "Jan";
+            txtNazwisko.Text = "Chuj";
+            txtWiek.Text = "18";
+            txtAdres.Text = "Oleska, Opole";
+            txtKoszyk.Text = "20";
+
+            txtImieAutora.Text = "Andrzej";
+            txtNazwiskoAutora.Text = "BijeŻonę";
+            txtTytul.Text = "Jak bić żonę?";
+            txtRokWyd.Text = "2000";
+            txtPrzeczytaneStrony.Text = "69";
+
+
+            txtUlubionyAutor.Text = "Paweł X";
+            txtUlubionaKsiazka.Text = "Pod Monopolem";
+            txtKupionaKsiazka.Text = "Trzy Żubry";
+            txtRokWydania.Text = "2000";
+            txtPrzeczytaneKs.Text = "333";
+
+
+        }
+        private void ClearTextBoxes()
+        {
+            txtNazwisko.Clear();
+            txtImie.Clear();
+            txtKoszyk.Clear();
+
+        }
+
+        private void buttonZaladuj_Click(object sender, System.EventArgs e)
+        {
+            //Book o1 = new Book(txtImie.Text, txtNazwisko.Text, Convert.ToInt32(this.txtWiek.Text), txtAdres.Text, Convert.ToInt32(this.txtKoszyk.Text), txtUlubionyAutor.Text, txtUlubionaKsiazka.Text, txtKupionaKsiazka.Text, Convert.ToInt32(this.txtRokWydania.Text), Convert.ToInt32(this.txtPrzeczytaneStrony.Text), dateCzas.Value, txtImieAutora.Text, txtNazwiskoAutora.Text, txtTytul.Text, Convert.ToInt32(this.txtRokWyd.Text), Convert.ToInt32(this.txtPrzeczytaneKs.Text));
+            //listBoxBook.Items.AddRange(o1.Wypisz());
+            //listBoxBook.Items.Add(DateTime.Now.ToString("dd.MM.yy"));
+
+            Book s1 = new Book(txtImie.Text, txtNazwisko.Text, Convert.ToInt32(this.txtWiek.Text), txtAdres.Text, Convert.ToInt32(this.txtKoszyk.Text), txtUlubionyAutor.Text, txtUlubionaKsiazka.Text, txtKupionaKsiazka.Text, Convert.ToInt32(this.txtRokWydania.Text), Convert.ToInt32(this.txtPrzeczytaneStrony.Text), dateCzas.Value, txtImieAutora.Text, txtNazwiskoAutora.Text, txtTytul.Text, Convert.ToInt32(this.txtRokWyd.Text), Convert.ToInt32(this.txtPrzeczytaneKs.Text));
+            //labelInfo.Text = "Nowy student:";
+
+            Okno.listP.Add(s1); //dodanie obiektu do listy
+            listBoxBook.Items.Clear(); //wyczyszczenie listBoxa
+            listBoxBook.Items.Add("NOWY STUDENT ZOSTAŁ DODANY DO LISTY: ");
+            Okno.listP[Okno.listP.Count - 1].Wypisz(listBoxBook);
+            ClearTextBoxes(); //wyczyszczenie pól tekstowych i innych elementów
+
+        }
+
+    }
+}

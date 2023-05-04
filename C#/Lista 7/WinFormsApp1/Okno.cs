@@ -1,17 +1,21 @@
+using System;
 using static Bookstore;
 
 namespace WinFormsApp1
 {
     public partial class Okno : Form
     {
+        BookForm formBookForm = new BookForm(); //tworzymy OBIEKT formatki s³u¿¹cej do dodawania
+                                                //nowych studentów do listy listP
+        Sklep formBook = new Sklep(); //tworzymy OBIEKT formatki s³u¿¹cej do dodawania
+
+        public static List<Bookstore> listP = new List<Bookstore>();
+
         public Okno()
         {
             InitializeComponent();
 
-
         }
-
-
         private void buttonBook_Click(object sender, EventArgs e)
         {
             BookForm form2 = new BookForm();
@@ -33,13 +37,13 @@ namespace WinFormsApp1
             PhotoClass photoObj = new PhotoClass("http://i.imgur.com/7ikw7ye.png");
 
             // Create a PictureBox control to display the photo
-            pictureBox2 = new PictureBox();
-            pictureBox2.Image = photoObj.Photo;
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.Dock = DockStyle.Fill;
+            pictureBox3 = new PictureBox();
+            pictureBox3.Image = photoObj.Photo;
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.Dock = DockStyle.Fill;
 
             // Add the PictureBox control to the form
-            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox3);
         }
 
         static void Photo()
@@ -47,8 +51,11 @@ namespace WinFormsApp1
             Application.EnableVisualStyles();
             Application.Run(new Okno());
         }
+
+
     }
 }
+
 
 
 
