@@ -98,9 +98,10 @@
             // 
             // pictureBox3
             // 
-            pictureBox3.Location = new Point(275, 67);
+            pictureBox3.BackColor = SystemColors.ActiveCaptionText;
+            pictureBox3.Location = new Point(284, 83);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(256, 130);
+            pictureBox3.Size = new Size(245, 127);
             pictureBox3.TabIndex = 6;
             pictureBox3.TabStop = false;
             // 
@@ -131,7 +132,6 @@
         private Label label2;
         private Button buttonZdjecie;
         private DateTimePicker dateCzas;
-        private PictureBox pictureBox2;
         private PictureBox pictureBox3;
     }
 }

@@ -49,6 +49,8 @@ namespace WinFormsApp1
             txtNazwisko.Clear();
             txtImie.Clear();
             txtKoszyk.Clear();
+            txtImieAutora.Clear();
+            txtAdres.Clear();
 
         }
 
