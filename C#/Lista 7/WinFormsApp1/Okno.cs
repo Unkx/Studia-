@@ -46,14 +46,9 @@ namespace WinFormsApp1
             Controls.Add(pictureBox3);
         }
 
-        private void Okno_Load(object sender, EventArgs e)
-        {
-            // Call the Photo() method to display the Okno form
-            Photo();
-        }
-
         static void Photo()
         {
+            Application.EnableVisualStyles();
             Application.Run(new Okno());
         }
 

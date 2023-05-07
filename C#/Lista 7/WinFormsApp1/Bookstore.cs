@@ -73,7 +73,7 @@ public abstract class Bookstore
         ls.Items.Add("Kupiona Książka :" + KupionaKsiazka);
         ls.Items.Add("Rok Wydania :" + RokWydania);
         ls.Items.Add("Przeczytane Strony :" + PrzeczytaneStrony);
-        ls.Items.Add("Data :" + Data);
+        ls.Items.Add("Data :" + DateTime.Now.ToString("dd.MM.yy"));
         ls.Items.Add("==================================");
     }
 

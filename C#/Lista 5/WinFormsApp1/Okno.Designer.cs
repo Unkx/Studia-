@@ -35,6 +35,7 @@
             pictureBox1 = new PictureBox();
             buttonZdjecie = new Button();
             dateCzas = new DateTimePicker();
+
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -134,5 +135,6 @@
         private PictureBox pictureBox1;
         private Button buttonZdjecie;
         private DateTimePicker dateCzas;
+        private Button ViewObjectsButton;
     }
 }

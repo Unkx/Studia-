@@ -28,21 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Okno));
             buttonBook = new Button();
             buttonStore = new Button();
             label1 = new Label();
             label2 = new Label();
             buttonZdjecie = new Button();
             dateCzas = new DateTimePicker();
-            pictureBox3 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            pictureBoxZdjecie = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxZdjecie).BeginInit();
             SuspendLayout();
             // 
             // buttonBook
             // 
-            buttonBook.Location = new Point(145, 261);
+            buttonBook.Location = new Point(166, 348);
+            buttonBook.Margin = new Padding(3, 4, 3, 4);
             buttonBook.Name = "buttonBook";
-            buttonBook.Size = new Size(162, 59);
+            buttonBook.Size = new Size(185, 79);
             buttonBook.TabIndex = 0;
             buttonBook.Text = "Kliknij";
             buttonBook.UseVisualStyleBackColor = true;
@@ -50,9 +52,10 @@
             // 
             // buttonStore
             // 
-            buttonStore.Location = new Point(515, 259);
+            buttonStore.Location = new Point(589, 345);
+            buttonStore.Margin = new Padding(3, 4, 3, 4);
             buttonStore.Name = "buttonStore";
-            buttonStore.Size = new Size(180, 61);
+            buttonStore.Size = new Size(206, 81);
             buttonStore.TabIndex = 1;
             buttonStore.Text = "Kliknij";
             buttonStore.UseVisualStyleBackColor = true;
@@ -61,63 +64,67 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(181, 213);
+            label1.Location = new Point(207, 284);
             label1.Name = "label1";
-            label1.Size = new Size(85, 15);
+            label1.Size = new Size(110, 20);
             label1.TabIndex = 2;
             label1.Text = "Dane o Książce";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(587, 213);
+            label2.Location = new Point(671, 284);
             label2.Name = "label2";
-            label2.Size = new Size(35, 15);
+            label2.Size = new Size(45, 20);
             label2.TabIndex = 3;
             label2.Text = "Sklep";
             // 
             // buttonZdjecie
             // 
-            buttonZdjecie.Location = new Point(83, 101);
-            buttonZdjecie.Margin = new Padding(3, 2, 3, 2);
+            buttonZdjecie.Location = new Point(95, 135);
             buttonZdjecie.Name = "buttonZdjecie";
-            buttonZdjecie.Size = new Size(109, 48);
+            buttonZdjecie.Size = new Size(125, 64);
             buttonZdjecie.TabIndex = 0;
             buttonZdjecie.Text = "Wyświetl zdj";
+            buttonZdjecie.Click += buttonZdjecie_Click;
             // 
             // dateCzas
             // 
             dateCzas.Format = DateTimePickerFormat.Custom;
-            dateCzas.Location = new Point(284, 9);
-            dateCzas.Margin = new Padding(3, 2, 3, 2);
+            dateCzas.Location = new Point(325, 12);
             dateCzas.Name = "dateCzas";
-            dateCzas.Size = new Size(233, 23);
+            dateCzas.Size = new Size(266, 27);
             dateCzas.TabIndex = 5;
             dateCzas.Value = new DateTime(2023, 4, 19, 0, 0, 0, 0);
             // 
-            // pictureBox3
+            // pictureBoxZdjecie
             // 
-            pictureBox3.Location = new Point(275, 67);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(256, 130);
-            pictureBox3.TabIndex = 6;
-            pictureBox3.TabStop = false;
+            pictureBoxZdjecie.BackColor = SystemColors.ActiveCaptionText;
+            pictureBoxZdjecie.Image = (Image)resources.GetObject("pictureBoxZdjecie.Image");
+            pictureBoxZdjecie.Location = new Point(314, 89);
+            pictureBoxZdjecie.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxZdjecie.Name = "pictureBoxZdjecie";
+            pictureBoxZdjecie.Size = new Size(293, 173);
+            pictureBoxZdjecie.TabIndex = 6;
+            pictureBoxZdjecie.TabStop = false;
+            pictureBoxZdjecie.Visible = false;
             // 
             // Okno
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(pictureBox3);
+            ClientSize = new Size(914, 600);
+            Controls.Add(pictureBoxZdjecie);
             Controls.Add(dateCzas);
             Controls.Add(buttonZdjecie);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(buttonStore);
             Controls.Add(buttonBook);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Okno";
             Text = "Okno Wyboru";
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxZdjecie).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -131,6 +138,6 @@
         private Button buttonZdjecie;
         private DateTimePicker dateCzas;
         private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
+        private PictureBox pictureBoxZdjecie;
     }
 }

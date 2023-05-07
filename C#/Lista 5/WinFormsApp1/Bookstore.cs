@@ -79,11 +79,13 @@
         return clientInfo;
     }
 
+
     public virtual void Write(ListBox chuj)
     {
         // Pusta implementacja
         chuj.Items.Add("Imie" + Imie);
     }
+
 
 
 }

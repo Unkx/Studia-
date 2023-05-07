@@ -23,8 +23,18 @@ namespace WinFormsApp1
         {
             txtNazwisko.Clear();
             txtImie.Clear();
+            txtWiek.Clear();
+            txtAdres.Clear();
             txtKoszyk.Clear();
-
+            txtUlubionyAutor.Clear();
+            txtUlubionaKsiazka.Clear();
+            txtKupionaKsiazka.Clear();
+            txtRokWydania.Clear();
+            txtPrzeczytaneStrony.Clear();
+            txtKsiazki.Clear(); 
+            txtPracownicy.Clear();
+            txtSklep.Clear();   
+            txtEmail.Clear();
         }
 
         private void buttonZatwierdz_Click(object sender, EventArgs e)

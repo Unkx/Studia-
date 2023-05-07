@@ -26,7 +26,7 @@
         this.rokWydania = o.rokWydania;
         this.przeczytaneStrony = o.przeczytaneStrony;
     }
-
+    
     public override string[] Wypisz()
     {
         string[] clientInfo = new string[]
@@ -54,6 +54,7 @@
         };
         return clientInfo;
     }
+
 
     public override void Write(ListBox chuj)
     {

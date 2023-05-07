@@ -37,3 +37,4 @@ C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 5\WinFormsApp1\obj\Debug\net6.
 C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 5\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Okno.resources
 C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 5\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Sklep.resources
 C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 5\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.BookForm.resources
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 5\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Form1.resources

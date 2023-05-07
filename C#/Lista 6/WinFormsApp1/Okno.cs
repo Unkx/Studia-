@@ -7,8 +7,6 @@ namespace WinFormsApp1
         public Okno()
         {
             InitializeComponent();
-
-
         }
 
 
@@ -30,23 +28,22 @@ namespace WinFormsApp1
         private void buttonZdjecie_Click(object sender, EventArgs e)
         {
             // Create an instance of PhotoClass and load the photo
-            PhotoClass photoObj = new PhotoClass("http://i.imgur.com/7ikw7ye.png");
 
+            //PhotoClass photoObj = new PhotoClass("http://i.imgur.com/7ikw7ye.png");
+            pictureBoxZdjecie.Visible = true;
             // Create a PictureBox control to display the photo
-            pictureBox2 = new PictureBox();
-            pictureBox2.Image = photoObj.Photo;
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.Dock = DockStyle.Fill;
+            pictureBoxZdjecie = new PictureBox();
+            //pictureBoxZdjecie.Image = photoObj.Photo;
+            pictureBoxZdjecie.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxZdjecie.Dock = DockStyle.Fill;
 
             // Add the PictureBox control to the form
-            Controls.Add(pictureBox2);
+            Controls.Add(pictureBoxZdjecie);
         }
 
-        static void Photo()
-        {
-            Application.EnableVisualStyles();
-            Application.Run(new Okno());
-        }
+
+
+
     }
 }
 

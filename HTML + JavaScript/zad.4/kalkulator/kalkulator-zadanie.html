@@ -1,148 +1,41 @@
 <!DOCTYPE html>
 <html lang="pl">
     <head>
-        <title>Kalkulator</title>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8">
+
         <script type="text/javascript" >
-            function dodawanie()
+
+            function pole()
             {
-                var liczba1 = parseInt(document.getElementById('liczba1').value);
-                var liczba2 = parseInt(document.getElementById('liczba2').value);
-                var wynik = liczba1 + liczba2;
-                document.getElementById('wynik').innerHTML = wynik;
+                var liczba1=document.getElementById('pole1').value;
+                var liczba2=document.getElementById('pole2').value;
+                var liczba3=document.getElementById('pole3').value;
+                var liczba4=document.getElementById('pole4').value;
+                var napis;
+                napis = Math.pow(4,liczba1.length)
+                document.getElementById('wynik').innerHTML = napis;
             } 
 
-            function odejmowanie()
-            {
-                var liczba1=document.getElementById('liczba1').value;
-                var liczba2=document.getElementById('liczba2').value;
-                var napis;
-                napis = liczba1 - liczba2;
-                document.getElementById('wynik').innerHTML = napis;
-            }
-            function mnożenie()
-            {
-                var liczba1=document.getElementById('liczba1').value;
-                var liczba2=document.getElementById('liczba2').value;
-                var napis;
-                napis = liczba1 * liczba2;
-                document.getElementById('wynik').innerHTML = napis;
-            }
-            function dzielenie()
-            {
-                var liczba1=document.getElementById('liczba1').value;
-                var liczba2=document.getElementById('liczba2').value;
-                var napis;
-                napis = liczba1 / liczba2;
-                document.getElementById('wynik').innerHTML = napis;
-            }
 
-
-            /////////////////////////////////////////////////
-            function kwadrat()
-            {
-                var pole1=document.getElementById('pole1').value;
-                var pole2=document.getElementById('pole2').value;
-
-                var kwadrat;
-                kwadrat = pole1 * pole1;
-                document.getElementById('wynik2').innerHTML = kwadrat;
-            }
-
-            function romb()
-            {
-                var pole1=document.getElementById('pole1').value;
-                var pole3=document.getElementById('pole3').value;
-                var romb;
-
-                romb = pole1 * pole3;
-                document.getElementById('wynik2').innerHTML = romb;
-            }               
-            function prostokąt()
-            {
-                var pole1=document.getElementById('pole1').value;
-                var pole2=document.getElementById('pole2').value;
-                var prostokąt;
-
-                prostokąt = pole1 * pole2;
-                document.getElementById('wynik2').innerHTML = prostokąt;
-            }
-            function trójkąt()
-            {
-                var pole1=document.getElementById('pole1').value;
-                var pole3=document.getElementById('pole3').value;
-                var trójkąt;
-
-                trójkąt = pole1 * pole3 /2;
-                document.getElementById('wynik2').innerHTML = trójkąt;
-            }
-            function koło()
-            {
-                var pole4=document.getElementById('pole4').value;
-                var koło
-                koło = Math.pow(pole4,2) * 3.14 ;
-                document.getElementById('wynik2').innerHTML = koło;
-            }
-            function trapez()
-            {
-                var pole1=parseInt(document.getElementById('pole1').value);
-                var pole2=parseInt(document.getElementById('pole2').value);
-                var pole3=document.getElementById('pole3').value;
-                var trapez;
-                var trapez2;
-                var trapez3;
-                trapez = pole1 + pole2;
-                trapez2 = trapez * pole3;
-                trapez3 = 1/2 * trapez2;
-                document.getElementById('wynik2').innerHTML = trapez3;
-            }
 
         </script>
     </head>
     <body>
-        <div class="text">
-            <div class="kalkulator">
-                <b>Zwykły kalkulator</b>
-                <br>
-                Podaj Pierwszą Liczbę :
-                <input type="text" id="liczba1"/>
-                Podaj Drugą Liczbę :
-                <input type="text" id="liczba2"/>
-                <br>
-                <input type="submit" value="+" onclick="dodawanie()" class="input"/>
-                <input type="submit" value="-" onclick="odejmowanie()" class="input"/>
-                <input type="submit" value="*" onclick="mnożenie()" class="input"/>
-                <input type="submit" value="/" onclick="odejmowanie()" class="input"/>
-                <br>
-                Wynik :
-            </div>
-            
-            <div id="wynik"></div>
+        <div id="kwadrat">
+        Liczba 1 :
+        <input type="text" id="pole1"/><br>
+        Liczba 2 :
+        <input type="text" id="pole2"/><br>
 
-            <div class="pole">
-                <b class="b">Kalkulator figur płaskich </b>
-                <br>
-                Podaj a :
-                <input type="text" id="pole1" class="input"/>
-                Podaj b :
-                <input type="text" id="pole2" class="input"/>
-                Podaj H:
-                <input type="text" id="pole3" class="input"/>
-                Podaj r :
-                <input type="text" id="pole4" class="input"/>
-                <br>
-                <input type="submit" value="Kwadrat" onclick="kwadrat()"/>
-                <input type="submit" value="Romb" onclick="romb()"/>
-                <input type="submit" value="Prostokąt" onclick="prostokąt()"/>
-                <input type="submit" value="Trójkąt" onclick="trójkąt()"/>
-                <input type="submit" value="Koło" onclick="koło()"/>
-                <input type="submit" value="Trapez" onclick="trapez()"/>
-                <br>
-                Wynik : 
-            </div>
+        <input type="submit" value="*" onclick="pole()"/>
+        <input type="submit" value="-" onclick="odejmowanie()"/>
+        <input type="submit" value="*" onclick="mnożenie()"/>
+        <input type="submit" value="/" onclick="odejmowanie()"/>
 
-            <div id="wynik2"></div>
+        wynik <br> <br>
         </div>
+
+        /*pole albo obwód*/ 
+        <div id="wynik"></div>
     </body>
 </html>

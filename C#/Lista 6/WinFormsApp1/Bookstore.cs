@@ -87,7 +87,7 @@
         {
             try
             {
-                photo = Image.FromFile("http://i.imgur.com/7ikw7ye.png");
+                photo = Image.FromFile("bez-nazwy1");
             }
             catch (Exception e)
             {
