@@ -1,12 +1,18 @@
+using System.Net;
+using System.Windows.Forms;
 using static Bookstore;
 
 namespace WinFormsApp1
 {
+
+
     public partial class Okno : Form
     {
         public Okno()
         {
             InitializeComponent();
+
+
         }
 
 
@@ -29,7 +35,8 @@ namespace WinFormsApp1
         {
             // Create an instance of PhotoClass and load the photo
 
-            //PhotoClass photoObj = new PhotoClass("http://i.imgur.com/7ikw7ye.png");
+            PhotoClass photoObj = new PhotoClass("bez-nazwy1");
+            Image myPhoto = photoObj.Photo;
             pictureBoxZdjecie.Visible = true;
             // Create a PictureBox control to display the photo
             pictureBoxZdjecie = new PictureBox();
@@ -39,9 +46,9 @@ namespace WinFormsApp1
 
             // Add the PictureBox control to the form
             Controls.Add(pictureBoxZdjecie);
+
+
         }
-
-
 
 
     }

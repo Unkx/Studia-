@@ -31,27 +31,25 @@ namespace WinFormsApp1
 
         }
 
+
         private void buttonZdjecie_Click(object sender, EventArgs e)
         {
             // Create an instance of PhotoClass and load the photo
-            PhotoClass photoObj = new PhotoClass("http://i.imgur.com/7ikw7ye.png");
 
+            PhotoClass photoObj = new PhotoClass("bez-nazwy1");
+            Image myPhoto = photoObj.Photo;
+            pictureBoxZdjecie.Visible = true;
             // Create a PictureBox control to display the photo
-            pictureBox3 = new PictureBox();
-            pictureBox3.Image = photoObj.Photo;
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.Dock = DockStyle.Fill;
+            pictureBoxZdjecie = new PictureBox();
+            //pictureBoxZdjecie.Image = photoObj.Photo;
+            pictureBoxZdjecie.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxZdjecie.Dock = DockStyle.Fill;
 
             // Add the PictureBox control to the form
-            Controls.Add(pictureBox3);
-        }
+            Controls.Add(pictureBoxZdjecie);
 
-        static void Photo()
-        {
-            Application.EnableVisualStyles();
-            Application.Run(new Okno());
-        }
 
+        }
     }
 }
 

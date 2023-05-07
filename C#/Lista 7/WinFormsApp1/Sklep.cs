@@ -19,39 +19,58 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
+        private void buttonUzupelnij_Click(object sender, EventArgs e)
+        {
+            txtImie.Text = "Jan";
+            txtNazwisko.Text = "Chuj";
+            txtWiek.Text = "18";
+            txtAdres.Text = "Oleska, Opole";
+            txtKoszyk.Text = "20";
+
+            txtUlubionyAutor.Text = "Adam Mickiewicz";
+            txtUlubionaKsiazka.Text = "Pan Tadeusz";
+            txtKupionaKsiazka.Text = "Auta";
+            txtRokWydania.Text = "2001";
+            txtPrzeczytaneStrony.Text = "21";
+            txtKsiazki.Text = "2000";
+            txtPracownicy.Text = "100";
+            txtSklep.Text = "Księgarnia X";
+            txtEmail.Text = "KsięgarniaX.com";
+
+
+        }
         private void ClearTextBoxes()
         {
-            txtNazwisko.Clear();
             txtImie.Clear();
+            txtNazwisko.Clear();
             txtWiek.Clear();
             txtAdres.Clear();
             txtKoszyk.Clear();
+
             txtUlubionyAutor.Clear();
             txtUlubionaKsiazka.Clear();
             txtKupionaKsiazka.Clear();
-            txtRokWydania.Clear();
+            txtRokWydania.Clear();  
             txtPrzeczytaneStrony.Clear();
-            txtKsiazki.Clear(); 
+            txtKsiazki.Clear();
             txtPracownicy.Clear();
-            txtSklep.Clear();   
+            txtSklep.Clear();
             txtEmail.Clear();
+
         }
 
         private void buttonZatwierdz_Click(object sender, EventArgs e)
         {
 
-            Store s1 = new Store(txtImie.Text, txtNazwisko.Text, Convert.ToInt32(this.txtWiek.Text), txtAdres.Text, Convert.ToInt32(this.txtKoszyk.Text), txtUlubionyAutor.Text, txtUlubionaKsiazka.Text, txtKupionaKsiazka.Text, Convert.ToInt32(this.txtRokWydania.Text), Convert.ToInt32(this.txtPrzeczytaneStrony.Text),dateCzas.Value, Convert.ToInt32(txtKsiazki.Text), Convert.ToInt32(txtPracownicy.Text), txtSklep.Text, txtEmail.Text);
+            Store s1 = new Store(txtImie.Text, txtNazwisko.Text, Convert.ToInt32(this.txtWiek.Text), txtAdres.Text, Convert.ToInt32(this.txtKoszyk.Text), txtUlubionyAutor.Text, txtUlubionaKsiazka.Text, txtKupionaKsiazka.Text, Convert.ToInt32(this.txtRokWydania.Text), Convert.ToInt32(this.txtPrzeczytaneStrony.Text), dateCzas.Value, Convert.ToInt32(txtKsiazki.Text), Convert.ToInt32(txtPracownicy.Text), txtPracownicy.Text, txtEmail.Text);
             //listBoxStore.Items.AddRange(o1.Wypisz());
 
             Okno.listP.Add(s1); //dodanie obiektu do listy
             listBoxStore.Items.Clear(); //wyczyszczenie listBoxa
-            listBoxStore.Items.Add("NOWY STUDENT ZOSTAŁ DODANY DO LISTY: ");
+            //listBoxStore.Items.Add("NOWY STUDENT ZOSTAŁ DODANY DO LISTY: ");
             Okno.listP[Okno.listP.Count - 1].Wypisz(listBoxStore);
-            ClearTextBoxes(); //wyczyszczenie pól tekstowych i innych elementów
+            //ClearTextBoxes(); //wyczyszczenie pól tekstowych i innych elementów
         }
-
-
-
 
 
     }

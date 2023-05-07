@@ -61,8 +61,6 @@ public class Store : Bookstore
         return clientInfo;
     }
 
-
-
     public override void Write(ListBox chuj)
     {
         base.Write(chuj);
@@ -70,6 +68,8 @@ public class Store : Bookstore
         chuj.Items.Add("Wiek " + Wiek);
     }
 
-  
+    Bookstore bookstore = new Store();
+
+    bookstore.Wypisz(chuj);
 
 }

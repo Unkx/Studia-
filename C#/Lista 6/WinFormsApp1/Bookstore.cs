@@ -100,6 +100,5 @@
             get { return photo; }
             set { photo = value; }
         }
-
     }
 }

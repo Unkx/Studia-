@@ -14,8 +14,6 @@ namespace WinFormsApp1
 {
     public partial class BookForm : Form
     {
-
-
         public BookForm()
         {
             InitializeComponent();
@@ -26,8 +24,6 @@ namespace WinFormsApp1
             Book o1 = new Book(txtImie.Text, txtNazwisko.Text, Convert.ToInt32(this.txtWiek.Text), txtAdres.Text, Convert.ToInt32(this.txtKoszyk.Text), txtUlubionyAutor.Text, txtUlubionaKsiazka.Text, txtKupionaKsiazka.Text, Convert.ToInt32(this.txtRokWydania.Text), Convert.ToInt32(this.txtPrzeczytaneStrony.Text), dateCzas.Value, txtImieAutora.Text, txtNazwiskoAutora.Text, txtTytul.Text, Convert.ToInt32(this.txtRokWyd.Text), Convert.ToInt32(this.txtPrzeczytaneKs.Text));
             listBoxBook.Items.AddRange(o1.Wypisz());
             listBoxBook.Items.Add(DateTime.Now.ToString("dd.MM.yy"));
-
-
 
         }
     }

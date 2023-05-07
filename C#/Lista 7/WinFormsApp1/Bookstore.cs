@@ -85,7 +85,7 @@ public abstract class Bookstore
         {
             try
             {
-                photo = Image.FromFile("http://i.imgur.com/7ikw7ye.png");
+                photo = Image.FromFile("bez-nazwy1");
             }
             catch (Exception e)
             {
@@ -98,7 +98,6 @@ public abstract class Bookstore
             get { return photo; }
             set { photo = value; }
         }
-
     }
 
 }

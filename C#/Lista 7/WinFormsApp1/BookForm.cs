@@ -46,14 +46,24 @@ namespace WinFormsApp1
         }
         private void ClearTextBoxes()
         {
-            txtNazwisko.Clear();
             txtImie.Clear();
+            txtNazwisko.Clear();
             txtWiek.Clear();
             txtAdres.Clear();
             txtKoszyk.Clear();
-            txtKoszyk.Clear();
+
+            txtImieAutora.Clear();
+            txtNazwiskoAutora.Clear();
+            txtTytul.Clear();
+            txtRokWyd.Clear();
+            txtPrzeczytaneStrony.Clear();
 
 
+            txtUlubionyAutor.Clear();
+            txtUlubionaKsiazka.Clear();
+            txtKupionaKsiazka.Clear();
+            txtRokWydania.Clear();
+            txtPrzeczytaneKs.Clear();
 
         }
 
@@ -67,10 +77,9 @@ namespace WinFormsApp1
             //labelInfo.Text = "Nowy student:";
 
             Okno.listP.Add(s1); //dodanie obiektu do listy
-            //listBoxBook.Items.Clear(); //wyczyszczenie listBoxa
+            listBoxBook.Items.Clear(); //wyczyszczenie listBoxa
             listBoxBook.Items.Add("NOWA KSIĄŻKA ZOSTAŁA DODANA DO LISTY: ");
             Okno.listP[Okno.listP.Count - 1].Wypisz(listBoxBook);
-            //listBoxBook.Items.Add(DateTime.Now.ToString("dd.MM.yy"));
             ClearTextBoxes(); //wyczyszczenie pól tekstowych i innych elementów
 
         }

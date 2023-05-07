@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\C#",
+    "\\C#\\Lista 4",
+    "\\C#\\Lista 4\\Zad.4"
   ],
-  "SelectedNode": "\\Zadanie.sln",
+  "SelectedNode": "\\C#\\Lista 4\\Zad.4\\Klient.cs",
   "PreviewInSolutionExplorer": false
 }
