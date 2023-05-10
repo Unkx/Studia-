@@ -13,7 +13,7 @@
     protected DateTime Data;
 
 
-    public Bookstore(string Imie, string Nazwisko, int Wiek, string Adres, int Koszyk, string UlubionyAutor, string UlubionaKsiazka, string KupionaKsiazka, int RokWydania, int PrzeczytaneStrony,DateTime Data)
+    public Bookstore(string Imie, string Nazwisko, int Wiek, string Adres, int Koszyk, string UlubionyAutor, string UlubionaKsiazka, string KupionaKsiazka, int RokWydania, int PrzeczytaneStrony, DateTime Data)
     {
         this.Imie = Imie;
         this.Nazwisko = Nazwisko;
@@ -42,7 +42,7 @@
         this.PrzeczytaneStrony = 0;
 
     }
-    public Bookstore(Bookstore o) 
+    public Bookstore(Bookstore o)
     {
         this.Imie = o.Imie;
         this.Nazwisko = o.Nazwisko;
@@ -52,7 +52,7 @@
         this.UlubionyAutor = o.UlubionyAutor;
         this.UlubionaKsiazka = o.UlubionaKsiazka;
         this.KupionaKsiazka = o.KupionaKsiazka;
-        this.RokWydania =   o.RokWydania;
+        this.RokWydania = o.RokWydania;
         this.PrzeczytaneStrony = o.PrzeczytaneStrony;
         this.Data = o.Data;
     }
@@ -81,24 +81,48 @@
 
     public class PhotoClass
     {
-        private Image photo;
+        private Image photo ;
 
         public PhotoClass(string photoPath)
         {
             try
             {
-                photo = Image.FromFile("bez-nazwy1");
+                photo = Image.FromFile(photoPath);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error loading photo: " + e.Message);
+            }
+            Photo = Image.FromFile(photoPath);
+        }
+
+        public Image Photo
+        {
+            get { return photo; }
+            // Make the setter private to prevent external code from modifying the photo field
+            private set { photo = value; }
+        }
+
+        // Add a method to update the photo field
+        public void UpdatePhoto(string photoPath)
+        {
+            try
+            {
+                Photo = Image.FromFile(photoPath);
             }
             catch (Exception e)
             {
                 Console.WriteLine("Error loading photo: " + e.Message);
             }
         }
+<<<<<<< HEAD
+=======
 
         public Image Photo
         {
             get { return photo; }
             set { photo = value; }
         }
+>>>>>>> 25b8928c75a7f0908a89092c37d61efabbc4c2d5
     }
 }

@@ -5,9 +5,13 @@ using static Bookstore;
 namespace WinFormsApp1
 {
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 25b8928c75a7f0908a89092c37d61efabbc4c2d5
     public partial class Okno : Form
     {
+        private PhotoClass photoObj;
         public Okno()
         {
             InitializeComponent();
@@ -33,8 +37,20 @@ namespace WinFormsApp1
 
         private void buttonZdjecie_Click(object sender, EventArgs e)
         {
-            // Create an instance of PhotoClass and load the photo
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Filter = "Image files (*.jpg, *.jpeg, *.png) | *.jpg; *.jpeg; *.png";
+                openFileDialog.Title = "Select an image file";
 
+<<<<<<< HEAD
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    photoObj = new PhotoClass(openFileDialog.FileName);
+                    pictureBoxZdjecie.Image = photoObj.Photo;
+                }
+            }
+        }
+=======
             PhotoClass photoObj = new PhotoClass("bez-nazwy1");
             Image myPhoto = photoObj.Photo;
             pictureBoxZdjecie.Visible = true;
@@ -51,7 +67,9 @@ namespace WinFormsApp1
         }
 
 
+>>>>>>> 25b8928c75a7f0908a89092c37d61efabbc4c2d5
     }
+
 }
 
 
