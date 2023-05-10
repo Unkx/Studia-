@@ -10,6 +10,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.DataFormats;
 
 namespace WinFormsApp1
 {
@@ -22,15 +23,15 @@ namespace WinFormsApp1
         private void buttonUzupelnij_Click(object sender, EventArgs e)
         {
             txtImie.Text = "Jan";
-            txtNazwisko.Text = "Chuj";
+            txtNazwisko.Text = "Masło";
             txtWiek.Text = "18";
             txtAdres.Text = "Oleska, Opole";
             txtKoszyk.Text = "20";
 
             txtUlubionyAutor.Text = "Adam Mickiewicz";
             txtUlubionaKsiazka.Text = "Pan Tadeusz";
-            txtKupionaKsiazka.Text = "Auta";
-            txtRokWydania.Text = "2001";
+            txtKupionaKsiazka.Text = "Auta BmVV";
+            txtRokWydania.Text = "2021";
             txtPrzeczytaneStrony.Text = "21";
             txtKsiazki.Text = "2000";
             txtPracownicy.Text = "100";
@@ -50,7 +51,7 @@ namespace WinFormsApp1
             txtUlubionyAutor.Clear();
             txtUlubionaKsiazka.Clear();
             txtKupionaKsiazka.Clear();
-            txtRokWydania.Clear();  
+            txtRokWydania.Clear();
             txtPrzeczytaneStrony.Clear();
             txtKsiazki.Clear();
             txtPracownicy.Clear();
@@ -69,9 +70,18 @@ namespace WinFormsApp1
             listBoxStore.Items.Clear(); //wyczyszczenie listBoxa
             //listBoxStore.Items.Add("NOWY STUDENT ZOSTAŁ DODANY DO LISTY: ");
             Okno.listP[Okno.listP.Count - 1].Wypisz(listBoxStore);
-            //ClearTextBoxes(); //wyczyszczenie pól tekstowych i innych elementów
+            ClearTextBoxes(); //wyczyszczenie pól tekstowych i innych elementów
+
+            Lista.listBoxData = new List<string>();
+            foreach (var item in listBoxStore.Items)
+            {
+                Lista.listBoxData.Add(item.ToString());
+            }
+
+            Lista form4 = new Lista();
+            pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
         }
-
-
     }
 }
+

@@ -9,6 +9,8 @@ namespace WinFormsApp1
                                                 //nowych studentów do listy listP
         Sklep formBook = new Sklep(); //tworzymy OBIEKT formatki s³u¿¹cej do dodawania
 
+        Lista Lista = new Lista();
+
         public static List<Bookstore> listP = new List<Bookstore>();
 
         public Okno()
@@ -50,6 +52,33 @@ namespace WinFormsApp1
 
 
         }
+
+        private void buttonLista_Click(object sender, EventArgs e)
+        {
+            Lista form4 = new Lista();
+            form4.ShowDialog();
+        }
+        /*private void buttonZdjecie_Click(object sender, EventArgs e)
+{
+   using (OpenFileDialog openFileDialog = new OpenFileDialog())
+   {
+       openFileDialog.Filter = "Image files (*.jpg, *.jpeg, *.png) | *.jpg; *.jpeg; *.png";
+       openFileDialog.Title = "Select an image file";
+
+       if (openFileDialog.ShowDialog() == DialogResult.OK)
+       {
+           try
+           {
+               photoObj = new PhotoClass(openFileDialog.FileName);
+               pictureBoxZdjecie.Image = photoObj.Photo;
+           }
+           catch (Exception ex)
+           {
+               MessageBox.Show("Error loading photo: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+           }
+       }
+   }
+}*/
     }
 }
 

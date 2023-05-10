@@ -98,16 +98,12 @@
             // 
             // pictureBoxZdjecie
             // 
-<<<<<<< HEAD
             pictureBoxZdjecie.BackColor = SystemColors.ActiveCaptionText;
             pictureBoxZdjecie.Location = new Point(314, 89);
             pictureBoxZdjecie.Margin = new Padding(3, 4, 3, 4);
-=======
             pictureBoxZdjecie.BackColor = Color.Transparent;
             pictureBoxZdjecie.ErrorImage = null;
-            pictureBoxZdjecie.Image = (Image)resources.GetObject("pictureBoxZdjecie.Image");
             pictureBoxZdjecie.Location = new Point(275, 67);
->>>>>>> 25b8928c75a7f0908a89092c37d61efabbc4c2d5
             pictureBoxZdjecie.Name = "pictureBoxZdjecie";
             pictureBoxZdjecie.Size = new Size(256, 130);
             pictureBoxZdjecie.TabIndex = 6;
@@ -140,6 +136,7 @@
         private Label label2;
         private Button buttonZdjecie;
         private DateTimePicker dateCzas;
+        private PictureBox pictureBox2;
         private PictureBox pictureBoxZdjecie;
     }
 }

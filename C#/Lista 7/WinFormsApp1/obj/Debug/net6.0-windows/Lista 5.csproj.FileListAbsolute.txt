@@ -70,3 +70,4 @@ C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 7\WinFormsApp1\obj\Debug\net6.
 C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 7\WinFormsApp1\obj\Debug\net6.0-windows\Lista 5.pdb
 C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 7\WinFormsApp1\obj\Debug\net6.0-windows\Lista 5.genruntimeconfig.cache
 C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 7\WinFormsApp1\obj\Debug\net6.0-windows\ref\Lista 5.dll
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 7\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Lista.resources

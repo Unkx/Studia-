@@ -24,23 +24,23 @@ namespace WinFormsApp1
         private void buttonUzupelnij_Click(object sender, EventArgs e)
         {
             txtImie.Text = "Jan";
-            txtNazwisko.Text = "Chuj";
+            txtNazwisko.Text = "Masło";
             txtWiek.Text = "18";
             txtAdres.Text = "Oleska, Opole";
             txtKoszyk.Text = "20";
 
             txtImieAutora.Text = "Andrzej";
-            txtNazwiskoAutora.Text = "BijeŻonę";
-            txtTytul.Text = "Jak bić żonę?";
+            txtNazwiskoAutora.Text = "Mleko";
+            txtTytul.Text = "Poradnik majstra";
             txtRokWyd.Text = "2000";
             txtPrzeczytaneStrony.Text = "69";
 
 
             txtUlubionyAutor.Text = "Paweł X";
-            txtUlubionaKsiazka.Text = "Pod Monopolem";
-            txtKupionaKsiazka.Text = "Trzy Żubry";
-            txtRokWydania.Text = "2000";
-            txtPrzeczytaneKs.Text = "333";
+            txtUlubionaKsiazka.Text = "Pod Zamkiem";
+            txtKupionaKsiazka.Text = "Harry";
+            txtRokWydania.Text = "2020";
+            txtPrzeczytaneKs.Text = "33";
 
 
         }
@@ -82,6 +82,16 @@ namespace WinFormsApp1
             Okno.listP[Okno.listP.Count - 1].Wypisz(listBoxBook);
             ClearTextBoxes(); //wyczyszczenie pól tekstowych i innych elementów
 
+            pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
+
+            Lista.listBoxData2 = new List<string>();
+            foreach (var item in listBoxBook.Items)
+            {
+                Lista.listBoxData2.Add(item.ToString());
+            }
+
+            Lista form4 = new Lista();
         }
 
     }

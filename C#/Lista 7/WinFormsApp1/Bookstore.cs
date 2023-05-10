@@ -99,5 +99,39 @@ public abstract class Bookstore
             set { photo = value; }
         }
     }
+    /*public class PhotoClass
+    {
+        private Image photo;
+
+        public PhotoClass(string photoPath)
+        {
+            try
+            {
+                Photo = Image.FromFile(photoPath);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error loading photo: " + e.Message);
+            }
+        }
+
+        public Image Photo
+        {
+            get { return photo; }
+            private set { photo = value; }
+        }
+
+        public void UpdatePhoto(string photoPath)
+        {
+            try
+            {
+                Photo = Image.FromFile(photoPath);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error loading photo: " + e.Message);
+            }
+        }
+    }*/
 
 }

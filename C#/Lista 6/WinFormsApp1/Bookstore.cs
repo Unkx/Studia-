@@ -81,29 +81,26 @@
 
     public class PhotoClass
     {
-        private Image photo ;
+        private Image photo;
 
         public PhotoClass(string photoPath)
         {
             try
             {
-                photo = Image.FromFile(photoPath);
+                Photo = Image.FromFile(photoPath);
             }
             catch (Exception e)
             {
                 Console.WriteLine("Error loading photo: " + e.Message);
             }
-            Photo = Image.FromFile(photoPath);
         }
 
         public Image Photo
         {
             get { return photo; }
-            // Make the setter private to prevent external code from modifying the photo field
             private set { photo = value; }
         }
 
-        // Add a method to update the photo field
         public void UpdatePhoto(string photoPath)
         {
             try
@@ -115,14 +112,6 @@
                 Console.WriteLine("Error loading photo: " + e.Message);
             }
         }
-<<<<<<< HEAD
-=======
-
-        public Image Photo
-        {
-            get { return photo; }
-            set { photo = value; }
-        }
->>>>>>> 25b8928c75a7f0908a89092c37d61efabbc4c2d5
     }
+
 }
