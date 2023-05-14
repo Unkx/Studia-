@@ -83,7 +83,8 @@ namespace WinFormsApp1
             ClearTextBoxes(); //wyczyszczenie pól tekstowych i innych elementów
 
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
+            //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
+            //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\Pulpit\\Bez nazwy-1.jpg");
 
             Lista.listBoxData2 = new List<string>();
             foreach (var item in listBoxBook.Items)
@@ -92,6 +93,14 @@ namespace WinFormsApp1
             }
 
             Lista form4 = new Lista();
+
+            Porownywanie.listBoxData2 = new List<string>();
+            foreach (var item in listBoxBook.Items)
+            {
+                Porownywanie.listBoxData2.Add(item.ToString());
+            }
+
+            Porownywanie form5 = new Porownywanie();
         }
 
     }

@@ -16,6 +16,7 @@ namespace WinFormsApp1
 {
     public partial class Sklep : Form
     {
+        public string TextBoxValue { get { return txtImie.Text; } }
         public Sklep()
         {
             InitializeComponent();
@@ -80,7 +81,17 @@ namespace WinFormsApp1
 
             Lista form4 = new Lista();
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
+            //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");//ścierzka dla laptopa
+            //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\Desktop\\bez-nazwy1");//ścierzka dla pc
+
+
+            Porownywanie.listBoxData = new List<string>();
+            foreach (var item in listBoxStore.Items)
+            {
+                Porownywanie.listBoxData.Add(item.ToString());
+            }
+
+            Porownywanie form5 = new Porownywanie();
         }
     }
 }
