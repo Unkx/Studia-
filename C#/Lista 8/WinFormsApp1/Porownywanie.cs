@@ -49,7 +49,7 @@ namespace WinFormsApp1
             }
             else if (listBoxData2 == null)
             {
-                MessageBox.Show("Nic nie ma ");
+                MessageBox.Show("Nic nie ma ", "Chuj ci w dupe kurwo");
             }
         }
 
@@ -59,28 +59,13 @@ namespace WinFormsApp1
 
             // Show Form2 as a dialog
             DialogResult result = form3.ShowDialog();
+        }
 
-            // Check if the user closed Form2 without canceling
-            if (result == DialogResult.OK)
-            {
-                // Access the TextBox value from Form2
-                string TextBoxValueForm2 = form3.TextBoxValue;
-
-                // Compare with the TextBox value in Form1
-                if (textBox2.Text == TextBoxValueForm2)
-                {
-                    // Values are similar
-                    MessageBox.Show("TextBox values are similar.");
-                }
-                else
-                {
-                    // Values are different
-                    MessageBox.Show("TextBox values are different.");
-                }
-            }
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            FormPor form5 = new FormPor();
+            form5.ShowDialog();
         }
     }
-    
 }
-
 

@@ -12,6 +12,7 @@ namespace WinFormsApp1
         Lista Lista = new Lista();
 
         Porownywanie Porownywanie = new Porownywanie();
+        FormPor FormPor = new FormPor();    
 
         public static List<Bookstore> listP = new List<Bookstore>();
 

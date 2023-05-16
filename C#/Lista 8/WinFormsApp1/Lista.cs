@@ -24,6 +24,7 @@ namespace WinFormsApp1
         {
             if (listBoxData != null)
             {
+                listBox1.Items.Clear();
                 listBox1.Items.AddRange(listBoxData.ToArray());
 
                 pictureZdjecie2.Visible = true;
@@ -32,7 +33,7 @@ namespace WinFormsApp1
             }
             else if(listBoxData == null) 
             {
-                MessageBox.Show("Nic tu nie ma ","Wypierdalaj kutasie krzywy");
+                MessageBox.Show("Nic tu nie ma ");
             }
 
 
@@ -47,6 +48,7 @@ namespace WinFormsApp1
 
             if (listBoxData2 != null)
             {
+                listBox1.Items.Clear();
                 listBox1.Items.AddRange(listBoxData2.ToArray());
                 pictureZdjecie2.Visible = true;
                 pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -61,7 +63,7 @@ namespace WinFormsApp1
             
 
 
-            listBox1.Items.AddRange(listBoxData2.ToArray());
+            //listBox1.Items.AddRange(listBoxData2.ToArray());
 
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");

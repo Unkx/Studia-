@@ -32,14 +32,16 @@
             buttonFormatka2 = new Button();
             buttonClick = new Button();
             listBox1 = new ListBox();
-            textBox2 = new TextBox();
+            listBox2 = new ListBox();
+            buttonOkno = new Button();
             SuspendLayout();
             // 
             // buttonFormatka1
             // 
-            buttonFormatka1.Location = new Point(46, 79);
+            buttonFormatka1.Location = new Point(53, 105);
+            buttonFormatka1.Margin = new Padding(3, 4, 3, 4);
             buttonFormatka1.Name = "buttonFormatka1";
-            buttonFormatka1.Size = new Size(186, 66);
+            buttonFormatka1.Size = new Size(213, 88);
             buttonFormatka1.TabIndex = 0;
             buttonFormatka1.Text = "buttonFormatka1";
             buttonFormatka1.UseVisualStyleBackColor = true;
@@ -47,9 +49,10 @@
             // 
             // buttonFormatka2
             // 
-            buttonFormatka2.Location = new Point(46, 215);
+            buttonFormatka2.Location = new Point(53, 287);
+            buttonFormatka2.Margin = new Padding(3, 4, 3, 4);
             buttonFormatka2.Name = "buttonFormatka2";
-            buttonFormatka2.Size = new Size(186, 66);
+            buttonFormatka2.Size = new Size(213, 88);
             buttonFormatka2.TabIndex = 1;
             buttonFormatka2.Text = "Oponeo";
             buttonFormatka2.UseVisualStyleBackColor = true;
@@ -57,9 +60,10 @@
             // 
             // buttonClick
             // 
-            buttonClick.Location = new Point(383, 335);
+            buttonClick.Location = new Point(438, 447);
+            buttonClick.Margin = new Padding(3, 4, 3, 4);
             buttonClick.Name = "buttonClick";
-            buttonClick.Size = new Size(75, 23);
+            buttonClick.Size = new Size(86, 31);
             buttonClick.TabIndex = 2;
             buttonClick.Text = "Click";
             buttonClick.UseVisualStyleBackColor = true;
@@ -68,33 +72,47 @@
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(255, 21);
+            listBox1.ItemHeight = 20;
+            listBox1.Location = new Point(291, 28);
+            listBox1.Margin = new Padding(3, 4, 3, 4);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(228, 289);
+            listBox1.Size = new Size(260, 384);
             listBox1.TabIndex = 4;
             // 
-            // textBox2
+            // listBox2
             // 
-            textBox2.Location = new Point(643, 102);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 5;
+            listBox2.FormattingEnabled = true;
+            listBox2.ItemHeight = 20;
+            listBox2.Location = new Point(591, 53);
+            listBox2.Name = "listBox2";
+            listBox2.Size = new Size(203, 344);
+            listBox2.TabIndex = 5;
+            // 
+            // buttonOkno
+            // 
+            buttonOkno.Location = new Point(808, 226);
+            buttonOkno.Name = "buttonOkno";
+            buttonOkno.Size = new Size(94, 29);
+            buttonOkno.TabIndex = 6;
+            buttonOkno.Text = "button1";
+            buttonOkno.UseVisualStyleBackColor = true;
+            buttonOkno.Click += button1_Click_1;
             // 
             // Porownywanie
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(textBox2);
+            ClientSize = new Size(914, 600);
+            Controls.Add(buttonOkno);
+            Controls.Add(listBox2);
             Controls.Add(listBox1);
             Controls.Add(buttonClick);
             Controls.Add(buttonFormatka2);
             Controls.Add(buttonFormatka1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Porownywanie";
             Text = "Porownywanie";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -103,6 +121,7 @@
         private Button buttonFormatka2;
         private Button buttonClick;
         private ListBox listBox1;
-        private TextBox textBox2;
+        private ListBox listBox2;
+        private Button buttonOkno;
     }
 }

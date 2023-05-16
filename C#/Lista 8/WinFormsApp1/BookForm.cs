@@ -83,7 +83,7 @@ namespace WinFormsApp1
             ClearTextBoxes(); //wyczyszczenie pól tekstowych i innych elementów
 
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
-            //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
+            pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
             //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\Pulpit\\Bez nazwy-1.jpg");
 
             Lista.listBoxData2 = new List<string>();
