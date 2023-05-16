@@ -11,8 +11,7 @@ namespace WinFormsApp1
 
         Lista Lista = new Lista();
 
-        Porownywanie Porownywanie = new Porownywanie();
-        FormPor FormPor = new FormPor();    
+        PorownanieBook Porownanie = new PorownanieBook();
 
         public static List<Bookstore> listP = new List<Bookstore>();
 
@@ -62,33 +61,7 @@ namespace WinFormsApp1
             form4.ShowDialog();
         }
 
-        private void buttonPorownywanie_Click(object sender, EventArgs e)
-        {
-            Porownywanie form5 = new Porownywanie();
-            form5.ShowDialog();
-        }
 
-        /*private void buttonZdjecie_Click(object sender, EventArgs e)
-{
-using (OpenFileDialog openFileDialog = new OpenFileDialog())
-{
-openFileDialog.Filter = "Image files (*.jpg, *.jpeg, *.png) | *.jpg; *.jpeg; *.png";
-openFileDialog.Title = "Select an image file";
-
-if (openFileDialog.ShowDialog() == DialogResult.OK)
-{
-  try
-  {
-      photoObj = new PhotoClass(openFileDialog.FileName);
-      pictureBoxZdjecie.Image = photoObj.Photo;
-  }
-  catch (Exception ex)
-  {
-      MessageBox.Show("Error loading photo: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-  }
-}
-}
-}*/
     }
 }
 

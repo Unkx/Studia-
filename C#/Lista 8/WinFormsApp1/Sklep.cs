@@ -16,7 +16,6 @@ namespace WinFormsApp1
 {
     public partial class Sklep : Form
     {
-        public string TextBoxValue { get { return txtImie.Text; } }
         public Sklep()
         {
             InitializeComponent();
@@ -64,12 +63,14 @@ namespace WinFormsApp1
         private void buttonZatwierdz_Click(object sender, EventArgs e)
         {
 
+
+
             Store s1 = new Store(txtImie.Text, txtNazwisko.Text, Convert.ToInt32(this.txtWiek.Text), txtAdres.Text, Convert.ToInt32(this.txtKoszyk.Text), txtUlubionyAutor.Text, txtUlubionaKsiazka.Text, txtKupionaKsiazka.Text, Convert.ToInt32(this.txtRokWydania.Text), Convert.ToInt32(this.txtPrzeczytaneStrony.Text), dateCzas.Value, Convert.ToInt32(txtKsiazki.Text), Convert.ToInt32(txtPracownicy.Text), txtPracownicy.Text, txtEmail.Text);
             //listBoxStore.Items.AddRange(o1.Wypisz());
 
             Okno.listP.Add(s1); //dodanie obiektu do listy
             listBoxStore.Items.Clear(); //wyczyszczenie listBoxa
-            //listBoxStore.Items.Add("NOWY STUDENT ZOSTAŁ DODANY DO LISTY: ");
+                                        //listBoxStore.Items.Add("NOWY STUDENT ZOSTAŁ DODANY DO LISTY: ");
             Okno.listP[Okno.listP.Count - 1].Wypisz(listBoxStore);
             ClearTextBoxes(); //wyczyszczenie pól tekstowych i innych elementów
 
@@ -81,18 +82,17 @@ namespace WinFormsApp1
 
             Lista form4 = new Lista();
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");//ścierzka dla laptopa
+            //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");//ścierzka dla laptopa
             //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\Desktop\\bez-nazwy1");//ścierzka dla pc
 
 
-            Porownywanie.listBoxData = new List<string>();
-            foreach (var item in listBoxStore.Items)
-            {
-                Porownywanie.listBoxData.Add(item.ToString());
-            }
+        }
 
-            Porownywanie form5 = new Porownywanie();
+        private void buttonComplete_Click(object sender, EventArgs e)
+        {
+
         }
     }
+
 }
 

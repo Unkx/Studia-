@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Xml.Linq;
+using WinFormsApp1;
 
 
 class Store : Bookstore
 {
+    public string txtImie { get; set; }
+    public string txtNazwisko { get; set; }
+
     int Ksiazki;
     int LiczbaPracownikow;
     string Sklep;
@@ -43,6 +47,30 @@ class Store : Bookstore
         ls.Items.Add("Nazwa Sklepu:\t" + Sklep);        
         ls.Items.Add("Email:\t" + email);
         ls.Items.Add("==================================");
+    }
+
+    public static bool operator ==(Store s1, Store s2)
+    {
+        // Add your comparison logic here
+        // For example, compare relevant properties of the Sklep class
+        return s1.Imie == s2.Imie && s1.Imie == s2.Imie;
+    }
+
+    public static bool operator !=(Store s1, Store s2)
+    {
+        // Invert the result of the == operator
+        return !(s1 == s2);
+    }
+    private void CompareSklepObjects(Store s1, Store s2)
+    {
+        if (s1 == s2)
+        {
+            MessageBox.Show("Sklep objects are equal.");
+        }
+        else
+        {
+            MessageBox.Show("Sklep objects are not equal.");
+        }
     }
 
 

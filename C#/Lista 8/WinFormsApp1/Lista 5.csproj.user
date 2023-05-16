@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="FormPor.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Lista.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -13,7 +10,7 @@
     <Compile Update="BookForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Porownywanie.cs">
+    <Compile Update="PorownanieBook.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Sklep.cs">

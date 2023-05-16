@@ -29,16 +29,17 @@ namespace WinFormsApp1
 
                 pictureZdjecie2.Visible = true;
                 pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
-                pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
+                //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
             }
             else if(listBoxData == null) 
             {
                 MessageBox.Show("Nic tu nie ma ");
             }
 
+            listBox1.Items.AddRange(listBoxData.ToArray());
 
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
+            //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
  
         }
 
@@ -52,21 +53,17 @@ namespace WinFormsApp1
                 listBox1.Items.AddRange(listBoxData2.ToArray());
                 pictureZdjecie2.Visible = true;
                 pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
-                pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
+                //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
             }
             else if (listBoxData2 == null)
             {
                 MessageBox.Show("Nic nie ma ");
             }
             
-
-            
-
-
-            //listBox1.Items.AddRange(listBoxData2.ToArray());
+            listBox1.Items.AddRange(listBoxData2.ToArray());
 
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
+            //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
 
         }
 

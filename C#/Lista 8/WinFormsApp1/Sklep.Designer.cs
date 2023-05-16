@@ -63,6 +63,7 @@
             dateCzas = new DateTimePicker();
             buttonUzupelnij = new Button();
             pictureZdjecie2 = new PictureBox();
+            buttonComplete = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureZdjecie2).BeginInit();
             SuspendLayout();
             // 
@@ -105,12 +106,11 @@
             // 
             // buttonZatwierdz
             // 
-            buttonZatwierdz.Location = new Point(337, 309);
+            buttonZatwierdz.Location = new Point(353, 272);
             buttonZatwierdz.Name = "buttonZatwierdz";
-            buttonZatwierdz.Size = new Size(162, 60);
-            buttonZatwierdz.TabIndex = 2;
-            buttonZatwierdz.Text = "Zatwierdź";
-            buttonZatwierdz.UseVisualStyleBackColor = true;
+            buttonZatwierdz.Size = new Size(129, 61);
+            buttonZatwierdz.TabIndex = 25;
+            buttonZatwierdz.Text = "Zatwierdz";
             buttonZatwierdz.Click += buttonZatwierdz_Click;
             // 
             // txtUlubionaKsiazka
@@ -354,11 +354,22 @@
             pictureZdjecie2.TabIndex = 23;
             pictureZdjecie2.TabStop = false;
             // 
+            // buttonComplete
+            // 
+            buttonComplete.Location = new Point(466, 509);
+            buttonComplete.Name = "buttonComplete";
+            buttonComplete.Size = new Size(117, 52);
+            buttonComplete.TabIndex = 24;
+            buttonComplete.Text = "button1";
+            buttonComplete.UseVisualStyleBackColor = true;
+            buttonComplete.Click += buttonComplete_Click;
+            // 
             // Sklep
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1333, 610);
+            Controls.Add(buttonComplete);
             Controls.Add(pictureZdjecie2);
             Controls.Add(buttonUzupelnij);
             Controls.Add(dateCzas);
@@ -435,5 +446,6 @@
         private Button buttonUzupelnij;
         private PictureBox pictureZdjecie2;
         public TextBox txtImie;
+        private Button buttonComplete;
     }
 }

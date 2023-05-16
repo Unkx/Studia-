@@ -129,7 +129,6 @@
             buttonPorownywanie.TabIndex = 8;
             buttonPorownywanie.Text = "Rankomat.pl";
             buttonPorownywanie.UseVisualStyleBackColor = false;
-            buttonPorownywanie.Click += buttonPorownywanie_Click;
             // 
             // Okno
             // 

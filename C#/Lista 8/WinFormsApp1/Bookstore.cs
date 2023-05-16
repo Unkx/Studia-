@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualBasic.Logging;
 using System.Xml.Linq;
+using WinFormsApp1;
 
 public abstract class Bookstore
 {
@@ -99,39 +100,28 @@ public abstract class Bookstore
             set { photo = value; }
         }
     }
-    /*public class PhotoClass
+    public static bool operator == (Bookstore s1, Bookstore s2)
     {
-        private Image photo;
+        // Add your comparison logic here
+        // For example, compare relevant properties of the Sklep class
+        return s1.Imie == s2.Imie && s1.Imie == s2.Imie;
+    }
 
-        public PhotoClass(string photoPath)
+    public static bool operator != ( Bookstore s1, Bookstore s2)
+    {
+        // Invert the result of the == operator
+        return !(s1 == s2);
+    }
+    private void CompareSklepObjects(Bookstore s1, Bookstore s2)
+    {
+        if (s1 == s2)
         {
-            try
-            {
-                Photo = Image.FromFile(photoPath);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Error loading photo: " + e.Message);
-            }
+            MessageBox.Show("Sklep objects are equal.");
         }
-
-        public Image Photo
+        else
         {
-            get { return photo; }
-            private set { photo = value; }
+            MessageBox.Show("Sklep objects are not equal.");
         }
-
-        public void UpdatePhoto(string photoPath)
-        {
-            try
-            {
-                Photo = Image.FromFile(photoPath);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Error loading photo: " + e.Message);
-            }
-        }
-    }*/
+    }
 
 }
