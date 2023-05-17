@@ -5,7 +5,7 @@ namespace WinFormsApp1
 {
     public partial class Okno : Form
     {
-        BookForm formBookForm = new BookForm(); //tworzymy OBIEKT formatki s³u¿¹cej do dodawania
+        BookForm BookForm = new BookForm(); //tworzymy OBIEKT formatki s³u¿¹cej do dodawania
                                                 //nowych studentów do listy listP
         Sklep formBook = new Sklep(); //tworzymy OBIEKT formatki s³u¿¹cej do dodawania
 

@@ -101,7 +101,30 @@ namespace WinFormsApp1
         {
             PorownanieBook form5 = new PorownanieBook();
             form5.ShowDialog();
+            string selectedItem = listBoxBook.SelectedItem?.ToString();
+
+            // Raise an event to pass the selected item to the parent form
+            DataComparisonRequested?.Invoke(this, new DataComparisonEventArgs(selectedItem));
         }
 
+
+
+        public event EventHandler<DataComparisonEventArgs> DataComparisonRequested;
+        public class DataComparisonEventArgs : EventArgs
+        {
+            public string SelectedItem { get; }
+
+            public DataComparisonEventArgs(string selectedItem)
+            {
+                SelectedItem = selectedItem;
+            }
+        }
     }
 }
+
+
+
+
+
+    
+

@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp1
 {
-    partial class BookForm
+    partial class BookForm : Form
     {
         /// <summary>
         /// Required designer variable.
