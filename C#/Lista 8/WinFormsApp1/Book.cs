@@ -1,4 +1,6 @@
-﻿class Book : Bookstore
+﻿using WinFormsApp1;
+
+class Book : Bookstore
 {
     string imieAutora;
     string nazwiskoAutora;
@@ -6,6 +8,23 @@
     int rokWydania;
     int przeczytaneStrony;
 
+    public static bool operator == (Book Book1 , Book Book2)
+    {
+        return Book1.imieAutora  == Book2.imieAutora &&
+            Book1.nazwiskoAutora == Book2.nazwiskoAutora &&
+            Book1.tytul == Book2.tytul &&
+            Book1.rokWydania == Book2.rokWydania&&
+            Book1.przeczytaneStrony == Book2.przeczytaneStrony;
+    }
+    public static bool operator !=(Book Book1, Book Book2)
+    {
+        return Book1.imieAutora != Book2.imieAutora ||
+        Book1.nazwiskoAutora != Book2.nazwiskoAutora ||
+        Book1.tytul != Book2.tytul ||
+        Book1.rokWydania != Book2.rokWydania ||
+        Book1.przeczytaneStrony != Book2.przeczytaneStrony;
+    }
+    
     public Book(string Imie, string Nazwisko, int Wiek, string Adres,int Koszyk,string UlubionyAutor,string UlubionaKsiazka,string KupionaKsiazka,int RokWydania,int PrzeczytaneStrony ,DateTime Data,string imieAutora, string nazwiskoAutora,string tytul, int rokWydania,int przeczytaneStrony)
         : base(Imie, Nazwisko, Wiek, Adres,Koszyk,UlubionyAutor,UlubionaKsiazka,KupionaKsiazka,RokWydania,PrzeczytaneStrony,Data)
     {

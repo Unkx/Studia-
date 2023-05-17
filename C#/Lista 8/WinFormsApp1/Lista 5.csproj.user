@@ -10,7 +10,7 @@
     <Compile Update="Okno.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="PorownanieBook.cs">
+    <Compile Update="Porownywanie.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Sklep.cs">

@@ -1,3 +1,4 @@
+using Lista_5;
 using System;
 using static Bookstore;
 
@@ -6,12 +7,12 @@ namespace WinFormsApp1
     public partial class Okno : Form
     {
         BookForm BookForm = new BookForm(); //tworzymy OBIEKT formatki s³u¿¹cej do dodawania
-                                                //nowych studentów do listy listP
+                                            //nowych studentów do listy listP
         Sklep formBook = new Sklep(); //tworzymy OBIEKT formatki s³u¿¹cej do dodawania
 
         Lista Lista = new Lista();
 
-        PorownanieBook Porownanie = new PorownanieBook();
+        Porownywanie Porownywanie = new Porownywanie();
 
         public static List<Bookstore> listP = new List<Bookstore>();
 
@@ -61,7 +62,11 @@ namespace WinFormsApp1
             form4.ShowDialog();
         }
 
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Porownywanie form5 = new Porownywanie();
+            form5.ShowDialog();
+        }
     }
 }
 
