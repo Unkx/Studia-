@@ -11,8 +11,13 @@ namespace WinFormsApp1
         Sklep formBook = new Sklep(); //tworzymy OBIEKT formatki s³u¿¹cej do dodawania
 
         Lista Lista = new Lista();
+        
+        Porownanie Porownanie = new Porownanie();  
 
+<<<<<<< HEAD
         Porownywanie Porownywanie = new Porownywanie();
+=======
+>>>>>>> ecc2faf91635b10d71a1bcf475654a13e3091659
 
         public static List<Bookstore> listP = new List<Bookstore>();
 
@@ -62,9 +67,15 @@ namespace WinFormsApp1
             form4.ShowDialog();
         }
 
+<<<<<<< HEAD
         private void button1_Click(object sender, EventArgs e)
         {
             Porownywanie form5 = new Porownywanie();
+=======
+        private void buttonPorownanie_Click(object sender, EventArgs e)
+        {
+            Porownanie form5 = new Porownanie();
+>>>>>>> ecc2faf91635b10d71a1bcf475654a13e3091659
             form5.ShowDialog();
         }
     }

@@ -98,8 +98,11 @@ namespace WinFormsApp1
         }
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> ecc2faf91635b10d71a1bcf475654a13e3091659
     }
 }
 

@@ -64,8 +64,11 @@
             dateCzas = new DateTimePicker();
             buttonUzupelnij = new Button();
             pictureZdjecie2 = new PictureBox();
+<<<<<<< HEAD
             buttonPorownanie = new Button();
             button1 = new Button();
+=======
+>>>>>>> ecc2faf91635b10d71a1bcf475654a13e3091659
             ((System.ComponentModel.ISupportInitialize)pictureZdjecie2).BeginInit();
             SuspendLayout();
             // 
@@ -386,9 +389,13 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+<<<<<<< HEAD
             ClientSize = new Size(1563, 864);
             Controls.Add(button1);
             Controls.Add(buttonPorownanie);
+=======
+            ClientSize = new Size(1368, 648);
+>>>>>>> ecc2faf91635b10d71a1bcf475654a13e3091659
             Controls.Add(pictureZdjecie2);
             Controls.Add(buttonUzupelnij);
             Controls.Add(dateCzas);
@@ -471,7 +478,10 @@
         private DateTimePicker dateCzas;
         private Button buttonUzupelnij;
         private PictureBox pictureZdjecie2;
+<<<<<<< HEAD
         private Button buttonPorownanie;
         private Button button1;
+=======
+>>>>>>> ecc2faf91635b10d71a1bcf475654a13e3091659
     }
 }

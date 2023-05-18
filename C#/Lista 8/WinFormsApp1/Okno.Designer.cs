@@ -37,8 +37,12 @@
             dateCzas = new DateTimePicker();
             pictureBoxZdjecie = new PictureBox();
             buttonLista = new Button();
+<<<<<<< HEAD
             buttonPorownywanie = new Button();
             button1 = new Button();
+=======
+            buttonPorownanie = new Button();
+>>>>>>> ecc2faf91635b10d71a1bcf475654a13e3091659
             ((System.ComponentModel.ISupportInitialize)pictureBoxZdjecie).BeginInit();
             SuspendLayout();
             // 
@@ -122,8 +126,9 @@
             buttonLista.UseVisualStyleBackColor = false;
             buttonLista.Click += buttonLista_Click;
             // 
-            // buttonPorownywanie
+            // buttonPorownanie
             // 
+<<<<<<< HEAD
             buttonPorownywanie.Location = new Point(0, -2);
             buttonPorownywanie.Name = "buttonPorownywanie";
             buttonPorownywanie.Size = new Size(75, 23);
@@ -138,14 +143,28 @@
             button1.Text = "Porownywanie";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
+=======
+            buttonPorownanie.Location = new Point(537, 351);
+            buttonPorownanie.Name = "buttonPorownanie";
+            buttonPorownanie.Size = new Size(121, 60);
+            buttonPorownanie.TabIndex = 8;
+            buttonPorownanie.Text = "Porownanie";
+            buttonPorownanie.UseVisualStyleBackColor = true;
+            buttonPorownanie.Click += buttonPorownanie_Click;
+>>>>>>> ecc2faf91635b10d71a1bcf475654a13e3091659
             // 
             // Okno
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+<<<<<<< HEAD
             ClientSize = new Size(914, 600);
             Controls.Add(button1);
             Controls.Add(buttonPorownywanie);
+=======
+            ClientSize = new Size(800, 450);
+            Controls.Add(buttonPorownanie);
+>>>>>>> ecc2faf91635b10d71a1bcf475654a13e3091659
             Controls.Add(buttonLista);
             Controls.Add(pictureBoxZdjecie);
             Controls.Add(dateCzas);
@@ -172,7 +191,11 @@
         private DateTimePicker dateCzas;
         private PictureBox pictureBoxZdjecie;
         private Button buttonLista;
+<<<<<<< HEAD
         private Button buttonPorownywanie;
         private Button button1;
+=======
+        private Button buttonPorownanie;
+>>>>>>> ecc2faf91635b10d71a1bcf475654a13e3091659
     }
 }

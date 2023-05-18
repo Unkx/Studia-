@@ -10,7 +10,11 @@
     <Compile Update="Okno.cs">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Update="Porownywanie.cs">
+=======
+    <Compile Update="Porownanie.cs">
+>>>>>>> ecc2faf91635b10d71a1bcf475654a13e3091659
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Sklep.cs">
