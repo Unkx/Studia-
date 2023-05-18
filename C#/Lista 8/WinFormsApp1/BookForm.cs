@@ -19,8 +19,7 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
-
-
+        
         private void buttonUzupelnij_Click(object sender, EventArgs e)
         {
             txtImie.Text = "Jan";
@@ -78,7 +77,6 @@ namespace WinFormsApp1
 
             Okno.listP.Add(s1); //dodanie obiektu do listy
             listBoxBook.Items.Clear(); //wyczyszczenie listBoxa
-            listBoxBook.Items.Add("NOWA KSIĄŻKA ZOSTAŁA DODANA DO LISTY: ");
             Okno.listP[Okno.listP.Count - 1].Wypisz(listBoxBook);
             ClearTextBoxes(); //wyczyszczenie pól tekstowych i innych elementów
 
@@ -91,11 +89,20 @@ namespace WinFormsApp1
             Lista form4 = new Lista();
 
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
-            //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
-            //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\Pulpit\\Bez nazwy-1.jpg");
+            pictureZdjecie2.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            //labelInfo.Text = "Nowy student:";
+
+
+
         }
 
 
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> ecc2faf91635b10d71a1bcf475654a13e3091659
     }
 }
 

@@ -93,4 +93,8 @@ C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 8\WinFormsApp1\obj\Debug\net6.
 C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 8\WinFormsApp1\obj\Debug\net6.0-windows\Lista 5.pdb
 C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 8\WinFormsApp1\obj\Debug\net6.0-windows\Lista 5.genruntimeconfig.cache
 C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 8\WinFormsApp1\obj\Debug\net6.0-windows\ref\Lista 5.dll
+<<<<<<< HEAD
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 8\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Porownywanie.resources
+=======
 C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 8\WinFormsApp1\obj\Debug\net6.0-windows\Lista_5.Porownanie.resources
+>>>>>>> ecc2faf91635b10d71a1bcf475654a13e3091659
