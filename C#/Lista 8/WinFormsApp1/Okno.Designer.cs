@@ -37,7 +37,7 @@
             dateCzas = new DateTimePicker();
             pictureBoxZdjecie = new PictureBox();
             buttonLista = new Button();
-            buttonPorownywanie = new Button();
+            buttonPorownanie = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBoxZdjecie).BeginInit();
             SuspendLayout();
             // 
@@ -121,21 +121,22 @@
             buttonLista.UseVisualStyleBackColor = false;
             buttonLista.Click += buttonLista_Click;
             // 
-            // buttonPorownywanie
+            // buttonPorownanie
             // 
-            buttonPorownywanie.Location = new Point(466, 359);
-            buttonPorownywanie.Name = "buttonPorownywanie";
-            buttonPorownywanie.Size = new Size(156, 44);
-            buttonPorownywanie.TabIndex = 8;
-            buttonPorownywanie.Text = "Rankomat.pl";
-            buttonPorownywanie.UseVisualStyleBackColor = false;
+            buttonPorownanie.Location = new Point(537, 351);
+            buttonPorownanie.Name = "buttonPorownanie";
+            buttonPorownanie.Size = new Size(121, 60);
+            buttonPorownanie.TabIndex = 8;
+            buttonPorownanie.Text = "Porownanie";
+            buttonPorownanie.UseVisualStyleBackColor = true;
+            buttonPorownanie.Click += buttonPorownanie_Click;
             // 
             // Okno
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(buttonPorownywanie);
+            Controls.Add(buttonPorownanie);
             Controls.Add(buttonLista);
             Controls.Add(pictureBoxZdjecie);
             Controls.Add(dateCzas);
@@ -161,6 +162,6 @@
         private DateTimePicker dateCzas;
         private PictureBox pictureBoxZdjecie;
         private Button buttonLista;
-        private Button buttonPorownywanie;
+        private Button buttonPorownanie;
     }
 }

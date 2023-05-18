@@ -64,7 +64,6 @@
             dateCzas = new DateTimePicker();
             buttonUzupelnij = new Button();
             pictureZdjecie2 = new PictureBox();
-            buttonPorownanie = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureZdjecie2).BeginInit();
             SuspendLayout();
             // 
@@ -367,22 +366,11 @@
             pictureZdjecie2.TabIndex = 11;
             pictureZdjecie2.TabStop = false;
             // 
-            // buttonPorownanie
-            // 
-            buttonPorownanie.Location = new Point(660, 513);
-            buttonPorownanie.Name = "buttonPorownanie";
-            buttonPorownanie.Size = new Size(152, 67);
-            buttonPorownanie.TabIndex = 12;
-            buttonPorownanie.Text = "Porownanie";
-            buttonPorownanie.UseVisualStyleBackColor = true;
-            buttonPorownanie.Click += buttonPorownanie_Click;
-            // 
             // BookForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1368, 648);
-            Controls.Add(buttonPorownanie);
             Controls.Add(pictureZdjecie2);
             Controls.Add(buttonUzupelnij);
             Controls.Add(dateCzas);
@@ -464,6 +452,5 @@
         private DateTimePicker dateCzas;
         private Button buttonUzupelnij;
         private PictureBox pictureZdjecie2;
-        private Button buttonPorownanie;
     }
 }

@@ -6,6 +6,30 @@
     int rokWydania;
     int przeczytaneStrony;
 
+    public static bool operator ==(Book book1, Book book2)
+    {
+        if (ReferenceEquals(book1, book2))
+        {
+            return true;
+        }
+
+        if (ReferenceEquals(book1, null) || ReferenceEquals(book2, null))
+        {
+            return false;
+        }
+
+        return book1.imieAutora == book2.imieAutora &&
+               book1.nazwiskoAutora == book2.nazwiskoAutora &&
+               book1.tytul == book2.tytul &&
+               book1.rokWydania == book2.rokWydania &&
+               book1.przeczytaneStrony == book2.przeczytaneStrony;
+    }
+
+    public static bool operator !=(Book book1, Book book2)
+    {
+        return !(book1 == book2);
+    }
+
     public Book(string Imie, string Nazwisko, int Wiek, string Adres,int Koszyk,string UlubionyAutor,string UlubionaKsiazka,string KupionaKsiazka,int RokWydania,int PrzeczytaneStrony ,DateTime Data,string imieAutora, string nazwiskoAutora,string tytul, int rokWydania,int przeczytaneStrony)
         : base(Imie, Nazwisko, Wiek, Adres,Koszyk,UlubionyAutor,UlubionaKsiazka,KupionaKsiazka,RokWydania,PrzeczytaneStrony,Data)
     {

@@ -96,29 +96,6 @@ namespace WinFormsApp1
         }
 
 
-
-        private void buttonPorownanie_Click(object sender, EventArgs e)
-        {
-            PorownanieBook form5 = new PorownanieBook();
-            form5.ShowDialog();
-            string selectedItem = listBoxBook.SelectedItem?.ToString();
-
-            // Raise an event to pass the selected item to the parent form
-            DataComparisonRequested?.Invoke(this, new DataComparisonEventArgs(selectedItem));
-        }
-
-
-
-        public event EventHandler<DataComparisonEventArgs> DataComparisonRequested;
-        public class DataComparisonEventArgs : EventArgs
-        {
-            public string SelectedItem { get; }
-
-            public DataComparisonEventArgs(string selectedItem)
-            {
-                SelectedItem = selectedItem;
-            }
-        }
     }
 }
 
@@ -126,5 +103,5 @@ namespace WinFormsApp1
 
 
 
-    
+
 
