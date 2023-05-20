@@ -52,7 +52,7 @@
             button1.TabIndex = 1;
             button1.Text = "Następny";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            button1.Click += buttonKsiazka_Click;
             // 
             // pictureZdjecie2
             // 
@@ -70,7 +70,7 @@
             button2.TabIndex = 3;
             button2.Text = "Poprzedni";
             button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            button2.Click += buttonSklep_Click;
             // 
             // Lista
             // 

@@ -37,7 +37,6 @@
             dateCzas = new DateTimePicker();
             pictureBoxZdjecie = new PictureBox();
             buttonLista = new Button();
-            buttonPorownywanie = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBoxZdjecie).BeginInit();
             SuspendLayout();
             // 
@@ -126,7 +125,6 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(buttonPorownywanie);
             Controls.Add(buttonLista);
             Controls.Add(pictureBoxZdjecie);
             Controls.Add(dateCzas);
@@ -152,6 +150,5 @@
         private DateTimePicker dateCzas;
         private PictureBox pictureBoxZdjecie;
         private Button buttonLista;
-        private Button buttonPorownywanie;
     }
 }

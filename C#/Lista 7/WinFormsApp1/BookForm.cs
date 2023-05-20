@@ -94,13 +94,7 @@ namespace WinFormsApp1
 
             Lista form4 = new Lista();
 
-            Porownywanie.listBoxData2 = new List<string>();
-            foreach (var item in listBoxBook.Items)
-            {
-                Porownywanie.listBoxData2.Add(item.ToString());
-            }
 
-            Porownywanie form5 = new Porownywanie();
         }
 
     }

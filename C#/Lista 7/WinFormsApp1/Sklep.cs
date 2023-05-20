@@ -85,13 +85,7 @@ namespace WinFormsApp1
             //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\Desktop\\bez-nazwy1");//ścierzka dla pc
 
 
-            Porownywanie.listBoxData = new List<string>();
-            foreach (var item in listBoxStore.Items)
-            {
-                Porownywanie.listBoxData.Add(item.ToString());
-            }
 
-            Porownywanie form5 = new Porownywanie();
         }
     }
 }

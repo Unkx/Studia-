@@ -20,51 +20,50 @@ namespace WinFormsApp1
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonKsiazka_Click(object sender, EventArgs e)
         {
             if (listBoxData != null)
             {
+                listBox1.Items.Clear();
                 listBox1.Items.AddRange(listBoxData.ToArray());
 
                 pictureZdjecie2.Visible = true;
                 pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
-                pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
+                //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
             }
             else if(listBoxData == null) 
             {
-                MessageBox.Show("Nic tu nie ma ","Wypierdalaj kutasie krzywy");
+                MessageBox.Show("Nic tu nie ma ");
             }
 
 
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
+            //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
  
         }
 
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonSklep_Click(object sender, EventArgs e)
         {
 
             if (listBoxData2 != null)
             {
+                listBox1.Items.Clear();
                 listBox1.Items.AddRange(listBoxData2.ToArray());
                 pictureZdjecie2.Visible = true;
                 pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
-                pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
+                //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-2.jpg");
             }
             else if (listBoxData2 == null)
             {
-                MessageBox.Show("Nic nie ma ");
+                MessageBox.Show("Nic tu nie ma ");
             }
-            
-
-            
 
 
-            listBox1.Items.AddRange(listBoxData2.ToArray());
+            //listBox1.Items.AddRange(listBoxData2.ToArray());
 
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
+            //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-2.jpg");
 
         }
 

@@ -19,7 +19,7 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
-        
+
         private void buttonUzupelnij_Click(object sender, EventArgs e)
         {
             txtImie.Text = "Jan";
@@ -68,12 +68,9 @@ namespace WinFormsApp1
 
         private void buttonZaladuj_Click(object sender, System.EventArgs e)
         {
-            //Book o1 = new Book(txtImie.Text, txtNazwisko.Text, Convert.ToInt32(this.txtWiek.Text), txtAdres.Text, Convert.ToInt32(this.txtKoszyk.Text), txtUlubionyAutor.Text, txtUlubionaKsiazka.Text, txtKupionaKsiazka.Text, Convert.ToInt32(this.txtRokWydania.Text), Convert.ToInt32(this.txtPrzeczytaneStrony.Text), dateCzas.Value, txtImieAutora.Text, txtNazwiskoAutora.Text, txtTytul.Text, Convert.ToInt32(this.txtRokWyd.Text), Convert.ToInt32(this.txtPrzeczytaneKs.Text));
-            //listBoxBook.Items.AddRange(o1.Wypisz());
-            //listBoxBook.Items.Add(DateTime.Now.ToString("dd.MM.yy"));
 
             Book s1 = new Book(txtImie.Text, txtNazwisko.Text, Convert.ToInt32(this.txtWiek.Text), txtAdres.Text, Convert.ToInt32(this.txtKoszyk.Text), txtUlubionyAutor.Text, txtUlubionaKsiazka.Text, txtKupionaKsiazka.Text, Convert.ToInt32(this.txtRokWydania.Text), Convert.ToInt32(this.txtPrzeczytaneStrony.Text), dateCzas.Value, txtImieAutora.Text, txtNazwiskoAutora.Text, txtTytul.Text, Convert.ToInt32(this.txtRokWyd.Text), Convert.ToInt32(this.txtPrzeczytaneKs.Text));
-            //labelInfo.Text = "Nowy student:";
+
 
             Okno.listP.Add(s1); //dodanie obiektu do listy
             listBoxBook.Items.Clear(); //wyczyszczenie listBoxa
@@ -91,18 +88,12 @@ namespace WinFormsApp1
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.StretchImage;
 
-            //labelInfo.Text = "Nowy student:";
 
 
 
         }
 
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> ecc2faf91635b10d71a1bcf475654a13e3091659
     }
 }
 
