@@ -127,36 +127,46 @@ h1 {
     text-align: center;
   }
   .pong {
-    width:20%;
+
+    width: 20%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 100px 0px 20px;
+    padding: 10px 0px 20px;
   }
+  
   .pierwsza-gra {
     position: absolute;
-    top: 51%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
     font-family: 'Ubuntu', sans-serif;
     font-size: 32px;
-    text-shadow:2px 2px 3px rgba(255,255,255);
+    text-shadow: 2px 2px 3px rgba(255, 255, 255);
     opacity: 70%;
   }
-  .pong-div {
+  .lata-80 {
     font-family:'Ubuntu', sans-serif;
     font-size: 20px;
     color:antiquewhite;
     text-align: center;
     text-shadow: 2px 2px 2px #FFB650,
-                  4px 4px 4px #FFD662,
-
-                  
-                  6px 6px 6px  #FF80BF;
-                  /* 20px 20px 0px #EF5097, 
-                  25px 25px 0px #6868AC, 
-                  30px 30px 0px #90B1E0;*/
-
+                  6px 6px 6px  #FF80BF,
+                  8px 8px 8px #EF5097, 
+                  10px 10px 10px #6868AC, 
+                  12px 12px 12px #90B1E0;
+    padding: 22px;
 
   }
+  .nes {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding:20px;
+  }
   /* koniec strony <historia.html> */ 
+  .test{
+    font-size: 200px;
+  }
