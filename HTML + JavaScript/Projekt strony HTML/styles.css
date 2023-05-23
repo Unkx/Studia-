@@ -1,5 +1,6 @@
 /* miejsce na font */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
 @font-face { font-family: SuperMario256; src: url('SuperMario256.ttf'); } 
 @font-face { font-family: ARCADE_R; src: url('ARCADE_R.ttf'); }
@@ -16,6 +17,7 @@ html {
     background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,0.5882002459186799) 0%, rgba(0,0,0,0.5853991254705007) 100%);
     background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,0.5882002459186799) 0%, rgba(0,0,0,0.5853991254705007) 100%);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,0.5882002459186799) 0%, rgba(0,0,0,0.5853991254705007) 100%);
+    display: block;
   }
   
   
@@ -30,15 +32,15 @@ html {
   }
 
   nav {
-    position:fixed;
     overflow: hidden;
     background-color: #333;
     width: 100%; /* Full width */
-    padding-left: 50px;
+    padding-left: 150px;
+
     list-style-type: none;
     margin: 0;
     position: -webkit-sticky; /* Safari */
-    position: sticky;
+    position: fixed;
     top: 0;
   }
   nav a {
@@ -51,8 +53,10 @@ html {
     text-decoration: none;    
     font-family: ARCADE_N;
     font-size: 16px;
+    
   }
   nav ul {
+
     display: flex;
     justify-content: center;
   }
@@ -125,25 +129,7 @@ h1 {
     font-family: SuperMario256;
     text-align: center;
   }
-  .pong {
-    width: 20%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 0px 20px;
-  }
-  
-  .pierwsza-gra {
-    position: absolute !important;
-    top: 42%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 32px;
-    text-shadow: 2px 2px 3px rgba(255, 255, 255);
-    opacity: 70%;
-  }
+
   .lata-70 {
     font-family:'Ubuntu', sans-serif;
     font-size: 20px;
@@ -156,6 +142,8 @@ h1 {
                   10px 10px 10px #6868AC, 
                   12px 12px 12px #90B1E0;
     padding: 22px;
+
+
   }
 
 
@@ -171,7 +159,6 @@ h1 {
   border: 3px solid;
   padding: 0.25em 0.5em;
   box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-  position: relative;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -196,10 +183,7 @@ h1 {
 .Space_Invaders {
   width: 20%;
 }
-.pong {
-  margin-bottom: 20px;
-  width: 20%;
-}
+
 .star-trek {
   width: 30%;
 }
@@ -207,29 +191,12 @@ h1 {
   width: 18%;
 }
 
-.nes {
-  position: relative;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-  background: rgba(50, 196, 50, 0.301);
-}
-.konsola-nes {
-  position: absolute;
-  top: 170%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 32px;
-  text-shadow: 2px 2px 3px rgb(17, 196, 127);
-  opacity: 70%;
-}
+
+
 .lata-80 {
   font-family:'Ubuntu', sans-serif;
   font-size: 20px;
-  background: rgba(72, 50, 196, 0.301);
+  background: rgba(50, 174, 196, 0.301);
   color:antiquewhite;
   text-align: center;
   text-shadow: 2px 2px 2px #FFB650,
@@ -238,7 +205,56 @@ h1 {
                 10px 10px 10px #6868AC, 
                 12px 12px 12px #90B1E0;
   padding: 22px;
+
+
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
 }
+.historia-tytuł {
+  font-family: 'Press start 2P';
+  font-size: 30px;
+}
+.border-step4 {
+  border-style: solid;
+  border-width: .125em 0;
+  box-shadow: -.375em 0 0 -.125em,
+      .375em 0 0 -.125em;
+  margin: 0 .5em;
+  padding: .5em .125em;
+  position: relative;
+  z-index: 1;
+
+  &:before {
+      background-color: inherit;
+      border: inherit;
+      border-width: 0 .125em;
+      bottom: .375em;
+      content: '';
+      left: -.5em;
+      pointer-events: none;
+      position: absolute;
+      top: .375em;
+      right: -.5em;
+      z-index: -1;
+  }
+
+  &:after {
+      background-color: inherit;
+      border: inherit;
+      border-width: 0 .125em;
+      bottom: .125em;
+      content: '';
+      left: -.375em;
+      position: absolute;
+      top: .125em;
+      right: -.375em;
+      z-index: -2;
+  }
+}
+    
+  
+
 /* koniec strony <historia.html> */ 
 .test{
   font-size: 200px;
