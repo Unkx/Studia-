@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 @font-face { font-family: SuperMario256; src: url('SuperMario256.ttf'); } 
+@font-face { font-family: ARCADE_R; src: url('ARCADE_R.ttf'); }
+@font-face { font-family: ARCADE_N; src: url('ARCADE_N.ttf'); }
 
 /* start css */
 html {
@@ -28,10 +30,11 @@ html {
   }
 
   nav {
+    position:fixed;
     overflow: hidden;
     background-color: #333;
     width: 100%; /* Full width */
-    padding-bottom: 20px;
+    padding-left: 50px;
     list-style-type: none;
     margin: 0;
     position: -webkit-sticky; /* Safari */
@@ -45,7 +48,9 @@ html {
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+    text-decoration: none;    
+    font-family: ARCADE_N;
+    font-size: 16px;
   }
   nav ul {
     display: flex;
@@ -58,7 +63,6 @@ html {
     margin: 10px;
     list-style-type: none;
     padding: 20px 0px 20px;
-
   }
   .tło {
     opacity: 20%;
@@ -68,7 +72,6 @@ html {
 
   .tekst {
     font-family: 'Ubuntu', sans-serif;
-    
     color: #f2f2f2;
   }
   nav a:hover {
@@ -96,7 +99,7 @@ html {
 h1 {
   size: 200px;
   text-align: center;
-  text-shadow: 1px 1px 0 rgba(250, 255, 105, 0);
+  text-shadow: 3px 1px 1px rgb(178, 184, 15);
 }
   
 
@@ -123,7 +126,6 @@ h1 {
     text-align: center;
   }
   .pong {
-
     width: 20%;
     display: block;
     margin-left: auto;
@@ -132,7 +134,7 @@ h1 {
   }
   
   .pierwsza-gra {
-    position: absolute;
+    position: absolute !important;
     top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -187,20 +189,55 @@ h1 {
   }
 }
 
-
-.arcade {
-
+.Asteroids {
+  margin-top: 20px;
+  width: 20%;
 }
-.komputery-konsole {
-
+.Space_Invaders {
+  width: 20%;
 }
+.pong {
+  margin-bottom: 20px;
+  width: 20%;
+}
+.star-trek {
+  width: 30%;
+}
+.superman {
+  width: 18%;
+}
+
 .nes {
+  position: relative;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
-  padding:20px;
   background: rgba(50, 196, 50, 0.301);
+}
+.konsola-nes {
+  position: absolute;
+  top: 170%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 32px;
+  text-shadow: 2px 2px 3px rgb(17, 196, 127);
+  opacity: 70%;
+}
+.lata-80 {
+  font-family:'Ubuntu', sans-serif;
+  font-size: 20px;
+  background: rgba(72, 50, 196, 0.301);
+  color:antiquewhite;
+  text-align: center;
+  text-shadow: 2px 2px 2px #FFB650,
+                6px 6px 6px  #FF80BF,
+                8px 8px 8px #EF5097, 
+                10px 10px 10px #6868AC, 
+                12px 12px 12px #90B1E0;
+  padding: 22px;
 }
 /* koniec strony <historia.html> */ 
 .test{
