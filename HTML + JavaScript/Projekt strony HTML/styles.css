@@ -133,7 +133,7 @@ h1 {
   
   .pierwsza-gra {
     position: absolute;
-    top: 50%;
+    top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -142,9 +142,10 @@ h1 {
     text-shadow: 2px 2px 3px rgba(255, 255, 255);
     opacity: 70%;
   }
-  .lata-80 {
+  .lata-70 {
     font-family:'Ubuntu', sans-serif;
     font-size: 20px;
+    background: rgba(72, 50, 196, 0.301);
     color:antiquewhite;
     text-align: center;
     text-shadow: 2px 2px 2px #FFB650,
@@ -154,16 +155,8 @@ h1 {
                   12px 12px 12px #90B1E0;
     padding: 22px;
   }
-  .nes {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    padding:20px;
-  }
-  .lata-80 {
-    background: rgba(72, 50, 196, 0.301);
-  }
+
+
 
 .button {
   font-family: "Open Sans", sans-serif;
@@ -200,6 +193,14 @@ h1 {
 }
 .komputery-konsole {
 
+}
+.nes {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding:20px;
+  background: rgba(50, 196, 50, 0.301);
 }
 /* koniec strony <historia.html> */ 
 .test{
