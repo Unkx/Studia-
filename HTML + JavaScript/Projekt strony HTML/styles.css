@@ -14,7 +14,6 @@ html {
     background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,0.5882002459186799) 0%, rgba(0,0,0,0.5853991254705007) 100%);
     background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,0.5882002459186799) 0%, rgba(0,0,0,0.5853991254705007) 100%);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,0.5882002459186799) 0%, rgba(0,0,0,0.5853991254705007) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#000000",GradientType=1);
   }
   
   
@@ -38,7 +37,6 @@ html {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
-  
   }
   nav a {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -85,15 +83,13 @@ html {
     background-color: aqua;
   }
   
-  
-    
-    
-    @media (max-width: 600px) {
-      nav, article {
-        width: 100%;
-        height: auto;
-      }
+  @media (max-width: 600px) {
+    nav,
+    article {
+      width: 100%;
+      height: auto;
     }
+  }
   
   /* koniec części wspólnej */
   
@@ -157,7 +153,6 @@ h1 {
                   10px 10px 10px #6868AC, 
                   12px 12px 12px #90B1E0;
     padding: 22px;
-
   }
   .nes {
     display: block;
@@ -166,7 +161,48 @@ h1 {
     width: 40%;
     padding:20px;
   }
-  /* koniec strony <historia.html> */ 
-  .test{
-    font-size: 200px;
+  .lata-80 {
+    background: rgba(72, 50, 196, 0.301);
   }
+
+.button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
+
+
+.arcade {
+
+}
+.komputery-konsole {
+
+}
+/* koniec strony <historia.html> */ 
+.test{
+  font-size: 200px;
+}
+
