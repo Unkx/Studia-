@@ -8,15 +8,20 @@ window.addEventListener('scroll', function() {
     nav.classList.remove('sticky');
   }
 });
+
 /*koniec części wspólnej*/
 
 /* część <historia.html> */
-function ShowAndHide() {
-  var x = document.getElementById('SectionName');
-  if (x.style.display == 'none') {
-      x.style.display = 'block';
+function ShowAndHide(buttonId, sectionId) {
+  var section = document.getElementById(sectionId);
+  var button = document.getElementById(buttonId);
+
+  if (section.style.display === "none") {
+    section.style.display = "block";
+    button.innerHTML = "Hide";
   } else {
-      x.style.display = 'none';
+    section.style.display = "none";
+    button.innerHTML = "Show";
   }
 }
 /* część <historia.html> */
