@@ -17,8 +17,7 @@ html {
     background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,0.5882002459186799) 0%, rgba(0,0,0,0.5853991254705007) 100%);
     background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,0.5882002459186799) 0%, rgba(0,0,0,0.5853991254705007) 100%);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,0.5882002459186799) 0%, rgba(0,0,0,0.5853991254705007) 100%);
-    
-
+  
   }
   
   
@@ -53,7 +52,7 @@ html {
     padding: 14px 16px;
     text-decoration: none;    
     font-family: ARCADE_N;
-    font-size: 16px;
+    font-size: 14px;
     
   }
   nav ul {
@@ -66,7 +65,7 @@ html {
     list-style-type: none;
     margin: 10px;
     list-style-type: none;
-    padding: 27px 0px 20px;
+    padding: 22px 0px 20px;
   }
 
 
