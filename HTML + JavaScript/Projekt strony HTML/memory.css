@@ -10,42 +10,39 @@ html {
     min-height: 100%;
     min-width: 100%;
     background-image: url('https://wallpapercave.com/dwp1x/MUW4Dh6.jpg');
+    
   }
   body {
     background: rgb(2,0,36);
     background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,0.5882002459186799) 0%, rgba(0,0,0,0.5853991254705007) 100%);
     background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,0.5882002459186799) 0%, rgba(0,0,0,0.5853991254705007) 100%);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,0.5882002459186799) 0%, rgba(0,0,0,0.5853991254705007) 100%);
-  
+    
   }
   .gamepad {
     width: 400px; /* Adjust the width as needed */
     height: auto;
-    position:fixed; 
-    top:1px; 
+    position:absolute; 
+    top:-30px; 
     left:52px; 
   }
   .navbar {
+    position:fixed;
     overflow: hidden;
     background-color: #333;
     width: 100%; /* Full width */
-    padding-left: 150px;
-
-    list-style-type: none;
-    margin: 0;
-    position: -webkit-sticky; /* Safari */
-    position: fixed;
-    top: 0;
+    padding-left: -30px;
+    margin-top:-25px;
     
   }
   
   .navbar-links {
     display: flex;
     justify-content: center;
+    margin-left:200px;
 
-    margin: -20px ;
-    padding-right: 80px;
-    margin-bottom: -80px;
+    margin-top:-10px;
+    margin-bottom: -30px;
   }
   
   .navbar-links ul {
@@ -97,49 +94,48 @@ html {
     border-radius: 10px;
   }
   
-  
+ 
 @media (max-width: 900px) {
-    .navbar {
+  .navbar {
       flex-direction: column;
       align-items: flex-start;
-    }
+      padding: 30px;
+      margin-right: 64px;
+    
+  }
 
-    .toggle-button {
+  .toggle-button {
       display: flex;
-    }
+      padding: 15px;
+      padding-right: 80px;
+  }
 
-    .navbar-links {
+  .navbar-links {
       display: none;
-      text-align: center;
-      width: 40%;
-      vertical-align: middle;
-    }
+      width: 100%;
+  }
 
-    .navbar-links ul {
+  .navbar-links ul {
       width: 100%;
       flex-direction: column;
-    }
+  }
 
-    .navbar-links ul li {
+  .navbar-links ul li {
       text-align: center;
-    }
+  }
 
-    .navbar-links ul li a {
+  .navbar-links ul li a {
       padding: .5rem 1rem;
+  }
 
-    }
-
-    .navbar-links.active {
-        display: flex;
-    }
-    .gamepad {
-      width:20%;
-      top: 2px;
-      left: 260px;
-
-    }
+  .navbar-links.active {
+      display: flex;
+  }
+  .gamepad {
+    width: 40%;
+    padding: 20px 20px;
+  }
 }
-
 
 h1
 {
