@@ -97,8 +97,9 @@ html {
  
 @media (max-width: 900px) {
   .navbar {
+      position:fixed;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       padding: 30px;
       margin-right: 64px;
     
@@ -109,36 +110,57 @@ html {
       padding: 15px;
       padding-right: 80px;
   }
-
+  .navbar-links li:hover {
+    background: #ddd;
+    color: black;
+    margin: top -20px bottom center;
+    margin-bottom: center;
+    
+  }
   .navbar-links {
+      position:flex;
       display: none;
       width: 100%;
   }
 
   .navbar-links ul {
       width: 100%;
-      flex-direction: column;
+      padding: -10px;
+      margin-top: -30px;
+      margin-left:-550px;
+      flex-direction:row;
+      display: flex;
+      align-items: center;
+      justify-content: center;
   }
 
   .navbar-links ul li {
       text-align: center;
+      padding-left: -2px;
+
   }
 
   .navbar-links ul li a {
-      padding: .5rem 1rem;
+      position:static;
+      margin-top: 10px;
+      padding-left: -2px;
+      padding-top:60px;
+      margin-bottom:-40px;
+      font-size: 12px;
   }
 
   .navbar-links.active {
-      display: flex;
+    text-align: center;
+    display: flex;
   }
   .gamepad {
-    width: 40%;
-    padding: 20px 20px;
+    width: 26%;
+    padding-top: 22px;
+    padding-left: 270px;
   }
 }
 
-h1
-{
+h1{
     padding:140px;
     font-size: 64px;
     font-weight:400;
@@ -150,8 +172,7 @@ h1
     color:white;
 }
 
-p
-{
+p{
     text-align:center;
     margin-top:5px;
     margin-bottom:25px;
@@ -164,6 +185,7 @@ p
     margin-left: auto;
     margin-right:auto;
     text-align: center;
+    position:static;
 }
 
 .cardA
