@@ -1,21 +1,157 @@
-body 
-{
-    margin :0;
-    background-color:#26282E;
+/* miejsce na font */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+@font-face { font-family: SuperMario256; src: url('SuperMario256.ttf'); } 
+@font-face { font-family: ARCADE_R; src: url('ARCADE_R.ttf'); }
+@font-face { font-family: ARCADE_N; src: url('ARCADE_N.ttf'); }
+
+html {
+    min-height: 100%;
+    min-width: 100%;
+    background-image: url('https://wallpapercave.com/dwp1x/MUW4Dh6.jpg');
+  }
+  body {
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,0.5882002459186799) 0%, rgba(0,0,0,0.5853991254705007) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,0.5882002459186799) 0%, rgba(0,0,0,0.5853991254705007) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,0.5882002459186799) 0%, rgba(0,0,0,0.5853991254705007) 100%);
+  
+  }
+  .gamepad {
+    width: 400px; /* Adjust the width as needed */
+    height: auto;
+    position:fixed; 
+    top:1px; 
+    left:52px; 
+  }
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    width: 100%; /* Full width */
+    padding-left: 150px;
+
+    list-style-type: none;
+    margin: 0;
+    position: -webkit-sticky; /* Safari */
+    position: fixed;
+    top: 0;
     
-    font-family: 'Lobster',sans-serif;
-    font: size 28px;
+  }
+  
+  .navbar-links {
+    display: flex;
+    justify-content: center;
+
+    margin: -20px ;
+    padding-right: 80px;
+    margin-bottom: -80px;
+  }
+  
+  .navbar-links ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar-links li {
+      list-style: none;
+      
+      margin-bottom: 50px;
+      text-align: center;
+      list-style-type: none;
+      margin-top:30px;
+  
+  }
+  
+  .navbar-links li a {
+    font-weight: bold;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;    
+    font-family: ARCADE_N;
+    font-size: 14px;
+  }
+  
+  .navbar-links li:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+  .toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+  
+  .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  
+@media (max-width: 900px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .toggle-button {
+      display: flex;
+    }
+
+    .navbar-links {
+      display: none;
+      text-align: center;
+      width: 40%;
+      vertical-align: middle;
+    }
+
+    .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .navbar-links ul li {
+      text-align: center;
+    }
+
+    .navbar-links ul li a {
+      padding: .5rem 1rem;
+
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+    .gamepad {
+      width:20%;
+      top: 2px;
+      left: 260px;
+
+    }
 }
 
 
 h1
 {
+    padding:140px;
     font-size: 64px;
     font-weight:400;
     text-align: center;
     letter-spacing: 5px;
     margin-top:20px;
     margin-bottom:0px;
+    font-family: Arcade_N;
+    color:white;
 }
 
 p
@@ -28,7 +164,6 @@ p
 
 .board
 {
-    padding: 200px;
     width: 600px;
     margin-left: auto;
     margin-right:auto;
@@ -50,107 +185,6 @@ p
 }
 
 .card
-/* miejsce na font */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
-
-@font-face { font-family: SuperMario256; src: url('SuperMario256.ttf'); } 
-@font-face { font-family: ARCADE_R; src: url('ARCADE_R.ttf'); }
-@font-face { font-family: ARCADE_N; src: url('ARCADE_N.ttf'); }
-
-/* start css */
-html {
-  min-height: 100%;
-  min-width: 100%;
-  background-image: url('https://wallpapercave.com/dwp1x/MUW4Dh6.jpg');
-}
-  body {
-    background: rgb(2,0,36);
-    background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,0.5882002459186799) 0%, rgba(0,0,0,0.5853991254705007) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,0.5882002459186799) 0%, rgba(0,0,0,0.5853991254705007) 100%);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,0.5882002459186799) 0%, rgba(0,0,0,0.5853991254705007) 100%);
-  
-  }
-  
-  
-  /* część wspólna */
-
-  .gamepad {
-    width: 400px; /* Adjust the width as needed */
-    height: auto;
-    position:fixed; 
-    top:-16px; 
-    left:52px; 
-  }
-
-  nav {
-    overflow: hidden;
-    background-color: #333;
-    width: 100%; /* Full width */
-    padding-left: 150px;
-
-    list-style-type: none;
-    margin: 0;
-    position: -webkit-sticky; /* Safari */
-    position: fixed;
-    top: 0;
-  }
-  nav a {
-    font-weight: bold;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 20px 16px;
-    text-decoration: none;    
-    font-family: ARCADE_N;
-    font-size: 14px;
-    
-  }
-  nav ul {
-    display: flex;
-    justify-content: center;
-  }
-  li {
-    margin-bottom: 10px;
-    text-align: center;
-    list-style-type: none;
-    margin: 10px;
-    list-style-type: none;
-    padding: 22px 0px 20px;
-  }
-
-
-  .tło {
-    opacity: 20%;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,1) 0%, rgba(0,0,0,1) 100%);
-  }
-
-  .tekst {
-    font-family: 'Ubuntu', sans-serif;
-    color: #f2f2f2;
-  }
-  nav a:hover {
-    background: #ddd;
-    color: black;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 5px;  
-    font-size: 20px;
-
-  }
-  
-  @media (max-width: 600px) {
-    nav,
-    article {
-      width: 100%;
-      height: auto;
-    }
-  }
-  
-  
 {
     width:125px;
     height: 125px;

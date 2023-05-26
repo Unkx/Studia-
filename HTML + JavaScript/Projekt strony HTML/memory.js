@@ -112,3 +112,9 @@ function restore2Cards(nr1,nr2)
 }
 //wejdź na stronę jQuery i pobierz  wersję skompresowaną bez znaków białych i 
 //zainstaluj w folderze z naszymi plikami.
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
