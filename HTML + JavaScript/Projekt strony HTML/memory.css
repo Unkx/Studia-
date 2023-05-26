@@ -1,0 +1,176 @@
+body 
+{
+    margin :0;
+    background-color:#26282E;
+    
+    font-family: 'Lobster',sans-serif;
+    font: size 28px;
+}
+
+
+h1
+{
+    font-size: 64px;
+    font-weight:400;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-top:20px;
+    margin-bottom:0px;
+}
+
+p
+{
+    text-align:center;
+    margin-top:5px;
+    margin-bottom:25px;
+    letter-spacing: 2px;
+}
+
+.board
+{
+    padding: 200px;
+    width: 600px;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+}
+
+.cardA
+{
+    width: 125px;
+    height: 125px;
+    display:inline-block;
+    margin:3px;
+    background-image: url("img/karta.png");
+    border:4px solid #e9b64a;
+    border-radius: 4px;
+    cursor:default;
+    filter:brightness(100%);
+    transition: all .3s ease-in-out;
+}
+
+.card
+/* miejsce na font */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+@font-face { font-family: SuperMario256; src: url('SuperMario256.ttf'); } 
+@font-face { font-family: ARCADE_R; src: url('ARCADE_R.ttf'); }
+@font-face { font-family: ARCADE_N; src: url('ARCADE_N.ttf'); }
+
+/* start css */
+html {
+  min-height: 100%;
+  min-width: 100%;
+  background-image: url('https://wallpapercave.com/dwp1x/MUW4Dh6.jpg');
+}
+  body {
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,0.5882002459186799) 0%, rgba(0,0,0,0.5853991254705007) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,0.5882002459186799) 0%, rgba(0,0,0,0.5853991254705007) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,0.5882002459186799) 0%, rgba(0,0,0,0.5853991254705007) 100%);
+  
+  }
+  
+  
+  /* część wspólna */
+
+  .gamepad {
+    width: 400px; /* Adjust the width as needed */
+    height: auto;
+    position:fixed; 
+    top:-16px; 
+    left:52px; 
+  }
+
+  nav {
+    overflow: hidden;
+    background-color: #333;
+    width: 100%; /* Full width */
+    padding-left: 150px;
+
+    list-style-type: none;
+    margin: 0;
+    position: -webkit-sticky; /* Safari */
+    position: fixed;
+    top: 0;
+  }
+  nav a {
+    font-weight: bold;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;    
+    font-family: ARCADE_N;
+    font-size: 14px;
+    
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  li {
+    margin-bottom: 10px;
+    text-align: center;
+    list-style-type: none;
+    margin: 10px;
+    list-style-type: none;
+    padding: 22px 0px 20px;
+  }
+
+
+  .tło {
+    opacity: 20%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,1) 0%, rgba(0,0,0,1) 100%);
+  }
+
+  .tekst {
+    font-family: 'Ubuntu', sans-serif;
+    color: #f2f2f2;
+  }
+  nav a:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 5px;  
+    font-size: 20px;
+
+  }
+  
+  @media (max-width: 600px) {
+    nav,
+    article {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  
+{
+    width:125px;
+    height: 125px;
+    display: inline-block;
+    margin: 3px;
+    background-image:url("img/karta.png");
+    border: 4px solid #51C8B2;
+    border-radius: 4px;
+    cursor:crosshair;
+    filter:brightness(65%);
+    transition:all .3s ease-in-out;
+}
+
+.card:hover
+{
+    border:4px solid #e9b64a;
+    filter: brightness(100%);
+}
+.score
+{
+    margin-top: 50px;
+    letter-spacing: 2px;
+}
