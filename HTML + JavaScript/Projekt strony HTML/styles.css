@@ -156,8 +156,7 @@ h2 {
     text-shadow: 2px 2px 2px #FFB650,
                   6px 6px 6px  #FF80BF,
                   8px 8px 8px #EF5097, 
-                  10px 10px 10px #6868AC, 
-                  12px 12px 12px #90B1E0;
+                  10px 10px 10px #6868AC;                  
     padding: 22px;
 
 
@@ -222,9 +221,8 @@ h2 {
   text-shadow: 2px 2px 2px #50ff9f,
                 6px 6px 6px  #FF80BF,
                 8px 8px 8px #EF5097, 
-                10px 10px 10px #6868AC, 
-                12px 12px 12px #90B1E0;
-  padding: 22px;
+                10px 10px 10px #6868AC; 
+                padding: 22px;
   border:ridge 7px;
 
 }
