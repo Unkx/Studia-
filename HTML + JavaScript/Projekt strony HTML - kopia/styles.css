@@ -1,0 +1,398 @@
+/* miejsce na font */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+@font-face { font-family: SuperMario256; src: url('SuperMario256.ttf'); } 
+@font-face { font-family: ARCADE_R; src: url('ARCADE_R.ttf'); }
+@font-face { font-family: ARCADE_N; src: url('ARCADE_N.ttf'); }
+
+/* start css */
+html {
+  min-height: 100%;
+  min-width: 100%;
+  background-image: url('https://wallpapercave.com/dwp1x/MUW4Dh6.jpg');
+  
+}
+body {
+  background: rgb(2,0,36);
+  background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,0.5882002459186799) 0%, rgba(0,0,0,0.5853991254705007) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,0.5882002459186799) 0%, rgba(0,0,0,0.5853991254705007) 100%);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,0.5882002459186799) 0%, rgba(0,0,0,0.5853991254705007) 100%);
+  
+}
+.gamepad {
+  width: 400px; /* Adjust the width as needed */
+  height: auto;
+  position:absolute; 
+  top:-30px; 
+  left:52px; 
+}
+.navbar {
+  position:fixed;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%; /* Full width */
+  margin-top:-21px;
+
+  
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  margin-left:200px;
+
+  margin-top:-10px;
+  margin-bottom: -30px;
+}
+
+.navbar-links ul {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-links li {
+    list-style: none;
+    
+    margin-bottom: 50px;
+    text-align: center;
+    list-style-type: none;
+    margin-top:30px;
+
+}
+
+.navbar-links li a {
+  font-weight: bold;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 16px 20px 20px;
+  text-decoration: none;    
+  font-family: ARCADE_N;
+  font-size: 14px;
+}
+
+.navbar-links li:hover {
+  background: #ddd;
+  color: black;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 900px) {
+.navbar {
+    position:fixed;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin-right: 64px;
+  
+}
+
+.toggle-button {
+    display: flex;
+    padding: 15px;
+    padding-right: 80px;
+}
+.navbar-links li:hover {
+  background: #ddd;
+  color: black;
+  margin: top -20px bottom center;
+  margin-bottom: center;
+  
+}
+.navbar-links {
+    position:flex;
+    display: none;
+    width: 100%;
+}
+
+.navbar-links ul {
+    width: 100%;
+    padding: -10px;
+    margin-top: -30px;
+    margin-left:-550px;
+    flex-direction:row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-links ul li {
+    text-align: center;
+    padding-left: -2px;
+
+}
+
+.navbar-links ul li a {
+    position:static;
+    margin-top: 10px;
+    padding-left: -2px;
+    padding-top:60px;
+    margin-bottom:-40px;
+    font-size: 12px;
+}
+
+.navbar-links.active {
+  text-align: center;
+  display: flex;
+}
+.gamepad {
+  width: 26%;
+  padding-top: 22px;
+  padding-left: 270px;
+}
+}
+
+  
+  footer {
+    text-align: center;
+    padding: 5px;  
+    font-size: 20px;
+    background-color: aqua;
+  }
+  
+
+  
+  /* koniec części wspólnej */
+
+  .tekst {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 100px;
+  }
+
+  /* koniec strony <Strona Główna.html> */
+
+  .sklep{
+    width: 20%;
+  }
+  /* koniec strony o nas.html*/
+
+  .dziecko {
+    width:20px;
+    
+  }
+  /* koniec strony <galeria.html> */
+
+  .historia-gier{
+    color : rgba(219,14,117,1);
+    text-shadow:4px 2px 2px rgba(255,255,255);
+    font-size:70px;
+    margin-top: -0.8px;
+    padding-top: 150px;
+    font-family: SuperMario256;
+    text-align: center;
+    
+  }
+
+  .lata-70 {
+    font-family:'Ubuntu', sans-serif;
+    font-size: 20px;
+    background: rgba(72, 50, 196, 0.301);
+    color:antiquewhite;
+    text-align: center;
+    text-shadow: 2px 2px 2px #FFB650,
+                  6px 6px 6px  #FF80BF,
+                  8px 8px 8px #EF5097, 
+                  10px 10px 10px #6868AC;                  
+    padding: 22px;
+
+
+  }
+
+
+
+.button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
+/* sekcja na logo */
+.Asteroids {
+  margin-top: 20px;
+  width: 20%;
+}
+.Space_Invaders {
+  width: 20%;
+}
+
+.star-trek {
+  width: 30%;
+}
+.superman {
+  width: 18%;
+}
+.microsoft-flying-simulator {
+  width: 20%;
+}
+/* sekcja na logo */
+
+
+.lata-80 {
+  font-family:'Ubuntu', sans-serif;
+  font-size: 20px;
+  background: rgba(50, 174, 196, 0.301);
+  color:antiquewhite;
+  text-align: center;
+  text-shadow: 2px 2px 2px #50ff9f,
+                6px 6px 6px  #FF80BF,
+                8px 8px 8px #EF5097, 
+                10px 10px 10px #6868AC; 
+                padding: 22px;
+  border:ridge 7px;
+
+}
+.historia-tytuł {
+  font-family: 'Press start 2P';
+  font-size: 30px;
+  padding: 20px;;
+}
+
+
+
+/* CSS */
+.button2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button2:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+/* sekcja na logo */
+.contra {
+  width:20%;
+  margin-bottom:20px;
+}
+.donkey-kong {
+  width:30%;
+  margin-bottom:30px;
+}
+.pac-man {
+  width:30%;
+  margin-bottom:20px;
+}
+.super-mario {
+  width:20%;
+  margin-bottom:20px;
+}
+.wolfenstein {
+  width:20%;
+  margin-bottom:20px;
+}
+.the-legend-of-zelda {
+  width:20%;
+  margin-bottom:20px;
+}
+
+/* memory.html */
+
+.memory-text {
+  font-family: Arcade_N;    
+  padding: 100px 300px;
+  width: 600px;
+}
+
+.board
+{
+    padding: 100px;
+    width: 600px;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+    position:static;
+}
+
+.cardA
+{
+    width: 125px;
+    height: 125px;
+    display:inline-block;
+    margin:3px;
+    background-image: url("img/karta.png");
+    border:4px solid #e9b64a;
+    border-radius: 4px;
+    cursor:default;
+    filter:brightness(100%);
+    transition: all .3s ease-in-out;
+}
+
+.card
+{
+    width:125px;
+    height: 125px;
+    display: inline-block;
+    margin: 3px;
+    background-image:url("img/karta.png");
+    border: 4px solid #51C8B2;
+    border-radius: 4px;
+    cursor:crosshair;
+    filter:brightness(65%);
+    transition:all .3s ease-in-out;
+}
+
+.card:hover
+{
+    border:4px solid #e9b64a;
+    filter: brightness(100%);
+}
+.score
+{
+    margin-top: 50px;
+    letter-spacing: 2px;
+}
+
+/* memory.html */
