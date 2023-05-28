@@ -159,6 +159,10 @@ body {
   padding-top: 22px;
   padding-left: 270px;
 }
+.memory-text {
+  font-family: Arcade_N;    
+
+}
 }
 
   
@@ -341,8 +345,9 @@ body {
 /* memory.html */
 
 .memory-text {
-  font-family: Arcade_N;    
-  padding: 100px 300px;
+  font-family: Arcade_N;  
+  text-align: center !important;  
+  padding: 90px 130px;
   width: 600px;
 }
 
