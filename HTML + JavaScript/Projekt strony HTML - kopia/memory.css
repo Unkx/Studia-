@@ -44,6 +44,17 @@ p{
     text-align: center;
     position:static;
 }
+@media(max-width:900px)
+{
+  .board
+{
+    width: 600px;
+
+    margin-right:auto;
+    text-align: center;
+    position:static;
+}
+}
 
 .cardA
 {
