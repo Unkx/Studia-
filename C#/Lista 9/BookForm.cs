@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -85,12 +86,12 @@ namespace WinFormsApp1
 
             Lista form4 = new Lista();
 
-            pictureZdjecie2;
+
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");//ścierzka dla laptopa
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.StretchImage;
 
         }
-
 
     }
 }

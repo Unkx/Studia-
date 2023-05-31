@@ -59,12 +59,12 @@
             // 
             // pictureZdjecie2
             // 
-            pictureZdjecie2.Location = new Point(547, 293);
+            pictureZdjecie2.Location = new Point(547, 294);
             pictureZdjecie2.Name = "pictureZdjecie2";
+            pictureZdjecie2.Padding = new Padding(450, 50, 0, 40);
             pictureZdjecie2.Size = new Size(125, 61);
             pictureZdjecie2.TabIndex = 2;
             pictureZdjecie2.TabStop = false;
-            pictureZdjecie2.Click += pictureZdjecie2_Click;
             // 
             // buttonPoprzedni
             // 
@@ -83,7 +83,7 @@
             buttonZapisz.Name = "buttonZapisz";
             buttonZapisz.Size = new Size(86, 31);
             buttonZapisz.TabIndex = 4;
-            buttonZapisz.Text = "button1";
+            buttonZapisz.Text = "Zapisz";
             buttonZapisz.UseVisualStyleBackColor = true;
             buttonZapisz.Click += buttonZapisz_Click;
             // 
@@ -94,7 +94,7 @@
             buttonWczytaj.Name = "buttonWczytaj";
             buttonWczytaj.Size = new Size(86, 31);
             buttonWczytaj.TabIndex = 4;
-            buttonWczytaj.Text = "button1";
+            buttonWczytaj.Text = "Wczytaj";
             buttonWczytaj.UseVisualStyleBackColor = true;
             buttonWczytaj.Click += buttonWczytaj_Click;
             // 
@@ -105,7 +105,7 @@
             buttonWyswietl.Name = "buttonWyswietl";
             buttonWyswietl.Size = new Size(86, 31);
             buttonWyswietl.TabIndex = 4;
-            buttonWyswietl.Text = "button1";
+            buttonWyswietl.Text = "Wyświetl";
             buttonWyswietl.UseVisualStyleBackColor = true;
             buttonWyswietl.Click += buttonWyswietl_Click;
             // 

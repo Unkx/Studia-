@@ -90,6 +90,8 @@ namespace WinFormsApp1
             writer.WriteLine("Poniedzia³ek"); //zapisz liniê z podanym tekstem do pliku
             writer.Close();
 
+
+
             /*SaveFileDialog saveFileDialog = new SaveFileDialog();
             saveFileDialog.Filter = "Text Files (*.txt)|*.txt";
             saveFileDialog.Title = "Save List to File";
