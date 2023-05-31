@@ -85,6 +85,7 @@ namespace WinFormsApp1
 
             Lista form4 = new Lista();
 
+            pictureZdjecie2;
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.StretchImage;
 

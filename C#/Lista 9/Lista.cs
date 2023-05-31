@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
+using System.Xml.Linq;
 using static WinFormsApp1.Okno;
 
 namespace WinFormsApp1
@@ -82,52 +84,59 @@ namespace WinFormsApp1
 
         private void buttonZapisz_Click(object sender, EventArgs e)
         {
-
             SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "Text Files (*.txt)|*.txt";
-            saveFileDialog.Title = "Save List to File";
+            saveFileDialog.Filter = "XML Files (*.xml)|*.xml";
+            saveFileDialog.Title = "Save List to XML";
 
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
                 string filePath = saveFileDialog.FileName;
 
-                using (StreamWriter writer = new StreamWriter(filePath))
+                using (XmlWriter writer = XmlWriter.Create(filePath))
                 {
-                    foreach (MyClass obj in objectList)
+                    writer.WriteStartDocument();
+                    writer.WriteStartElement("Items");
+
+                    foreach (var item in listBox1.Items)
                     {
-                        obj.Zapisz(writer);
+                        writer.WriteStartElement("Name");
+                        writer.WriteString(item.ToString());
+                        writer.WriteEndElement();
                     }
+
+                    writer.WriteEndElement();
+                    writer.WriteEndDocument();
                 }
 
-                MessageBox.Show("List saved to file successfully!");
+                MessageBox.Show("List saved to XML successfully!");
             }
         }
 
         private void buttonWczytaj_Click(object sender, EventArgs e)
         {
-
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Text Files (*.txt)|*.txt";
-            openFileDialog.Title = "Load List from File";
+            openFileDialog.Filter = "XML Files (*.xml)|*.xml";
+            openFileDialog.Title = "Load List from XML";
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 string filePath = openFileDialog.FileName;
 
-                using (StreamReader reader = new StreamReader(filePath))
+                using (XmlReader reader = XmlReader.Create(filePath))
                 {
-                    objectList.Clear();
+                    listBox1.Items.Clear();
 
-                    while (!reader.EndOfStream)
+                    while (reader.Read())
                     {
-                        MyClass obj = new MyClass();
-                        obj.Wczytaj(reader);
-                        objectList.Add(obj);
+                        if (reader.NodeType == XmlNodeType.Element && reader.Name == "Name")
+                        {
+                            reader.Read(); // Move to the text content of the element
+                            listBox1.Items.Add(reader.Value);
+                        }
                     }
                 }
 
-                MessageBox.Show("List loaded from file successfully!");
-
+                MessageBox.Show("List loaded from XML successfully!");
             }
         }
         public class MyClass
@@ -159,6 +168,9 @@ namespace WinFormsApp1
             MessageBox.Show(message);
         }
 
+        private void pictureZdjecie2_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

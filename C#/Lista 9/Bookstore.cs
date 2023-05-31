@@ -132,15 +132,36 @@ public abstract class Bookstore
     public string Pole2 { get; set; }
     public virtual void Zapisz(StreamWriter writer)
     {
-        writer.WriteLine(Pole1);
-        writer.WriteLine(Pole2);
+        writer.WriteLine(Imie);
+        writer.WriteLine(Nazwisko);
+        writer.WriteLine(Wiek);
+        writer.WriteLine(Adres);
+        writer.WriteLine(Koszyk);
+        writer.WriteLine(UlubionyAutor);
+        writer.WriteLine(UlubionaKsiazka);
+        writer.WriteLine(KupionaKsiazka);
+        writer.WriteLine(RokWydania);
+        writer.WriteLine(PrzeczytaneStrony);
+        writer.WriteLine(Data);
+
 
     }
 
     public virtual void Wczytaj(StreamReader reader)
     {
-        Pole1 = int.Parse(reader.ReadLine());
-        Pole2 = reader.ReadLine();
+        Imie = reader.ReadLine();
+        Nazwisko = reader.ReadLine();
+        Wiek = Convert.ToInt32(reader.ReadLine());
+        Adres = reader.ReadLine();
+        Koszyk = Convert.ToInt32(reader.ReadLine());
+        UlubionyAutor = reader.ReadLine();
+        UlubionaKsiazka = reader.ReadLine();
+        RokWydania = Convert.ToInt32(reader.ReadLine());
+        PrzeczytaneStrony = Convert.ToInt32(reader.ReadLine());
+        DateTime.TryParse(reader.ReadLine(), out DateTime date);
+        Data = date;
+
+
     }
 
 }

@@ -86,7 +86,11 @@ namespace WinFormsApp1
 
         private void buttonZapisz_Click(object sender, EventArgs e)
         {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            StreamWriter writer = new StreamWriter("C:\\Users\\mi140\\OneDrive\\Pulpit\\chuj.txt");
+            writer.WriteLine("Poniedzia³ek"); //zapisz liniê z podanym tekstem do pliku
+            writer.Close();
+
+            /*SaveFileDialog saveFileDialog = new SaveFileDialog();
             saveFileDialog.Filter = "Text Files (*.txt)|*.txt";
             saveFileDialog.Title = "Save List to File";
 
@@ -103,7 +107,7 @@ namespace WinFormsApp1
                 }
 
                 MessageBox.Show("List saved to file successfully!");
-            }
+            }*/
         }
 
         private void buttonWczytaj_Click(object sender, EventArgs e)
@@ -153,6 +157,7 @@ namespace WinFormsApp1
 
         private void buttonWyswietl_Click(object sender, EventArgs e)
         {
+
             string message = "Dane z listy:\n";
             foreach (MyClass obj in objectList)
             {

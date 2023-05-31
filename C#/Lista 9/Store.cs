@@ -78,14 +78,32 @@ class Store : Bookstore
 
     public override void Zapisz(StreamWriter writer)
     {
-        base.Zapisz(writer);
-        writer.WriteLine(Pole4);
+        writer.WriteLine(Imie);
+        writer.WriteLine(Nazwisko); writer.WriteLine(Wiek);
+        writer.WriteLine(Adres);
+        writer.WriteLine(Koszyk);
+        writer.WriteLine(UlubionyAutor); 
+        writer.WriteLine(UlubionaKsiazka);
+        writer.WriteLine(KupionaKsiazka); 
+        writer.WriteLine(RokWydania);
+        writer.WriteLine(PrzeczytaneStrony);
+        writer.WriteLine(Data);
+
     }
 
     public override void Wczytaj(StreamReader reader)
     {
-        base.Wczytaj(reader);
-        Pole4 = bool.Parse(reader.ReadLine());
+        Imie = reader.ReadLine();
+        Nazwisko = reader.ReadLine();
+        Adres = reader.ReadLine();
+        Koszyk = Convert.ToInt32(reader.ReadLine());
+        UlubionyAutor = reader.ReadLine();
+        UlubionaKsiazka = reader.ReadLine();
+        KupionaKsiazka = reader.ReadLine();
+        RokWydania = Convert.ToInt32(reader.ReadLine());
+        PrzeczytaneStrony = Convert.ToInt32(reader.ReadLine());
+        DateTime.TryParse(reader.ReadLine(), out DateTime date);
+        Data = date;
     }
 
 
