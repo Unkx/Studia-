@@ -63,13 +63,13 @@ namespace WinFormsApp1
             {
                 listBox1.Items.Clear();
                 listBox1.Items.AddRange(listBoxData2.ToArray());
-                pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-2.jpg");//ścierzka dla laptopa
+                //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-2.jpg");//ścierzka dla laptopa
                 pictureZdjecie2.Visible = true;
                 listBox1.Items.Add(pictureZdjecie2);
-                pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-2.jpg");//ścierzka dla laptopa
+                //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-2.jpg");//ścierzka dla laptopa
                 pictureZdjecie2.Visible = true;
                 pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
-                pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
+                //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
                 pictureZdjecie2.SizeMode = PictureBoxSizeMode.StretchImage;
             }
             else if (listBoxData2 == null)
@@ -81,7 +81,7 @@ namespace WinFormsApp1
 
 
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
+            //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.StretchImage;
 
         }

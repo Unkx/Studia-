@@ -88,7 +88,7 @@ namespace WinFormsApp1
 
 
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");//ścierzka dla laptopa
+            //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");//ścierzka dla laptopa
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.StretchImage;
 
         }
