@@ -341,10 +341,11 @@ body {
 
 /* memory.html */
 
-.memory-text {
+.memory {
   font-family: Arcade_N;  
-  text-align: center !important;  
-  padding: 90px 130px;
+  text-align: center ;  
+  padding-left: 700px;
+  padding-top:40px;
   width: 100px;
 }
 
@@ -409,5 +410,7 @@ body {
     margin-top: 50px;
     letter-spacing: 2px;
 }
+
+
 
 /* memory.html */
