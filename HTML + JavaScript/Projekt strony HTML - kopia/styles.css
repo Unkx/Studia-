@@ -21,11 +21,11 @@ body {
   
 }
 .gamepad {
-  width: 400px; /* Adjust the width as needed */
+  width: 340px; /* Adjust the width as needed */
   height: auto;
   position:absolute; 
-  top:-30px; 
-  left:52px; 
+  top: -16px; 
+  left:36px; 
 }
 .navbar {
   position:fixed;
@@ -138,7 +138,6 @@ body {
 .navbar-links ul li {
     text-align: center;
     padding-left: -2px;
-
 }
 
 .navbar-links ul li a {
@@ -174,22 +173,72 @@ footer {
   
   /* koniec części wspólnej */
 
-  .tekst {
-    font-family: 'Courier New', Courier, monospace;
-    padding: 100px;
-  }
+
+  /* koniec koszyk.html */
 
   /* koniec strony <Strona Główna.html> */
 
-  .sklep{
-    width: 20%;
+  .kolekcjonerki {
+    font-family:'Ubuntu', sans-serif;
+    margin-left: 60px;
+    padding: 160px;
+    font-size:70px;
+    text-shadow: 2px 1px 2px #11e4efbb, 4px 5px 2px #ac11efbb;
+    text-align: center;
+    border-style: outset 1px;
   }
-  /* koniec strony o nas.html*/
+  @media(max-width:900px){
+    .kolekcjonerki {
+      font-family:'Ubuntu', sans-serif;
+      margin-left: 20px;
+      padding: 200px;
+      font-size: 60px;
+    }
+  }
 
-  .dziecko {
-    width:20px;
-    
-  }
+  .sklep {
+    text-align: center;
+}
+
+.dziecko {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.dziecko img {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+    display: flex;
+}
+
+.dziecko:hover img {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.piła {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.piła img {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+    display: flex;
+}
+
+.piła:hover img {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+  /* koniec strony koszyk.html*/
+
+
   /* koniec strony <galeria.html> */
 
   .historia-gier{
