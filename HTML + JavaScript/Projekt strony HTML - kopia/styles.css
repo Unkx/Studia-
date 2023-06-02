@@ -234,6 +234,23 @@ footer {
     transition: transform 0.3s ease-in-out;
 }
 
+.gogle {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.gogle img {
+  width: 200px;
+  height: auto;
+  margin-right: 10px;
+  display: flex;
+}
+
+.gogle:hover img {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
 
 
   /* koniec strony koszyk.html*/
