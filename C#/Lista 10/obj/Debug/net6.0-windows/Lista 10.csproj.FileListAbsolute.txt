@@ -1,0 +1,22 @@
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 10\obj\Debug\net6.0-windows\Lista 10.csproj.AssemblyReference.cache
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 10\obj\Debug\net6.0-windows\WinFormsApp1.BookForm.resources
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 10\obj\Debug\net6.0-windows\WinFormsApp1.Lista.resources
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 10\obj\Debug\net6.0-windows\WinFormsApp1.Okno.resources
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 10\obj\Debug\net6.0-windows\Lista_5.Porownanie.resources
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 10\obj\Debug\net6.0-windows\Lista_10.Properties.Resources.resources
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 10\obj\Debug\net6.0-windows\WinFormsApp1.Sklep.resources
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 10\obj\Debug\net6.0-windows\Lista 10.csproj.GenerateResource.cache
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 10\obj\Debug\net6.0-windows\Lista 10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 10\obj\Debug\net6.0-windows\Lista 10.AssemblyInfoInputs.cache
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 10\obj\Debug\net6.0-windows\Lista 10.AssemblyInfo.cs
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 10\obj\Debug\net6.0-windows\Lista 10.csproj.CoreCompileInputs.cache
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 10\bin\Debug\net6.0-windows\Lista 10.exe
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 10\bin\Debug\net6.0-windows\Lista 10.deps.json
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 10\bin\Debug\net6.0-windows\Lista 10.runtimeconfig.json
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 10\bin\Debug\net6.0-windows\Lista 10.dll
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 10\bin\Debug\net6.0-windows\Lista 10.pdb
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 10\obj\Debug\net6.0-windows\Lista 10.dll
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 10\obj\Debug\net6.0-windows\refint\Lista 10.dll
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 10\obj\Debug\net6.0-windows\Lista 10.pdb
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 10\obj\Debug\net6.0-windows\Lista 10.genruntimeconfig.cache
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 10\obj\Debug\net6.0-windows\ref\Lista 10.dll
