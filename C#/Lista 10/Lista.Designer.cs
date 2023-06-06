@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             listBox1 = new ListBox();
-            buttonNastępny = new Button();
             pictureZdjecie2 = new PictureBox();
             buttonPoprzedni = new Button();
             buttonZapisz = new Button();
             buttonWczytaj = new Button();
             buttonWyswietl = new Button();
             buttonUsun = new Button();
+            buttonNastepny = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureZdjecie2).BeginInit();
             SuspendLayout();
             // 
@@ -48,17 +48,6 @@
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(412, 244);
             listBox1.TabIndex = 0;
-            // 
-            // buttonNastępny
-            // 
-            buttonNastępny.Location = new Point(350, 298);
-            buttonNastępny.Margin = new Padding(3, 2, 3, 2);
-            buttonNastępny.Name = "buttonNastępny";
-            buttonNastępny.Size = new Size(82, 22);
-            buttonNastępny.TabIndex = 1;
-            buttonNastępny.Text = "Następny";
-            buttonNastępny.UseVisualStyleBackColor = true;
-            buttonNastępny.Click += buttonPoprzedni_Click;
             // 
             // pictureZdjecie2
             // 
@@ -79,7 +68,7 @@
             buttonPoprzedni.TabIndex = 3;
             buttonPoprzedni.Text = "Poprzedni";
             buttonPoprzedni.UseVisualStyleBackColor = true;
-            buttonPoprzedni.Click += buttonNastepny_Click;
+            buttonPoprzedni.Click += buttonPoprzedni_Click;
             // 
             // buttonZapisz
             // 
@@ -117,26 +106,36 @@
             buttonUsun.Name = "buttonUsun";
             buttonUsun.Size = new Size(75, 23);
             buttonUsun.TabIndex = 5;
-            buttonUsun.Text = "buttonUsun";
+            buttonUsun.Text = "Usuń";
             buttonUsun.UseVisualStyleBackColor = true;
             buttonUsun.Click += buttonUsun_Click;
+            // 
+            // buttonNastepny
+            // 
+            buttonNastepny.Location = new Point(351, 298);
+            buttonNastepny.Name = "buttonNastepny";
+            buttonNastepny.Size = new Size(75, 23);
+            buttonNastepny.TabIndex = 6;
+            buttonNastepny.Text = "Następny";
+            buttonNastepny.UseVisualStyleBackColor = true;
+            buttonNastepny.Click += buttonNastepny_Click;
             // 
             // Lista
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(700, 338);
+            Controls.Add(buttonNastepny);
             Controls.Add(buttonUsun);
             Controls.Add(buttonWyswietl);
             Controls.Add(buttonWczytaj);
             Controls.Add(buttonZapisz);
             Controls.Add(buttonPoprzedni);
             Controls.Add(pictureZdjecie2);
-            Controls.Add(buttonNastępny);
             Controls.Add(listBox1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "Lista";
-            Text = "Lista";
+            Text = "Za";
             ((System.ComponentModel.ISupportInitialize)pictureZdjecie2).EndInit();
             ResumeLayout(false);
         }
@@ -144,12 +143,12 @@
         #endregion
 
         private ListBox listBox1;
-        private Button buttonNastępny;
         private PictureBox pictureZdjecie2;
         private Button buttonPoprzedni;
         private Button buttonZapisz;
         private Button buttonWczytaj;
         private Button buttonWyswietl;
         private Button buttonUsun;
+        private Button buttonNastepny;
     }
 }

@@ -24,6 +24,7 @@ namespace WinFormsApp1
             InitializeComponent();
 
             objectList = new List<MyClass>();
+
         }
 
         private void buttonPoprzedni_Click(object sender, EventArgs e)
@@ -84,6 +85,7 @@ namespace WinFormsApp1
             //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.StretchImage;
 
+
         }
 
 
@@ -117,6 +119,7 @@ namespace WinFormsApp1
                     writer.WriteEndDocument();
                 }
 
+                buttonZapisz.BackColor = Color.Aqua;
                 MessageBox.Show("List saved to XML successfully!");
             }
         }
@@ -144,7 +147,7 @@ namespace WinFormsApp1
                         }
                     }
                 }
-
+                buttonWczytaj.BackColor = Color.Azure;
                 MessageBox.Show("List loaded from XML successfully!");
             }
         }
@@ -173,7 +176,7 @@ namespace WinFormsApp1
             {
                 message += "ID: " + obj.Id + ", Name: " + obj.Name + "\n";
             }
-
+            buttonWyswietl.BackColor = Color.CadetBlue;
             MessageBox.Show(message);
         }
         // lista 10
@@ -200,6 +203,7 @@ namespace WinFormsApp1
                 MessageBox.Show("Nie wybrano żadnego obiektu do usunięcia.");
             }
         }
+
 
     }
 }

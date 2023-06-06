@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -94,10 +95,9 @@ namespace WinFormsApp1
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.StretchImage;
 
             // Przekształcenie listy Okno.listP do listy obiektów typu Book
-            List<Book> bookList = Okno.listP.Cast<Book>().ToList();
+            double sredniaStron = ObliczSredniaPrzeczytanychStron();
+            MessageBox.Show("Średnia ilość przeczytanych stron: " + sredniaStron);
 
-            double sredniaStron = ObliczSredniaStron(bookList);
-            MessageBox.Show("Średnia ilość przeczytanych stron we wszystkich sklepach: " + sredniaStron);
 
             Random random = new Random();
             Color randomColor = Color.FromArgb(random.Next(216), random.Next(256), random.Next(256));
@@ -106,20 +106,21 @@ namespace WinFormsApp1
             this.BackColor = randomColor;
         }
 
-        private double ObliczSredniaStron(List<Book> ksiazki)
+        private double ObliczSredniaPrzeczytanychStron()
         {
-            if (ksiazki.Count == 0)
+            if (Okno.listP.Count == 0)
                 return 0;
 
             int sumaStron = 0;
 
-            foreach (Book ksiazka in ksiazki)
+            foreach (Book book in Okno.listP)
             {
-                sumaStron += ksiazka.PrzeczytaneStrony;
+                sumaStron += book.PrzeczytaneStrony;
             }
 
-            return (double)sumaStron / ksiazki.Count;
+            return (double)sumaStron / Okno.listP.Count;
         }
+
 
     }
 }

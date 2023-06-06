@@ -136,51 +136,79 @@ namespace WinFormsApp1
 
         private bool ValidateData()
         {
+            // Sprawdzanie poprawności danych w polu txtRokWydania (sprawdzamy, czy wprowadzona wartość jest liczbą większą lub równą zero)
+            if (string.IsNullOrEmpty(txtImie.Text))
+            {
+                MessageBox.Show("Wprowadź swoje imie.");
+                return false;
+            }
+            if (string.IsNullOrEmpty(txtNazwisko.Text))
+            {
+                MessageBox.Show("Wprowadź swoje nazwisko.");
+                return false;
+            }
             // Sprawdzanie poprawności danych w polu txtWiek (sprawdzamy, czy wprowadzona wartość jest liczbą)
             if (!int.TryParse(txtWiek.Text, out int wiek))
             {
                 MessageBox.Show("Wprowadź poprawny wiek.");
                 return false;
             }
-
-            // Sprawdzanie poprawności danych w polu txtKoszyk (sprawdzamy, czy wprowadzona wartość jest liczbą większą lub równą zero)
-            if (!int.TryParse(txtKoszyk.Text, out int koszyk) || koszyk < 0)
+            if (string.IsNullOrEmpty(txtAdres.Text))
             {
-                MessageBox.Show("Wprowadź poprawną wartość koszyka.");
+                MessageBox.Show("Wprowadź prawidłowy adres.");
+                return false;
+            }
+            if (!int.TryParse(txtKoszyk.Text, out int Koszyk) || Koszyk < 0)
+            {
+                MessageBox.Show("Wprowadź liczbę książkek w koszyku.");
+                return false;
+            }
+            if (string.IsNullOrEmpty(txtUlubionyAutor.Text))
+            {
+                MessageBox.Show("Wprowadź Imie i nazwisko swojego ulubionego autora.");
+                return false;
+            }
+            if (string.IsNullOrEmpty(txtUlubionaKsiazka.Text))
+            {
+                MessageBox.Show("Wprowadź tytuł swojej ulubionej książki.");
+                return false;
+            }
+            if (string.IsNullOrEmpty(txtKupionaKsiazka.Text))
+            {
+                MessageBox.Show("Wprowadź tytuł kupionej książki.");
+                return false;
+            }
+            if (!int.TryParse(txtRokWydania.Text, out int RokWydania) || RokWydania < 0)
+            {
+                MessageBox.Show("Wprowadź rok wydania książki którą kupiłeś.");
+                return false;
+            }
+            if (!int.TryParse(txtPrzeczytaneStrony.Text, out int PrzeczytaneStrony) || PrzeczytaneStrony < 0)
+            {
+                MessageBox.Show("Wprowadź przeczytane strony.");
+                return false;
+            }
+            if (!int.TryParse(txtKsiazki.Text , out int Ksiazki) || Ksiazki < 0)
+            {
+                MessageBox.Show("Wprowadź stan książek na magazynie.");
+                return false;
+            }
+            if (!int.TryParse(txtPracownicy.Text, out int Pracownicy) || Pracownicy < 0)
+            {
+                MessageBox.Show("Wprowadź liczbę pracowników pracujących w Twojej księgarni.");
+                return false;
+            }
+            if (string.IsNullOrEmpty(txtSklep.Text))
+            {
+                MessageBox.Show("Wprowadź nazwę sklepu.");
+                return false;
+            }
+            if (string.IsNullOrEmpty(txtEmail.Text))
+            {
+                MessageBox.Show("Wprowadź swój firmowy email.");
                 return false;
             }
 
-            // Sprawdzanie poprawności danych w polu txtPrzeczytaneStrony (sprawdzamy, czy wprowadzona wartość jest liczbą większą lub równą zero)
-            if (!int.TryParse(txtPrzeczytaneStrony.Text, out int przeczytaneStrony) || przeczytaneStrony < 0)
-            {
-                MessageBox.Show("Wprowadź poprawną liczbę przeczytanych stron.");
-                return false;
-            }
-
-            // Sprawdzanie poprawności danych w polu txtRokWydania (sprawdzamy, czy wprowadzona wartość jest liczbą większą lub równą zero)
-            if (!int.TryParse(txtRokWydania.Text, out int rokWydania) || rokWydania < 0)
-            {
-                MessageBox.Show("Wprowadź poprawny rok wydania.");
-                return false;
-            }
-
-
-            // Sprawdzanie poprawności danych w polu txtPrzeczytaneKs (sprawdzamy, czy wprowadzona wartość jest liczbą większą lub równą zero)
-            if (!int.TryParse(txtKsiazki.Text, out int przeczytaneKs) || przeczytaneKs < 0)
-            {
-                MessageBox.Show("Wprowadź poprawną liczbę przeczytanych książek.");
-                return false;
-            }
-
-            // Sprawdzanie poprawności danych w polu txtRokWydania (sprawdzamy, czy wprowadzona wartość jest liczbą większą lub równą zero)
-            if (!int.TryParse(txtKsiazki.Text, out int Ksiazki) || Ksiazki < 0)
-            {
-                MessageBox.Show("Wprowadź poprawną liczbę książęk.");
-                return false;
-            }
-
-            // Dodatkowe sprawdzanie poprawności danych w innych polach tekstowych
-            // ... dokończ jutro
 
             return true;
         }
