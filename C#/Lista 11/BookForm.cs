@@ -120,85 +120,94 @@ namespace WinFormsApp1
         }
         private bool ValidateData()
         {
-            // Sprawdzanie poprawności danych w polu txtRokWydania (sprawdzamy, czy wprowadzona wartość jest liczbą większą lub równą zero)
-            if (string.IsNullOrEmpty(txtImie.Text))
+            try
             {
-                MessageBox.Show("Wprowadź swoje imie.");
-                return false;
-            }
-            if (string.IsNullOrEmpty(txtNazwisko.Text))
-            {
-                MessageBox.Show("Wprowadź swoje nazwisko.");
-                return false;
-            }
-            // Sprawdzanie poprawności danych w polu txtWiek (sprawdzamy, czy wprowadzona wartość jest liczbą)
-            if (!int.TryParse(txtWiek.Text, out int wiek))
-            {
-                MessageBox.Show("Wprowadź poprawny wiek.");
-                return false;
-            }
-            if (string.IsNullOrEmpty(txtAdres.Text))
-            {
-                MessageBox.Show("Wprowadź prawidłowy adres.");
-                return false;
-            }
-            if (!int.TryParse(txtKoszyk.Text, out int Koszyk) || Koszyk < 0)
-            {
-                MessageBox.Show("Wprowadź liczbę książkek w koszyku.");
-                return false;
-            }
-            if (string.IsNullOrEmpty(txtUlubionyAutor.Text))
-            {
-                MessageBox.Show("Wprowadź Imie i nazwisko swojego ulubionego autora.");
-                return false;
-            }
-            if (string.IsNullOrEmpty(txtUlubionaKsiazka.Text))
-            {
-                MessageBox.Show("Wprowadź tytuł swojej ulubionej książki.");
-                return false;
-            }
-            if (string.IsNullOrEmpty(txtKupionaKsiazka.Text))
-            {
-                MessageBox.Show("Wprowadź tytuł kupionej książki.");
-                return false;
-            }
-            if (!int.TryParse(txtRokWydania.Text, out int RokWydania) || RokWydania < 0)
-            {
-                MessageBox.Show("Wprowadź rok wydania książki którą kupiłeś.");
-                return false;
-            }
-            if (!int.TryParse(txtPrzeczytaneStrony.Text, out int PrzeczytaneStrony) || PrzeczytaneStrony < 0)
-            {
-                MessageBox.Show("Wprowadź przeczytane strony.");
-                return false;
-            }
-            if (string.IsNullOrEmpty(txtImieAutora.Text))
-            {
-                MessageBox.Show("Wprowadź Imię autora książki.");
-                return false;
-            }
-            if (string.IsNullOrEmpty(txtNazwiskoAutora.Text))
-            {
-                MessageBox.Show("Wprowadź Nazwisko autora książki.");
-                return false;
-            }
-            if (string.IsNullOrEmpty(txtTytul.Text))
-            {
-                MessageBox.Show("Wprowadź tytuł kupionej książki.");
-                return false;
-            }
-            if (!int.TryParse(txtRokWyd.Text, out int RokWyd) || RokWyd < 0)
-            {
-                MessageBox.Show("Wprowadź rok wydania książki.");
-                return false;
-            }
-            if (!int.TryParse(txtPrzeczytaneKs.Text, out int PrzeczytaneKs) || PrzeczytaneKs < 0)
-            {
-                MessageBox.Show("Wprowadź przeczytane strony.");
-                return false;
-            }
+                // Sprawdzanie poprawności danych w polu txtRokWydania (sprawdzamy, czy wprowadzona wartość jest liczbą większą lub równą zero)
+                if (string.IsNullOrEmpty(txtImie.Text))
+                {
+                    MessageBox.Show("Wprowadź swoje imie.");
+                    throw new ArgumentException("Imie is required.");
+                }
+                if (string.IsNullOrEmpty(txtNazwisko.Text))
+                {
+                    MessageBox.Show("Wprowadź swoje nazwisko.");
+                    throw new ArgumentException("Nazwisko is required.");
+                }
+                // Sprawdzanie poprawności danych w polu txtWiek (sprawdzamy, czy wprowadzona wartość jest liczbą)
+                if (!int.TryParse(txtWiek.Text, out int wiek))
+                {
+                    MessageBox.Show("Wprowadź poprawny wiek.");
+                    throw new ArgumentException("Invalid age.");
+                }
+                if (string.IsNullOrEmpty(txtAdres.Text))
+                {
+                    MessageBox.Show("Wprowadź prawidłowy adres.");
+                    throw new ArgumentException("Adres is required.");
+                }
+                if (!int.TryParse(txtKoszyk.Text, out int Koszyk) || Koszyk < 0)
+                {
+                    MessageBox.Show("Wprowadź liczbę książek w koszyku.");
+                    throw new ArgumentException("Invalid number of books in the cart.");
+                }
+                if (string.IsNullOrEmpty(txtUlubionyAutor.Text))
+                {
+                    MessageBox.Show("Wprowadź Imie i nazwisko swojego ulubionego autora.");
+                    throw new ArgumentException("UlubionyAutor is required.");
+                }
+                if (string.IsNullOrEmpty(txtUlubionaKsiazka.Text))
+                {
+                    MessageBox.Show("Wprowadź tytuł swojej ulubionej książki.");
+                    throw new ArgumentException("UlubionaKsiazka is required.");
+                }
+                if (string.IsNullOrEmpty(txtKupionaKsiazka.Text))
+                {
+                    MessageBox.Show("Wprowadź tytuł kupionej książki.");
+                    throw new ArgumentException("KupionaKsiazka is required.");
+                }
+                if (!int.TryParse(txtRokWydania.Text, out int RokWydania) || RokWydania < 0)
+                {
+                    MessageBox.Show("Wprowadź rok wydania książki którą kupiłeś.");
+                    throw new ArgumentException("Invalid year of publication.");
+                }
+                if (!int.TryParse(txtPrzeczytaneStrony.Text, out int PrzeczytaneStrony) || PrzeczytaneStrony < 0)
+                {
+                    MessageBox.Show("Wprowadź przeczytane strony.");
+                    throw new ArgumentException("Invalid number of read pages.");
+                }
+                if (string.IsNullOrEmpty(txtImieAutora.Text))
+                {
+                    MessageBox.Show("Wprowadź Imię autora.");
+                    throw new ArgumentException("ImieAutora is required.");
+                }
+                if (string.IsNullOrEmpty(txtNazwiskoAutora.Text))
+                {
+                    MessageBox.Show("Wprowadź Nazwisko autora.");
+                    throw new ArgumentException("NazwiskoAutora is required.");
+                }
+                if (string.IsNullOrEmpty(txtTytul.Text))
+                {
+                    MessageBox.Show("Wprowadź Tytuł Książki.");
+                    throw new ArgumentException("Tytul is required.");
+                }
+                if (!int.TryParse(txtRokWyd.Text, out int RokWyd) || RokWyd < 0)
+                {
+                    MessageBox.Show("Wprowadź rok wydania książki.");
+                    throw new ArgumentException("Invalid number of year.");
+                }
+                if (!int.TryParse(txtPrzeczytaneKs.Text, out int PrzeczytaneKs) || PrzeczytaneKs < 0)
+                {
+                    MessageBox.Show("Wprowadź przeczytane strony.");
+                    throw new ArgumentException("Invalid number of read pages.");
+                }
 
-            return true;
+                return true;
+            }
+            catch (ArgumentException ex)
+            {
+                // Handle the exception
+                Console.WriteLine("Validation error: " + ex.Message);
+                return false;
+            }
         }
     }
 }

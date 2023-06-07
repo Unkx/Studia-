@@ -337,7 +337,7 @@
             // 
             // txtTytul
             // 
-            txtTytul.Location = new Point(447, 493);
+            txtTytul.Location = new Point(447, 494);
             txtTytul.Name = "txtTytul";
             txtTytul.Size = new Size(114, 27);
             txtTytul.TabIndex = 7;
@@ -467,6 +467,6 @@
         private DateTimePicker dateCzas;
         private Button buttonUzupelnij;
         private PictureBox pictureZdjecie2;
-  
+
     }
 }
