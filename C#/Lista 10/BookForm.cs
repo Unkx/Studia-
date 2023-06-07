@@ -76,19 +76,15 @@ namespace WinFormsApp1
             Okno.listP[Okno.listP.Count - 1].Wypisz(listBoxBook);
             ClearTextBoxes(); //wyczyszczenie pól tekstowych i innych elementów
 
-            Lista.listBoxData2 = new List<string>();
-            foreach (var item in listBoxBook.Items)
-            {
-                Lista.listBoxData2.Add(item.ToString());
-            }
-
-            Lista form4 = new Lista();
-
             Lista.listBoxData = new List<string>();
             foreach (var item in listBoxBook.Items)
             {
                 Lista.listBoxData.Add(item.ToString());
             }
+
+            Lista form4 = new Lista();
+
+            
 
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
             //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");//ścierzka dla laptopa

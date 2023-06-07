@@ -86,10 +86,10 @@ namespace WinFormsApp1
             Okno.listP[Okno.listP.Count - 1].Wypisz(listBoxStore);
             ClearTextBoxes(); //wyczyszczenie pól tekstowych i innych elementów
 
-            Lista.listBoxData = new List<string>();
+            Lista.listBoxData2 = new List<string>();
             foreach (var item in listBoxStore.Items)
             {
-                Lista.listBoxData.Add(item.ToString());
+                Lista.listBoxData2.Add(item.ToString());
             }
 
 

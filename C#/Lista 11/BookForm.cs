@@ -85,11 +85,6 @@ namespace WinFormsApp1
 
                 Lista form4 = new Lista();
 
-                Lista.listBoxData = new List<string>();
-                foreach (var item in listBoxBook.Items)
-                {
-                    Lista.listBoxData.Add(item.ToString());
-                }
 
                 pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
                 //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");//ścierzka dla laptopa
