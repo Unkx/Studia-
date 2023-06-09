@@ -364,73 +364,123 @@ footer {
 }
 /*lata 90 */
 .house-of-the-dead-2{
-  width: 20%;
-}
-.street-fighter2 {
-  width: 20%;
-}
-.final-fight {
-  width: 20%;
-}
-
-@media (max-width : 900px) {
-  /*lata 70 */
-.Asteroids {
-  margin-top: 20px;
-  width: 50%;
-}
-.Space_Invaders {
-  width: 40%;
-
-}
-.pong {
-
-}
-
-.star-trek {
-  width: 50%;
-}
-.superman {
-  width: 40%;
-}
-.microsoft-flying-simulator {
   width: 30%;
 }
-/*lata 80 */
-.contra {
-  width:40%;
-  margin-bottom:20px;
-}
-.donkey-kong {
-  width:40%;
-  margin-bottom:30px;
-}
-.pac-man {
-  width:50%;
-  margin-bottom:20px;
-}
-.super-mario {
-  width:40%;
-  margin-bottom:20px;
-}
-.wolfenstein {
-  width:40%;
-  margin-bottom:20px;
-}
-.the-legend-of-zelda {
-  width:40%;
-  margin-bottom:20px;
-}
-/*lata 90 */
-.house-of-the-dead-2{
-  width: 44%;
-}
 .street-fighter2 {
-  width: 40%;
+  width: 30%;
 }
 .final-fight {
-  width: 40%;
+  width: 30%;
 }
+.half-life{
+  width: 40%;   
+}
+.simcity2000{
+
+}
+.doom {
+
+}
+/* lata 2000 */
+.angry-birds {
+    
+}
+
+.the-sims{
+  width: 40%; 
+}
+.deus-ex{
+  width: 40%; 
+}
+.thps2{
+  width: 50%; 
+}
+
+/* media */
+@media (max-width : 900px) {
+  /*lata 70 */
+  .Asteroids {
+    margin-top: 20px;
+    width: 50%;
+  }
+  .Space_Invaders {
+    width: 40%;
+  }
+  .pong {
+    width: 40%;
+  }
+
+  .star-trek {
+    width: 50%;
+  }
+  .superman {
+    width: 40%;
+  }
+  .microsoft-flying-simulator {
+    width: 30%;
+  }
+  /*lata 80 */
+  .contra {
+    width:40%;
+    margin-bottom:20px;
+  }
+  .donkey-kong {
+    width:40%;
+    margin-bottom:30px;
+  }
+  .pac-man {
+    width:50%;
+    margin-bottom:20px;
+  }
+  .super-mario {
+    width:40%;
+    margin-bottom:20px;
+  }
+  .wolfenstein {
+    width:40%;
+    margin-bottom:20px;
+  }
+  .the-legend-of-zelda {
+    width:40%;
+    margin-bottom:20px;
+  }
+  /*lata 90 */
+  .house-of-the-dead-2{
+    width: 44%;
+  }
+  .street-fighter2 {
+    width: 40%;
+  }
+  .final-fight {
+    width: 40%;
+  }
+
+  .half-life{
+    width: 40%;   
+  }
+  .simcity2000{
+    width: 50%; 
+  }
+  .doom {
+    width: 50%; 
+  }
+
+  .the-sims{
+    width: 40%; 
+  }
+  /* lata 2000 */
+  .angry-birds {
+    width:60%;
+  }
+  .the-sims{
+    width: 40%; 
+  }
+  .deus-ex{
+    width: 40%; 
+  }
+  .thps2{
+    width: 50%; 
+  }
 }
 /* sekcja na logo */
 
@@ -533,6 +583,20 @@ li {
                 6px 6px 6px #bbe71c85;
                 padding: 22px;
   border:ridge rgb(68, 255, 124) 7px;
+
+}
+
+.lata-dwutysięczne {
+  font-family:'Ubuntu', sans-serif;
+  font-size: 20px;
+  background: rgba(50, 174, 196, 0.301);
+  color:rgb(0, 0, 0);
+  text-align: center;
+  text-shadow: 2px 2px 2px #50f9ff,
+                4px 4px 4px  #fdbb48,
+                6px 6px 6px #c550efb9; 
+                padding: 22px;
+  border:ridge #dbfa2e 7px;
 
 }
 /* memory.html */
