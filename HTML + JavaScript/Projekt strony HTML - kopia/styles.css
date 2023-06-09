@@ -60,6 +60,13 @@ body {
     margin-top:30px;
 
 }
+.navbar-links li:hover {
+  background: #ddd;
+  color: black;
+  margin: top -80px bottom center;
+  margin-bottom: center;
+  
+}
 
 .navbar-links li a {
   font-weight: bold;
@@ -106,6 +113,12 @@ body {
     padding: 15px;
     padding-right: 80px;
 }
+
+.navbar-links {
+    position:flex;
+    display: none;
+    width: 100%;
+}
 .navbar-links li:hover {
   background: #ddd;
   color: black;
@@ -113,12 +126,6 @@ body {
   margin-bottom: center;
   
 }
-.navbar-links {
-    position:flex;
-    display: none;
-    width: 100%;
-}
-
 .navbar-links ul {
     width: 100%;
     padding: -10px;
@@ -307,11 +314,17 @@ footer {
   }
 }
 /* sekcja na logo */
+
+/*lata 70 */
 .Asteroids {
   margin-top: 20px;
   width: 20%;
+
 }
 .Space_Invaders {
+  width: 20%;
+}
+.pong {
   width: 20%;
 }
 
@@ -323,6 +336,101 @@ footer {
 }
 .microsoft-flying-simulator {
   width: 20%;
+}
+/*lata 80 */
+.contra {
+  width:20%;
+  margin-bottom:20px;
+}
+.donkey-kong {
+  width:30%;
+  margin-bottom:30px;
+}
+.pac-man {
+  width:30%;
+  margin-bottom:20px;
+}
+.super-mario {
+  width:20%;
+  margin-bottom:20px;
+}
+.wolfenstein {
+  width:20%;
+  margin-bottom:20px;
+}
+.the-legend-of-zelda {
+  width:20%;
+  margin-bottom:20px;
+}
+/*lata 90 */
+.house-of-the-dead-2{
+  width: 20%;
+}
+.street-fighter2 {
+  width: 20%;
+}
+.final-fight {
+  width: 20%;
+}
+
+@media (max-width : 900px) {
+  /*lata 70 */
+.Asteroids {
+  margin-top: 20px;
+  width: 50%;
+}
+.Space_Invaders {
+  width: 40%;
+
+}
+.pong {
+
+}
+
+.star-trek {
+  width: 50%;
+}
+.superman {
+  width: 40%;
+}
+.microsoft-flying-simulator {
+  width: 30%;
+}
+/*lata 80 */
+.contra {
+  width:40%;
+  margin-bottom:20px;
+}
+.donkey-kong {
+  width:40%;
+  margin-bottom:30px;
+}
+.pac-man {
+  width:50%;
+  margin-bottom:20px;
+}
+.super-mario {
+  width:40%;
+  margin-bottom:20px;
+}
+.wolfenstein {
+  width:40%;
+  margin-bottom:20px;
+}
+.the-legend-of-zelda {
+  width:40%;
+  margin-bottom:20px;
+}
+/*lata 90 */
+.house-of-the-dead-2{
+  width: 44%;
+}
+.street-fighter2 {
+  width: 40%;
+}
+.final-fight {
+  width: 40%;
+}
 }
 /* sekcja na logo */
 
@@ -374,47 +482,45 @@ li {
   top: 5px;
   left: 5px;
 }
-/* sekcja na logo */
-.contra {
-  width:20%;
-  margin-bottom:20px;
-}
-.donkey-kong {
-  width:30%;
-  margin-bottom:30px;
-}
-.pac-man {
-  width:30%;
-  margin-bottom:20px;
-}
-.super-mario {
-  width:20%;
-  margin-bottom:20px;
-}
-.wolfenstein {
-  width:20%;
-  margin-bottom:20px;
-}
-.the-legend-of-zelda {
-  width:20%;
-  margin-bottom:20px;
-}
 
+/* gify */
 .pong-gif {
-  width:50%;
-  height:50%;
+  width:30%;
+  height:30%;
+  border:ridge 8px rgb(68, 255, 146);
   cursor:pointer;
 }
-.contra-gif {
-  width:50%;
+.wolfenstein-gif {
+  width:40%;
   height:50%;
+  border:ridge 8px rgb(68, 255, 193);
   cursor: grabbing;
+}
+.final-fight-gif{
+  width:30%;
+  height:50%;
+  border:ridge 8px #44f;
+  cursor:pointer;
+}
+
+@media (max-width :900px){
+  .pong-gif {
+  width:70%;
+  height:60%;
+
 }
 .wolfenstein-gif {
-  width:50%;
-  height:50%;
-  cursor: grabbing;
+  width:80%;
+  height:60%;
+
 }
+.final-fight-gif{
+  width:70%;
+  height:60%;
+
+}
+}
+/* gify */
 
 .lata-90 {
   font-family:'Ubuntu', sans-serif;
