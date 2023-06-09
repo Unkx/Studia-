@@ -49,6 +49,7 @@ body {
 .navbar-links ul {
   display: flex;
   justify-content: center;
+
 }
 
 .navbar-links li {
@@ -58,7 +59,7 @@ body {
     text-align: center;
     list-style-type: none;
     margin-top:30px;
-
+    position: center;
 }
 
 
@@ -70,7 +71,7 @@ body {
   padding: 20px 16px 20px 20px;
   text-decoration: none;    
   font-family: 'ARCADE_N';
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .toggle-button {
@@ -128,6 +129,7 @@ body {
 .navbar-links ul li {
     text-align: center;
     padding-left: -2px;
+    position: center;
 }
 
 .navbar-links ul li a {
@@ -137,6 +139,7 @@ body {
     padding-top:60px;
     margin-bottom:-40px;
     font-size: 12px;
+    position: center;
 }
 
 .navbar-links.active {
@@ -539,6 +542,7 @@ footer {
 }
 li {
   list-style-type: none;
+  position: center;
 }
 
 
@@ -736,8 +740,5 @@ a {
     border:4px solid #e9b64a;
     filter: brightness(100%);
 }
-
-
-
 
 /* memory.html */

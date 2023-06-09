@@ -1,4 +1,19 @@
-var cards = ["pong-memory.png","clicker.png","pong-memory.png","shambler.png","ellie.png","logo.png","clicker.png","joel.png","shambler.png","ellie.png","logo.png","joel.png"];
+/*część wspólna*/
+/*navbar część wspólna */
+window.addEventListener('scroll', function() {
+    var nav = document.querySelector('.sticky-nav');
+    if (window.pageXOffset> nav.offsetTop) {
+      nav.classList.add('sticky');
+    } else {
+      nav.classList.remove('sticky');
+    }
+  });
+  
+  
+  
+/*koniec części wspólnej*/
+
+var cards = ["pong-memory.png","super-mario.png","pong-memory.png","shambler.png","ellie.png","logo.png","clicker.png","joel.png","shambler.png","ellie.png","logo.png","joel.png"];
 
 var c0 = document.getElementById('c0');
 var c1= document.getElementById('c1');
@@ -119,3 +134,4 @@ toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
 })
 /* koniec memory */
+
