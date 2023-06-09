@@ -72,11 +72,6 @@ body {
   font-size: 14px;
 }
 
-.navbar-links li:hover {
-  background: #ddd;
-  color: black;
-}
-
 .toggle-button {
   position: absolute;
   top: .75rem;
@@ -276,12 +271,10 @@ footer {
     color:antiquewhite;
     text-align: center;
     text-shadow: 2px 2px 2px #FFB650,
-                  6px 6px 6px  #FF80BF,
-                  8px 8px 8px #EF5097, 
-                  10px 10px 10px #6868AC;                  
+                  4px 4px 4px  #80f0ff,
+                  6px 6px 6px #EF5097;                  
     padding: 22px;
-
-
+    border:ridge rgb(68, 227, 255) 7px;
   }
 
 
@@ -341,9 +334,8 @@ footer {
   color:antiquewhite;
   text-align: center;
   text-shadow: 2px 2px 2px #50ff9f,
-                6px 6px 6px  #FF80BF,
-                8px 8px 8px #EF5097, 
-                10px 10px 10px #6868AC; 
+                4px 4px 4px  #FF80BF,
+                6px 6px 6px #ef505db9; 
                 padding: 22px;
   border:ridge 7px;
 
@@ -424,6 +416,19 @@ li {
   cursor: grabbing;
 }
 
+.lata-90 {
+  font-family:'Ubuntu', sans-serif;
+  font-size: 20px;
+  background: rgba(50, 174, 196, 0.301);
+  color:rgb(255, 255, 255);
+  text-align: center;
+  text-shadow: 2px 2px 2px #ff50f0,
+                4px 4px 4px  #FF80BF,
+                6px 6px 6px #bbe71c85;
+                padding: 22px;
+  border:ridge rgb(68, 255, 124) 7px;
+
+}
 /* memory.html */
 
 .memory-text {
