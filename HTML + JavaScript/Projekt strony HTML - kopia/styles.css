@@ -383,17 +383,41 @@ footer {
 }
 /* lata 2000 */
 .angry-birds {
-    
+  width: 40%;
 }
-
+.bejeweled {
+  width: 30%;
+}
 .the-sims{
   width: 40%; 
 }
 .deus-ex{
-  width: 40%; 
+  width: 30%; 
+  margin-bottom:40px;
 }
 .thps2{
-  width: 50%; 
+  width: 40%; 
+  margin-bottom:40px;
+}
+/*lata 2010 */
+.beat-saber {
+  margin-bottom:40px;
+}
+.doom-vfr {
+  width: 30%;
+  margin-bottom:40px;
+}
+.superhot-vr{
+  width: 60%;
+}
+.super-mario-odyssey {
+  width: 40%;
+}
+.rdr2 {
+  width: 50%;
+}
+.the-witcher3{
+  width: 40%;
 }
 
 /* media */
@@ -472,6 +496,9 @@ footer {
   .angry-birds {
     width:60%;
   }
+  .bejeweled {
+    width: 50%;
+  }
   .the-sims{
     width: 40%; 
   }
@@ -480,6 +507,25 @@ footer {
   }
   .thps2{
     width: 50%; 
+  }
+  /* lata 2010 */
+  .beat-saber {
+
+  }
+  .doom-vfr {
+    width: 50%;
+  }
+  .superhot-vr{
+  
+  }
+  .super-mario-odyssey {
+  width: 50%;
+  }
+  .rdr2 {
+    width: 50%;
+  }
+  .the-witcher3{
+    width: 50%;
   }
 }
 /* sekcja na logo */
@@ -599,6 +645,18 @@ li {
   border:ridge #dbfa2e 7px;
 
 }
+.wikipedia{
+  font-family:'Ubuntu', sans-serif;
+  font-size: 40px;
+  background: rgba(50, 174, 196, 0.301);
+  color:rgb(0, 0, 0);
+  text-align: center;
+  text-shadow: 4px 4px 2px #50f9ff,
+                6px 6px 4px  #fdbb48;
+                padding: 22px;
+  border:ridge #fa2ed5 7px;
+}
+/* koniec historia.html */
 /* memory.html */
 
 .memory-text {
