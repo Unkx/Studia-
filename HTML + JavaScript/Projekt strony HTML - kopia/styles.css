@@ -60,13 +60,7 @@ body {
     margin-top:30px;
 
 }
-.navbar-links li:hover {
-  background: #ddd;
-  color: black;
-  margin: top -80px bottom center;
-  margin-bottom: center;
-  
-}
+
 
 .navbar-links li a {
   font-weight: bold;
@@ -119,13 +113,7 @@ body {
     display: none;
     width: 100%;
 }
-.navbar-links li:hover {
-  background: #ddd;
-  color: black;
-  margin: top -80px bottom center;
-  margin-bottom: center;
-  
-}
+
 .navbar-links ul {
     width: 100%;
     padding: -10px;
