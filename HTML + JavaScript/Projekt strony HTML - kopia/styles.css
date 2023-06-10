@@ -71,7 +71,7 @@ body {
   padding: 20px 16px 20px 20px;
   text-decoration: none;    
   font-family: 'ARCADE_N';
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .toggle-button {
@@ -663,13 +663,13 @@ li {
 /* koniec historia.html */
 /* memory.html */
 
-.memory-text {
+.memory {
   font-family:'Ubuntu', sans-serif;
   color: white;
   text-shadow: 4px 3px 4px #44f;
   padding-top: 150px;
-  padding-left:530px;
-
+  font-size: 23px;
+  text-align: center;
 }
 
 a {
@@ -685,7 +685,7 @@ a {
   letter-spacing: 2px;
 }
 @media (max-width:900px){
-  .memory-text {
+  .memory {
     font-family:'Ubuntu', sans-serif;  
     
     padding-top: 100px; 
