@@ -13,10 +13,10 @@ window.addEventListener('scroll', function() {
   
 /*koniec części wspólnej*/
 
-var cards = ["pong-memory.png","nintendo-gameboyx.png","pong-memory.png","shambler.png","ellie.png","logo.png","clicker.png","joel.png","shambler.png","ellie.png","logo.png","joel.png"];
+var cards = ["pong-memory.png","doom-memory.png","pong-memory.png","the-witcher-memory.png","the-legend-of-zelda-memory.png","tony-hawk's-pro-skater-2-memory.png","Contra-memory.png","doom-memory.png","the-witcher-memory.png","the-legend-of-zelda-memory.png","tony-hawk's-pro-skater-2-memory.png","Contra-memory.png","karta.png"];
 
 if (window.matchMedia("(max-width: 900px)").matches) {
-    cards = ["pong-memory-small.png", "nintendo-gameboyx-small.png", "pong-memory-small.png", "shambler-small.png", "ellie-small.png", "logo-small.png", "clicker-small.png", "joel-small.png", "shambler-small.png", "ellie-small.png", "logo-small.png", "joel-small.png"];
+    cards = ["pong-memory.png","doom-memory.png","pong-memory.png","the-witcher-memory.png","the-legend-of-zelda-memory.png","tony-hawk's-pro-skater-2-memory.png","Contra-memory.png","doom-memory.png","the-witcher-memory.png","the-legend-of-zelda-memory.png","tony-hawk's-pro-skater-2-memory.png","Contra-memory-small.png"];
   }
 var c0 = document.getElementById('c0');
 var c1= document.getElementById('c1');
@@ -111,7 +111,10 @@ function hide2Cards(nr1,nr2)
 
     if(pairsLeft == 0)
     {
-        $('.board').html('<h1>You win!<br>Done in' +turnCounter+ 'turns</h1>');
+      $('.board').html('<h1>Wygrałeś !<br>Zrobione w ' + turnCounter + ' ruchach </h1>').css({
+        'color': 'white',
+        'text-shadow': '2px 2px 4px rgba(255, 68, 239, 1)' 
+      });
     }
     lock = false;
 
