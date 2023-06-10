@@ -71,7 +71,7 @@ body {
   padding: 20px 16px 20px 20px;
   text-decoration: none;    
   font-family: 'ARCADE_N';
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .toggle-button {
@@ -680,6 +680,7 @@ li {
   font-family:'Ubuntu', sans-serif;
   color: white;
   text-shadow: 4px 3px 4px #44f;
+<<<<<<< HEAD
   padding-top: 80px;
   text-align: center;
 
@@ -694,6 +695,11 @@ li {
   text-align: center;
 
 
+=======
+  padding-top: 150px;
+  font-size: 23px;
+  text-align: center;
+>>>>>>> 484189ae15754942c4e1125e8ee5444c4d173f3c
 }
 
 a {
