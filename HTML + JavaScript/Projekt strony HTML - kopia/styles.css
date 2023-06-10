@@ -100,7 +100,7 @@ body {
     align-items: center;
     padding: 30px;
     margin-right: 64px;
-  
+    line-height: 2%;
 }
 
 .toggle-button {
@@ -118,12 +118,13 @@ body {
 .navbar-links ul {
     width: 100%;
     padding: -10px;
-    margin-top: -30px;
+    margin-top: 10px;
     margin-left:-550px;
-    flex-direction:row;
+    flex-direction:column;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .navbar-links ul li {
@@ -134,11 +135,11 @@ body {
 
 .navbar-links ul li a {
     position:static;
-    margin-top: 10px;
+    margin-top: 14px;
     padding-left: -2px;
-    padding-top:60px;
+   
     margin-bottom:-40px;
-    font-size: 12px;
+    font-size: 14px;
     position: center;
 }
 
@@ -147,9 +148,15 @@ body {
   display: flex;
 }
 .gamepad {
-  width: 26%;
+  width: 38%;
   padding-top: 22px;
-  padding-left: 270px;
+  padding-left: 70px;
+}
+.historia-tytuł {
+  font-family: 'Press start 2P';
+  font-size: 13px;
+  text-align: center;
+  margin-right:20px;
 }
 
 }
@@ -167,7 +174,7 @@ footer {
   /* koniec części wspólnej */
 
 
-  /* koniec koszyk.html */
+ 
 
   /* koniec strony <Strona Główna.html> */
 
@@ -179,14 +186,6 @@ footer {
     text-shadow: 2px 1px 2px #11e4efbb, 4px 5px 2px #ac11efbb;
     text-align: center;
     border-style: outset 1px;
-  }
-  @media(max-width:900px){
-    .kolekcjonerki {
-      font-family:'Ubuntu', sans-serif;
-      margin-left: 20px;
-      padding: 200px;
-      font-size: 60px;
-    }
   }
 
   .sklep {
@@ -243,6 +242,16 @@ footer {
   transform: scale(1.2);
   transition: transform 0.3s ease-in-out;
 }
+@media (max-width: 900px) {
+  .sklep{
+    width: 10%;
+
+  }
+  .kolekcjonerki {
+    font-size: 20px;
+    
+  }
+}
 
 
 
@@ -254,11 +263,13 @@ footer {
   .historia-gier{
     color : rgba(219,14,117,1);
     text-shadow:4px 2px 2px rgba(255,255,255);
-    font-size:70px;
+    font-size:50px;
     margin-top: -0.8px;
-    padding-top: 150px;
+
+    padding-top: 120px;
     font-family: 'SuperMario256';
     text-align: center;
+
     
   }
 
@@ -501,7 +512,7 @@ footer {
   }
   /* lata 2010 */
   .beat-saber {
-
+    width:40%;
   }
   .doom-vfr {
     width: 50%;
@@ -537,8 +548,9 @@ footer {
 }
 .historia-tytuł {
   font-family: 'Press start 2P';
-  font-size: 30px;
+  font-size: 18px;
   padding: 20px;
+  position: center;
 }
 li {
   list-style-type: none;
@@ -678,7 +690,7 @@ a {
     
     padding-top: 100px; 
     text-align: center;
-    padding-left:300px;
+    padding-left:30px;
     width:300px;
   }
 }
@@ -692,17 +704,6 @@ a {
     text-align: center;
     position:static;
 } 
-@media (max-width: 768px){
-  .board
-  {
-      padding: 10px;
-      width: 600px;
-      
-      margin-right:auto;
-      text-align: center;
-      position:static;
-  }
-}
 
 
 
@@ -740,5 +741,51 @@ a {
     border:4px solid #e9b64a;
     filter: brightness(100%);
 }
+@media (max-width: 900px){
+  .board
+  {
+      padding: 10px;
+      width: 300px;
+      
+      margin-right:auto;
+      text-align: center;
+      position:static;
+  }
+  .cardA
+{
+    width: 82px;
+    height: 82px;
+    display:inline-block;
+    margin:3px;
+    background-image: url("img/karta.png");
+    border:4px solid #e9b64a;
+    border-radius: 4px;
+    cursor:default;
+    filter:brightness(100%);
+    transition: all .3s ease-in-out;
+}
+
+.card
+{
+    width:82px;
+    height: 82px;
+    display: inline-block;
+    margin: 3px;
+    background-image:url("img/karta.png");
+    border: 4px solid #51C8B2;
+    border-radius: 4px;
+    cursor:crosshair;
+    filter:brightness(65%);
+    transition:all .3s ease-in-out;
+    
+}
+
+.card:hover
+{
+    border:4px solid #e9b64a;
+    filter: brightness(100%);
+}
+}
+
 
 /* memory.html */

@@ -13,8 +13,11 @@ window.addEventListener('scroll', function() {
   
 /*koniec części wspólnej*/
 
-var cards = ["pong-memory.png","super-mario.png","pong-memory.png","shambler.png","ellie.png","logo.png","clicker.png","joel.png","shambler.png","ellie.png","logo.png","joel.png"];
+var cards = ["pong-memory.png","nintendo-gameboyx.png","pong-memory.png","shambler.png","ellie.png","logo.png","clicker.png","joel.png","shambler.png","ellie.png","logo.png","joel.png"];
 
+if (window.matchMedia("(max-width: 900px)").matches) {
+    cards = ["pong-memory-small.png", "nintendo-gameboyx-small.png", "pong-memory-small.png", "shambler-small.png", "ellie-small.png", "logo-small.png", "clicker-small.png", "joel-small.png", "shambler-small.png", "ellie-small.png", "logo-small.png", "joel-small.png"];
+  }
 var c0 = document.getElementById('c0');
 var c1= document.getElementById('c1');
 var c2 = document.getElementById('c2');
@@ -113,18 +116,23 @@ function hide2Cards(nr1,nr2)
     lock = false;
 
 }
-function restore2Cards(nr1,nr2)
-{
-    $('#c'+nr1).css('background-image', 'url(zdj/memory-logo.png)');
-    $('#c'+nr1).addClass('card');
-    $('c'+nr1).removeClass('cardA');
-
-    $('#c'+nr2).css('background-image', 'url(zdj/memory-logo.png)');
-    $('#c'+nr2).addClass('card');
-    $('c'+nr2).removeClass('cardA');
-
+function restore2Cards(nr1, nr2) {
+    if (window.matchMedia("(max-width: 900px)").matches) {
+      $('#c' + nr1).css('background-image', 'url(zdj/memory-logo-small.png)');
+      $('#c' + nr2).css('background-image', 'url(zdj/memory-logo-small.png)');
+    } else {
+      $('#c' + nr1).css('background-image', 'url(zdj/memory-logo.png)');
+      $('#c' + nr2).css('background-image', 'url(zdj/memory-logo.png)');
+    }
+  
+    $('#c' + nr1).addClass('card');
+    $('#c' + nr1).removeClass('cardA');
+  
+    $('#c' + nr2).addClass('card');
+    $('#c' + nr2).removeClass('cardA');
+  
     lock = false;
-}
+  }
 //wejdź na stronę jQuery i pobierz  wersję skompresowaną bez znaków białych i 
 //zainstaluj w folderze z naszymi plikami.
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
