@@ -680,7 +680,6 @@ li {
   font-family:'Ubuntu', sans-serif;
   color: white;
   text-shadow: 4px 3px 4px #44f;
-<<<<<<< HEAD
   padding-top: 80px;
   text-align: center;
 
@@ -693,13 +692,9 @@ li {
   padding-top: 20px;
   font-size: 80px;
   text-align: center;
-
-
-=======
   padding-top: 150px;
   font-size: 23px;
   text-align: center;
->>>>>>> 484189ae15754942c4e1125e8ee5444c4d173f3c
 }
 
 a {
