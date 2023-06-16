@@ -67,3 +67,6 @@ https://tenor.com/pl/view/tony-hawk-pro-skater-skateboarding-video-game-gamer-gi
 https://giphy.com/gifs/UPv0qEJqNfoh9kyFOe - Beat Saber
 Memory :
 - https://www.pngegg.com/en/png-fwahq/download - GameBoy Classic
+
+Przykład koszyka wykorzystany na tej stronie :
+- https://www.webslesson.info/2020/02/stripe-payment-gateway-integration-in-php-shopping-cart.html
