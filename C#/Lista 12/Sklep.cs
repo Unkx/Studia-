@@ -69,44 +69,38 @@ namespace WinFormsApp1
 
         }
 
-
         private void buttonZatwierdz_Click(object sender, EventArgs e)
         {
             if (ValidateData())
             {
                 Store s1 = new Store(txtImie.Text, txtNazwisko.Text, Convert.ToInt32(this.txtWiek.Text), txtAdres.Text, Convert.ToInt32(this.txtKoszyk.Text), txtUlubionyAutor.Text, txtUlubionaKsiazka.Text, txtKupionaKsiazka.Text, Convert.ToInt32(this.txtRokWydania.Text), Convert.ToInt32(this.txtPrzeczytaneStrony.Text), dateCzas.Value, Convert.ToInt32(txtKsiazki.Text), Convert.ToInt32(txtPracownicy.Text), txtPracownicy.Text, txtEmail.Text);
-                //listBoxStore.Items.AddRange(o1.Wypisz());
-
-
 
                 Lista form4 = new Lista();
 
+                Okno.listP.Add(s1); // dodanie obiektu do listy
 
-                Okno.listP.Add(s1); //dodanie obiektu do listy
-                listBoxStore.Items.Clear(); //wyczyszczenie listBoxa
-                                            //listBoxStore.Items.Add("NOWY STUDENT ZOSTAŁ DODANY DO LISTY: ");
                 Okno.listP[Okno.listP.Count - 1].Wypisz(listBoxStore);
-                ClearTextBoxes(); //wyczyszczenie pól tekstowych i innych elementów
+                ClearTextBoxes(); // wyczyszczenie pól tekstowych i innych elementów
 
-                Lista.listBoxData = new List<string>();
+                // Tworzenie nowej listy z elementami z listBoxStore.Items
+                List<string> newList = new List<string>();
                 foreach (var item in listBoxStore.Items)
                 {
-                    Lista.listBoxData.Add(item.ToString());
+                    newList.Add(item.ToString());
                 }
 
+                // Aktualizacja ListBoxData
+                Lista.listBoxData = newList;
 
                 List<Store> storeList = Okno.listP.Cast<Store>().ToList();
                 // Obliczenie i wyświetlenie średniej ilości książek
                 double sredniaKsiazek = ObliczSredniaKsiazek(storeList);
                 MessageBox.Show("Średnia ilość książek we wszystkich sklepach: " + sredniaKsiazek);
 
-
-
                 pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
                 //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-2.jpg");//ścierzka dla laptopa
                 pictureZdjecie2.SizeMode = PictureBoxSizeMode.StretchImage;
                 //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\Desktop\\bez-nazwy1");//ścierzka dla pc
-
 
                 Random random = new Random();
                 Color randomColor = Color.FromArgb(random.Next(256), random.Next(256), random.Next(256));
@@ -114,10 +108,8 @@ namespace WinFormsApp1
                 // Zmiana koloru tła formularza
                 this.BackColor = randomColor;
             }
-
-
-
         }
+
         private double ObliczSredniaKsiazek(List<Store> sklepy)
         {
             if (sklepy.Count == 0)

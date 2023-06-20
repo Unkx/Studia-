@@ -24,7 +24,6 @@ namespace WinFormsApp1
             InitializeComponent();
 
             objectList = new List<MyClass>();
-
         }
 
         private void buttonPoprzedni_Click(object sender, EventArgs e)
@@ -47,10 +46,13 @@ namespace WinFormsApp1
                 MessageBox.Show("Nic tu nie ma ");
             }
 
-            listBox1.Items.AddRange(listBoxData.ToArray());
 
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
             //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-2.jpg");
+            pictureZdjecie2.SizeMode = PictureBoxSizeMode.StretchImage;
+
+
+            pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.StretchImage;
 
 
@@ -60,29 +62,42 @@ namespace WinFormsApp1
         private void buttonNastepny_Click(object sender, EventArgs e)
         {
 
-            if (listBoxData2 != null)
+            if (listBoxData2 != null && listBoxData2.Count >0)
             {
                 listBox1.Items.Clear();
                 listBox1.Items.AddRange(listBoxData2.ToArray());
-                //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-2.jpg");//ścierzka dla laptopa
                 pictureZdjecie2.Visible = true;
                 listBox1.Items.Add(pictureZdjecie2);
-                //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-2.jpg");//ścierzka dla laptopa
-                pictureZdjecie2.Visible = true;
                 pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
-                //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
                 pictureZdjecie2.SizeMode = PictureBoxSizeMode.StretchImage;
             }
-            else if (listBoxData2 == null)
+            else
             {
                 MessageBox.Show("Nic nie ma ");
             }
 
-            listBox1.Items.AddRange(listBoxData2.ToArray());
+            if (listBox1.Items.Count > 1)
+            {
+                listBox1.Items.Clear();
+                listBox1.Items.AddRange(listBoxData2.ToArray());
+                pictureZdjecie2.Visible = true;
+                listBox1.Items.Add(pictureZdjecie2);
+                pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
+                pictureZdjecie2.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+            else
+            {
+                MessageBox.Show("Nic nie ma ");
+            }
+
 
 
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
             //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
+            pictureZdjecie2.SizeMode = PictureBoxSizeMode.StretchImage;
+
+ 
+            pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.StretchImage;
 
 
@@ -151,30 +166,55 @@ namespace WinFormsApp1
                 MessageBox.Show("List loaded from XML successfully!");
             }
         }
-        public class MyClass
+        public class MyClass : IComparable<MyClass>
         {
             public int Id { get; set; }
-            public string Name { get; set; }
+            public string Imie { get; set; }
+            public string Nazwisko { get; set; }
+            public int Wiek { get; set; }
 
             public void Zapisz(StreamWriter writer)
             {
                 writer.WriteLine(Id);
-                writer.WriteLine(Name);
+                writer.WriteLine(Imie);
+                writer.WriteLine(Nazwisko);
+                writer.WriteLine(Wiek);
             }
 
             public void Wczytaj(StreamReader reader)
             {
                 Id = int.Parse(reader.ReadLine());
-                Name = reader.ReadLine();
+                Imie = reader.ReadLine();
+                Nazwisko = reader.ReadLine();
+                Wiek = int.Parse(reader.ReadLine());
+            }
+
+            public int CompareTo(MyClass other)
+            {
+                // Implement comparison logic based on the selected field (name, surname, or age)
+                // Modify the conditions as per your sorting requirements
+
+                if (other == null)
+                    return 1;
+
+                // Sort by Name
+                return Imie.CompareTo(other.Imie);
+
+                // Sort by Surname
+                return Nazwisko.CompareTo(other.Nazwisko);
+
+                // Sort by Age
+                 return Wiek.CompareTo(other.Wiek);
             }
         }
+
 
         private void buttonWyswietl_Click(object sender, EventArgs e)
         {
             string message = "Dane z listy:\n";
             foreach (MyClass obj in objectList)
             {
-                message += "ID: " + obj.Id + ", Name: " + obj.Name + "\n";
+                message += "ID: " + obj.Id + ", Name: " + obj.Imie + "\n";
             }
             buttonWyswietl.BackColor = Color.CadetBlue;
             MessageBox.Show(message);
@@ -190,7 +230,7 @@ namespace WinFormsApp1
                 listBox1.Items.Remove(selectedItem);
 
                 // Usuń obiekt z listy obiektów
-                MyClass selectedObject = objectList.FirstOrDefault(obj => obj.Name == selectedItem);
+                MyClass selectedObject = objectList.FirstOrDefault(obj => obj.Imie == selectedItem);
                 if (selectedObject != null)
                 {
                     objectList.Remove(selectedObject);
@@ -204,9 +244,39 @@ namespace WinFormsApp1
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonSortImie_Click(object sender, EventArgs e)
         {
-            objectList.Sort();
+            if (listBox1.Items.Count > 1) // Sprawdź, czy jest więcej niż jeden element
+            {
+                objectList = objectList.OrderBy(obj => obj.Imie).ToList();
+                RefreshList();
+            }
         }
+
+        private void buttonSortNazwisko_Click(object sender, EventArgs e)
+        {
+            if (listBox1.Items.Count > 1) // Sprawdź, czy jest więcej niż jeden element
+            {
+                objectList = objectList.OrderBy(obj => obj.Nazwisko).ToList();
+                RefreshList();
+            }
+        }
+
+        private void buttonSortWiek_Click(object sender, EventArgs e)
+        {
+            if (listBox1.Items.Count > 1) // Sprawdź, czy jest więcej niż jeden element
+            {
+                objectList = objectList.OrderBy(obj => obj.Wiek).ToList();
+                RefreshList();
+            }
+        }
+
+        private void RefreshList()
+        {
+            listBox1.Items.Clear();
+            listBox1.Items.AddRange(objectList.Select(obj => $"{obj.Imie} {obj.Nazwisko} ({obj.Wiek})").ToArray());
+        }
+
+
     }
 }

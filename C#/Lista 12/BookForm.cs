@@ -40,9 +40,8 @@ namespace WinFormsApp1
             txtKupionaKsiazka.Text = "Harry";
             txtRokWydania.Text = "2020";
             txtPrzeczytaneKs.Text = "33";
-
-
         }
+
         private void ClearTextBoxes()
         {
             txtImie.Clear();
@@ -57,13 +56,11 @@ namespace WinFormsApp1
             txtRokWyd.Clear();
             txtPrzeczytaneStrony.Clear();
 
-
             txtUlubionyAutor.Clear();
             txtUlubionaKsiazka.Clear();
             txtKupionaKsiazka.Clear();
             txtRokWydania.Clear();
             txtPrzeczytaneKs.Clear();
-
         }
 
         private void buttonZaladuj_Click(object sender, EventArgs e)
@@ -72,26 +69,23 @@ namespace WinFormsApp1
             {
                 Book s1 = new Book(txtImie.Text, txtNazwisko.Text, Convert.ToInt32(this.txtWiek.Text), txtAdres.Text, Convert.ToInt32(this.txtKoszyk.Text), txtUlubionyAutor.Text, txtUlubionaKsiazka.Text, txtKupionaKsiazka.Text, Convert.ToInt32(this.txtRokWydania.Text), Convert.ToInt32(this.txtPrzeczytaneStrony.Text), dateCzas.Value, txtImieAutora.Text, txtNazwiskoAutora.Text, txtTytul.Text, Convert.ToInt32(this.txtRokWyd.Text), Convert.ToInt32(this.txtPrzeczytaneKs.Text));
 
-                Okno.listP.Add(s1); //dodanie obiektu do listy
-                listBoxBook.Items.Clear(); //wyczyszczenie listBoxa
-                Okno.listP[Okno.listP.Count - 1].Wypisz(listBoxBook);
-                ClearTextBoxes(); //wyczyszczenie pól tekstowych i innych elementów
+                Okno.listP.Add(s1); // Dodanie obiektu do listy
+                listBoxBook.Items.Clear(); // Wyczyszczenie listBoxa
 
-                Lista.listBoxData2 = new List<string>();
-                foreach (var item in listBoxBook.Items)
+                foreach (Book book in Okno.listP)
                 {
-                    Lista.listBoxData2.Add(item.ToString());
+                    book.Wypisz(listBoxBook); // Wyświetlenie wszystkich obiektów w listBoxBook
                 }
+
+                ClearTextBoxes(); // Wyczyszczenie pól tekstowych i innych elementów
+
+                // Aktualizacja ListBoxData2
+                Lista.listBoxData2 = listBoxBook.Items.Cast<string>().ToList();
 
                 Lista form4 = new Lista();
 
-
                 pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
-                //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");//ścierzka dla laptopa
                 pictureZdjecie2.SizeMode = PictureBoxSizeMode.StretchImage;
-
-                // Przekształcenie listy Okno.listP do listy obiektów typu Book
-
 
                 double sredniaStron = ObliczSredniaPrzeczytanychStron();
                 MessageBox.Show("Średnia ilość przeczytanych stron we wszystkich sklepach: " + sredniaStron);
@@ -101,10 +95,9 @@ namespace WinFormsApp1
 
                 // Zmiana koloru tła formularza
                 this.BackColor = randomColor;
-                }
-               
-                
+            }
         }
+
         private double ObliczSredniaPrzeczytanychStron()
         {
             if (Okno.listP.Count == 0)
@@ -119,6 +112,7 @@ namespace WinFormsApp1
 
             return (double)sumaStron / Okno.listP.Count;
         }
+
         private bool ValidateData()
         {
             try
@@ -126,7 +120,7 @@ namespace WinFormsApp1
                 // Sprawdzanie poprawności danych w polu txtRokWydania (sprawdzamy, czy wprowadzona wartość jest liczbą większą lub równą zero)
                 if (string.IsNullOrEmpty(txtImie.Text))
                 {
-                    MessageBox.Show("Wprowadź swoje imie.");
+                    MessageBox.Show("Wprowadź swoje imię.");
                     throw new ArgumentException("Imie is required.");
                 }
                 if (string.IsNullOrEmpty(txtNazwisko.Text))
@@ -152,7 +146,7 @@ namespace WinFormsApp1
                 }
                 if (string.IsNullOrEmpty(txtUlubionyAutor.Text))
                 {
-                    MessageBox.Show("Wprowadź Imie i nazwisko swojego ulubionego autora.");
+                    MessageBox.Show("Wprowadź imię i nazwisko swojego ulubionego autora.");
                     throw new ArgumentException("UlubionyAutor is required.");
                 }
                 if (string.IsNullOrEmpty(txtUlubionaKsiazka.Text))
@@ -167,37 +161,37 @@ namespace WinFormsApp1
                 }
                 if (!int.TryParse(txtRokWydania.Text, out int RokWydania) || RokWydania < 0)
                 {
-                    MessageBox.Show("Wprowadź rok wydania książki którą kupiłeś.");
+                    MessageBox.Show("Wprowadź rok wydania książki, którą kupiłeś.");
                     throw new ArgumentException("Invalid year of publication.");
                 }
                 if (!int.TryParse(txtPrzeczytaneStrony.Text, out int PrzeczytaneStrony) || PrzeczytaneStrony < 0)
                 {
-                    MessageBox.Show("Wprowadź przeczytane strony.");
+                    MessageBox.Show("Wprowadź liczbę przeczytanych stron.");
                     throw new ArgumentException("Invalid number of read pages.");
                 }
                 if (string.IsNullOrEmpty(txtImieAutora.Text))
                 {
-                    MessageBox.Show("Wprowadź Imię autora.");
+                    MessageBox.Show("Wprowadź imię autora.");
                     throw new ArgumentException("ImieAutora is required.");
                 }
                 if (string.IsNullOrEmpty(txtNazwiskoAutora.Text))
                 {
-                    MessageBox.Show("Wprowadź Nazwisko autora.");
+                    MessageBox.Show("Wprowadź nazwisko autora.");
                     throw new ArgumentException("NazwiskoAutora is required.");
                 }
                 if (string.IsNullOrEmpty(txtTytul.Text))
                 {
-                    MessageBox.Show("Wprowadź Tytuł Książki.");
+                    MessageBox.Show("Wprowadź tytuł książki.");
                     throw new ArgumentException("Tytul is required.");
                 }
                 if (!int.TryParse(txtRokWyd.Text, out int RokWyd) || RokWyd < 0)
                 {
                     MessageBox.Show("Wprowadź rok wydania książki.");
-                    throw new ArgumentException("Invalid number of year.");
+                    throw new ArgumentException("Invalid year.");
                 }
                 if (!int.TryParse(txtPrzeczytaneKs.Text, out int PrzeczytaneKs) || PrzeczytaneKs < 0)
                 {
-                    MessageBox.Show("Wprowadź przeczytane strony.");
+                    MessageBox.Show("Wprowadź liczbę przeczytanych stron.");
                     throw new ArgumentException("Invalid number of read pages.");
                 }
 
@@ -209,15 +203,6 @@ namespace WinFormsApp1
                 Console.WriteLine("Validation error: " + ex.Message);
                 return false;
             }
-            
         }
-
     }
 }
-
-
-
-
-
-
-
