@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static WinFormsApp1.Okno;
 
 namespace WinFormsApp1
@@ -62,7 +63,7 @@ namespace WinFormsApp1
         private void buttonNastepny_Click(object sender, EventArgs e)
         {
 
-            if (listBoxData2 != null && listBoxData2.Count >0)
+            if (listBoxData2 != null && listBoxData2.Count > 0)
             {
                 listBox1.Items.Clear();
                 listBox1.Items.AddRange(listBoxData2.ToArray());
@@ -96,7 +97,7 @@ namespace WinFormsApp1
             //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-1.jpg");
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.StretchImage;
 
- 
+
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureZdjecie2.SizeMode = PictureBoxSizeMode.StretchImage;
 
@@ -204,10 +205,20 @@ namespace WinFormsApp1
                 return Nazwisko.CompareTo(other.Nazwisko);
 
                 // Sort by Age
-                 return Wiek.CompareTo(other.Wiek);
+                return Wiek.CompareTo(other.Wiek);
             }
         }
 
+        public class ListBoxItem
+        {
+            public string Text { get; set; }
+            public Image Image { get; set; }
+
+            public override string ToString()
+            {
+                return Text;
+            }
+        }
 
         private void buttonWyswietl_Click(object sender, EventArgs e)
         {
@@ -243,40 +254,95 @@ namespace WinFormsApp1
                 MessageBox.Show("Nie wybrano żadnego obiektu do usunięcia.");
             }
         }
-
-        private void buttonSortImie_Click(object sender, EventArgs e)
+        private void buttonSort_Click(object sender, EventArgs e)
         {
-            if (listBox1.Items.Count > 1) // Sprawdź, czy jest więcej niż jeden element
+            System.Windows.Forms.Button button = (System.Windows.Forms.Button)sender;
+            switch (button.Name)
             {
-                objectList = objectList.OrderBy(obj => obj.Imie).ToList();
-                RefreshList();
+                case "buttonSortImie":
+                    objectList = objectList.OrderBy(obj => obj.Imie).ToList();
+                    break;
+                case "buttonSortNazwisko":
+                    objectList = objectList.OrderBy(obj => obj.Nazwisko).ToList();
+                    break;
+                case "buttonSortWiek":
+                    objectList = objectList.OrderBy(obj => obj.Wiek).ToList();
+                    break;
+                default:
+                    break;
             }
+            RefreshList();
         }
-
-        private void buttonSortNazwisko_Click(object sender, EventArgs e)
-        {
-            if (listBox1.Items.Count > 1) // Sprawdź, czy jest więcej niż jeden element
-            {
-                objectList = objectList.OrderBy(obj => obj.Nazwisko).ToList();
-                RefreshList();
-            }
-        }
-
-        private void buttonSortWiek_Click(object sender, EventArgs e)
-        {
-            if (listBox1.Items.Count > 1) // Sprawdź, czy jest więcej niż jeden element
-            {
-                objectList = objectList.OrderBy(obj => obj.Wiek).ToList();
-                RefreshList();
-            }
-        }
-
         private void RefreshList()
         {
             listBox1.Items.Clear();
             listBox1.Items.AddRange(objectList.Select(obj => $"{obj.Imie} {obj.Nazwisko} ({obj.Wiek})").ToArray());
         }
+        private void buttonImie_Click(object sender, EventArgs e)
+        {
+            string searchPhrase = textBoxImie.Text;
 
+            List<string> searchResults = listBox1.Items
+            .OfType<string>() // Filter the items to only include strings
+            .Where(item => item.ToLower().Contains(searchPhrase.ToLower()))
+            .ToList();
+
+            if (searchResults.Count > 0)
+            {
+                listBox1.Items.Clear();
+                listBox1.Items.AddRange(searchResults.ToArray());
+                MessageBox.Show($"Znaleziono {searchResults.Count} obiektów z imieniem '{searchPhrase}'.");
+            }
+            else
+            {
+                listBox1.Items.Clear();
+                MessageBox.Show("Brak obiektów pasujących do podanego imienia.");
+            }
+        }
+
+        private void buttonNazwisko_Click(object sender, EventArgs e)
+        {
+            string searchPhrase = textBoxNazwisko.Text;
+
+            List<string> searchResults = listBox1.Items
+            .OfType<string>() // Filter the items to only include strings
+            .Where(item => item.ToLower().Contains(searchPhrase.ToLower()))
+            .ToList();
+
+            if (searchResults.Count > 0)
+            {
+                listBox1.Items.Clear();
+                listBox1.Items.AddRange(searchResults.ToArray());
+                MessageBox.Show($"Znaleziono {searchResults.Count} obiektów z nazwiskiem '{searchPhrase}'.");
+            }
+            else
+            {
+                listBox1.Items.Clear();
+                MessageBox.Show("Brak obiektów pasujących do podanego nazwiska.");
+            }
+        }
+
+        private void buttonWiek_Click(object sender, EventArgs e)
+        {
+            string searchPhrase = textBoxPrzeczytaneStrony.Text;
+
+            List<string> searchResults = listBox1.Items
+            .OfType<string>() // Filter the items to only include strings
+            .Where(item => item.ToLower().Contains(searchPhrase.ToLower()))
+            .ToList();
+
+            if (searchResults.Count > 0)
+            {
+                listBox1.Items.Clear();
+                listBox1.Items.AddRange(searchResults.ToArray());
+                MessageBox.Show($"Znaleziono {searchResults.Count} obiektów z przeczytanymi stronami '{searchPhrase}'.");
+            }
+            else
+            {
+                listBox1.Items.Clear();
+                MessageBox.Show("Brak obiektów pasujących do ilości przeczytanych stron.");
+            }
+        }
 
     }
 }

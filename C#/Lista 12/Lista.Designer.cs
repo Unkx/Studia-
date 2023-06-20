@@ -36,9 +36,16 @@
             buttonWczytaj = new Button();
             buttonWyswietl = new Button();
             buttonUsun = new Button();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            buttonSort = new Button();
+            label1 = new Label();
+            textBoxImie = new TextBox();
+            label2 = new Label();
+            textBoxNazwisko = new TextBox();
+            label3 = new Label();
+            textBoxPrzeczytaneStrony = new TextBox();
+            buttonNazwisko = new Button();
+            buttonWiek = new Button();
+            buttonImie = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureZdjecie2).BeginInit();
             SuspendLayout();
             // 
@@ -54,7 +61,7 @@
             // 
             // buttonNastępny
             // 
-            buttonNastępny.Location = new Point(350, 298);
+            buttonNastępny.Location = new Point(299, 298);
             buttonNastępny.Margin = new Padding(3, 2, 3, 2);
             buttonNastępny.Name = "buttonNastępny";
             buttonNastępny.Size = new Size(82, 22);
@@ -75,7 +82,7 @@
             // 
             // buttonPoprzedni
             // 
-            buttonPoprzedni.Location = new Point(228, 298);
+            buttonPoprzedni.Location = new Point(188, 298);
             buttonPoprzedni.Margin = new Padding(3, 2, 3, 2);
             buttonPoprzedni.Name = "buttonPoprzedni";
             buttonPoprzedni.Size = new Size(82, 22);
@@ -116,7 +123,7 @@
             // 
             // buttonUsun
             // 
-            buttonUsun.Location = new Point(479, 298);
+            buttonUsun.Location = new Point(412, 297);
             buttonUsun.Name = "buttonUsun";
             buttonUsun.Size = new Size(75, 23);
             buttonUsun.TabIndex = 5;
@@ -124,44 +131,109 @@
             buttonUsun.UseVisualStyleBackColor = true;
             buttonUsun.Click += buttonUsun_Click;
             // 
-            // button1
+            // buttonSort
             // 
-            button1.Location = new Point(613, 50);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 6;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += buttonSortImie_Click;
+            buttonSort.Location = new Point(525, 297);
+            buttonSort.Name = "buttonSort";
+            buttonSort.Size = new Size(75, 23);
+            buttonSort.TabIndex = 6;
+            buttonSort.Text = "Sortuj";
+            buttonSort.UseVisualStyleBackColor = true;
+            buttonSort.Click += buttonSort_Click;
             // 
-            // button2
+            // label1
             // 
-            button2.Location = new Point(613, 94);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 7;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += buttonSortNazwisko_Click;
+            label1.AutoSize = true;
+            label1.Location = new Point(669, 32);
+            label1.Name = "label1";
+            label1.Size = new Size(69, 15);
+            label1.TabIndex = 7;
+            label1.Text = "Podaj Imię :";
             // 
-            // button3
+            // textBoxImie
             // 
-            button3.Location = new Point(613, 140);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 8;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += buttonSortWiek_Click;
+            textBoxImie.Location = new Point(655, 59);
+            textBoxImie.Name = "textBoxImie";
+            textBoxImie.Size = new Size(100, 23);
+            textBoxImie.TabIndex = 8;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(659, 126);
+            label2.Name = "label2";
+            label2.Size = new Size(96, 15);
+            label2.TabIndex = 7;
+            label2.Text = "Podaj Nazwisko :";
+            // 
+            // textBoxNazwisko
+            // 
+            textBoxNazwisko.Location = new Point(655, 144);
+            textBoxNazwisko.Name = "textBoxNazwisko";
+            textBoxNazwisko.Size = new Size(100, 23);
+            textBoxNazwisko.TabIndex = 8;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(616, 204);
+            label3.Name = "label3";
+            label3.Size = new Size(178, 15);
+            label3.TabIndex = 7;
+            label3.Text = "Podaj ilość przeczytanych stron :";
+            // 
+            // textBoxPrzeczytaneStrony
+            // 
+            textBoxPrzeczytaneStrony.Location = new Point(655, 226);
+            textBoxPrzeczytaneStrony.Name = "textBoxPrzeczytaneStrony";
+            textBoxPrzeczytaneStrony.Size = new Size(100, 23);
+            textBoxPrzeczytaneStrony.TabIndex = 8;
+            // 
+            // buttonNazwisko
+            // 
+            buttonNazwisko.Location = new Point(651, 173);
+            buttonNazwisko.Name = "buttonNazwisko";
+            buttonNazwisko.Size = new Size(118, 23);
+            buttonNazwisko.TabIndex = 10;
+            buttonNazwisko.Text = "Sprawdź";
+            buttonNazwisko.UseVisualStyleBackColor = true;
+            buttonNazwisko.Click += buttonNazwisko_Click;
+            // 
+            // buttonWiek
+            // 
+            buttonWiek.Location = new Point(651, 266);
+            buttonWiek.Name = "buttonWiek";
+            buttonWiek.Size = new Size(118, 23);
+            buttonWiek.TabIndex = 11;
+            buttonWiek.Text = "Sprawdź";
+            buttonWiek.UseVisualStyleBackColor = true;
+            buttonWiek.Click += buttonWiek_Click;
+            // 
+            // buttonImie
+            // 
+            buttonImie.Location = new Point(651, 94);
+            buttonImie.Name = "buttonImie";
+            buttonImie.Size = new Size(118, 23);
+            buttonImie.TabIndex = 12;
+            buttonImie.Text = "Sprawdź";
+            buttonImie.UseVisualStyleBackColor = true;
+            buttonImie.Click += buttonImie_Click;
             // 
             // Lista
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(700, 338);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            ClientSize = new Size(804, 396);
+            Controls.Add(buttonImie);
+            Controls.Add(buttonWiek);
+            Controls.Add(buttonNazwisko);
+            Controls.Add(textBoxPrzeczytaneStrony);
+            Controls.Add(label3);
+            Controls.Add(textBoxNazwisko);
+            Controls.Add(label2);
+            Controls.Add(textBoxImie);
+            Controls.Add(label1);
+            Controls.Add(buttonSort);
             Controls.Add(buttonUsun);
             Controls.Add(buttonWyswietl);
             Controls.Add(buttonWczytaj);
@@ -175,6 +247,7 @@
             Text = "Lista";
             ((System.ComponentModel.ISupportInitialize)pictureZdjecie2).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -187,8 +260,15 @@
         private Button buttonWczytaj;
         private Button buttonWyswietl;
         private Button buttonUsun;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private Button buttonSort;
+        private Label label1;
+        private TextBox textBoxImie;
+        private Label label2;
+        private TextBox textBoxNazwisko;
+        private Label label3;
+        private TextBox textBoxPrzeczytaneStrony;
+        private Button buttonNazwisko;
+        private Button buttonWiek;
+        private Button buttonImie;
     }
 }
