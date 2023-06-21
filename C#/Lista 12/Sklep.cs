@@ -95,7 +95,7 @@ namespace WinFormsApp1
                 List<Store> storeList = Okno.listP.Cast<Store>().ToList();
                 // Obliczenie i wyświetlenie średniej ilości książek
                 double sredniaKsiazek = ObliczSredniaKsiazek(storeList);
-                MessageBox.Show("Średnia ilość książek we wszystkich sklepach: " + sredniaKsiazek);
+                MessageBox.Show("Średnia il5ość książek we wszystkich sklepach: " + sredniaKsiazek);
 
                 pictureZdjecie2.SizeMode = PictureBoxSizeMode.Zoom;
                 //pictureZdjecie2.Image = new Bitmap("C:\\Users\\mi140\\OneDrive\\Pulpit\\Bez nazwy-2.jpg");//ścierzka dla laptopa

@@ -2,12 +2,13 @@
 
 class Book : Bookstore
 {
-    
+    int id;
     string imieAutora;
     string nazwiskoAutora;
     string tytul;
     int rokWydania;
     int przeczytaneStrony;
+    protected string Tytul;
 
     public static bool operator ==(Book book1, Book book2)
     {
@@ -42,8 +43,10 @@ class Book : Bookstore
         this.tytul = tytul;
         this.rokWydania = rokWydania;
         this.przeczytaneStrony = przeczytaneStrony;
-       
-    }
+        this.id = id;
+        this.Tytul = tytul;
+
+}
 
     public Book(Book o) : base(o)
     {

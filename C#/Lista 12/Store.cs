@@ -18,7 +18,7 @@ class Store : Bookstore
     public Store(string Imie, string Nazwisko, int Wiek, string Adres,int Koszyk,string UlubionyAutor,string UlubionaKsiazka,string KupionaKsiazka,int RokWydania,int PrzeczytaneStrony,DateTime Data ,int Ksiazki, int LiczbaPracownikow, string sklep, string email)
         : base(Imie, Nazwisko, Wiek, Adres, Koszyk, UlubionyAutor, UlubionaKsiazka, KupionaKsiazka, RokWydania, PrzeczytaneStrony,Data)
     {
-
+        this.id = id;
         this.Ksiazki = Ksiazki;
         this.LiczbaPracownikow = LiczbaPracownikow;
         this.Sklep = sklep;
@@ -26,6 +26,7 @@ class Store : Bookstore
     }
     public Store()
     {
+        this.id = 0;
         this.LiczbaPracownikow = 0;
         this.Ksiazki = 0;
         this.Sklep = "-";
@@ -34,6 +35,7 @@ class Store : Bookstore
     }
     public Store(Store o) :base(o)
     {
+        this.id = o.id;
         this.LiczbaPracownikow = o.LiczbaPracownikow;
         this.Ksiazki = o.Ksiazki;
         this.Sklep = o.Sklep;

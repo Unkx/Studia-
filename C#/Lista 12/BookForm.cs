@@ -19,7 +19,7 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
-
+        private int identifier = 0;
         private void buttonUzupelnij_Click(object sender, EventArgs e)
         {
             txtImie.Text = "Jan";
@@ -67,6 +67,8 @@ namespace WinFormsApp1
         {
             if (ValidateData())
             {
+
+
                 Book s1 = new Book(txtImie.Text, txtNazwisko.Text, Convert.ToInt32(this.txtWiek.Text), txtAdres.Text, Convert.ToInt32(this.txtKoszyk.Text), txtUlubionyAutor.Text, txtUlubionaKsiazka.Text, txtKupionaKsiazka.Text, Convert.ToInt32(this.txtRokWydania.Text), Convert.ToInt32(this.txtPrzeczytaneStrony.Text), dateCzas.Value, txtImieAutora.Text, txtNazwiskoAutora.Text, txtTytul.Text, Convert.ToInt32(this.txtRokWyd.Text), Convert.ToInt32(this.txtPrzeczytaneKs.Text));
 
                 Okno.listP.Add(s1); // Dodanie obiektu do listy

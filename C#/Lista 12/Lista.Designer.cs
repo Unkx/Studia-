@@ -52,19 +52,17 @@
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(188, 32);
-            listBox1.Margin = new Padding(3, 2, 3, 2);
+            listBox1.ItemHeight = 20;
+            listBox1.Location = new Point(215, 43);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(412, 244);
+            listBox1.Size = new Size(470, 324);
             listBox1.TabIndex = 0;
             // 
             // buttonNastępny
             // 
-            buttonNastępny.Location = new Point(299, 298);
-            buttonNastępny.Margin = new Padding(3, 2, 3, 2);
+            buttonNastępny.Location = new Point(342, 397);
             buttonNastępny.Name = "buttonNastępny";
-            buttonNastępny.Size = new Size(82, 22);
+            buttonNastępny.Size = new Size(94, 29);
             buttonNastępny.TabIndex = 1;
             buttonNastępny.Text = "Następny";
             buttonNastępny.UseVisualStyleBackColor = true;
@@ -72,20 +70,18 @@
             // 
             // pictureZdjecie2
             // 
-            pictureZdjecie2.Location = new Point(479, 220);
-            pictureZdjecie2.Margin = new Padding(3, 2, 3, 2);
+            pictureZdjecie2.Location = new Point(547, 293);
             pictureZdjecie2.Name = "pictureZdjecie2";
-            pictureZdjecie2.Padding = new Padding(394, 38, 0, 30);
-            pictureZdjecie2.Size = new Size(109, 46);
+            pictureZdjecie2.Padding = new Padding(450, 51, 0, 40);
+            pictureZdjecie2.Size = new Size(125, 61);
             pictureZdjecie2.TabIndex = 2;
             pictureZdjecie2.TabStop = false;
             // 
             // buttonPoprzedni
             // 
-            buttonPoprzedni.Location = new Point(188, 298);
-            buttonPoprzedni.Margin = new Padding(3, 2, 3, 2);
+            buttonPoprzedni.Location = new Point(215, 397);
             buttonPoprzedni.Name = "buttonPoprzedni";
-            buttonPoprzedni.Size = new Size(82, 22);
+            buttonPoprzedni.Size = new Size(94, 29);
             buttonPoprzedni.TabIndex = 3;
             buttonPoprzedni.Text = "Poprzedni";
             buttonPoprzedni.UseVisualStyleBackColor = true;
@@ -93,9 +89,10 @@
             // 
             // buttonZapisz
             // 
-            buttonZapisz.Location = new Point(63, 50);
+            buttonZapisz.Location = new Point(87, 125);
+            buttonZapisz.Margin = new Padding(3, 4, 3, 4);
             buttonZapisz.Name = "buttonZapisz";
-            buttonZapisz.Size = new Size(75, 23);
+            buttonZapisz.Size = new Size(86, 31);
             buttonZapisz.TabIndex = 4;
             buttonZapisz.Text = "Zapisz";
             buttonZapisz.UseVisualStyleBackColor = true;
@@ -103,9 +100,10 @@
             // 
             // buttonWczytaj
             // 
-            buttonWczytaj.Location = new Point(63, 94);
+            buttonWczytaj.Location = new Point(87, 183);
+            buttonWczytaj.Margin = new Padding(3, 4, 3, 4);
             buttonWczytaj.Name = "buttonWczytaj";
-            buttonWczytaj.Size = new Size(75, 23);
+            buttonWczytaj.Size = new Size(86, 31);
             buttonWczytaj.TabIndex = 4;
             buttonWczytaj.Text = "Wczytaj";
             buttonWczytaj.UseVisualStyleBackColor = true;
@@ -113,9 +111,10 @@
             // 
             // buttonWyswietl
             // 
-            buttonWyswietl.Location = new Point(63, 140);
+            buttonWyswietl.Location = new Point(87, 245);
+            buttonWyswietl.Margin = new Padding(3, 4, 3, 4);
             buttonWyswietl.Name = "buttonWyswietl";
-            buttonWyswietl.Size = new Size(75, 23);
+            buttonWyswietl.Size = new Size(86, 31);
             buttonWyswietl.TabIndex = 4;
             buttonWyswietl.Text = "Wyświetl";
             buttonWyswietl.UseVisualStyleBackColor = true;
@@ -123,9 +122,10 @@
             // 
             // buttonUsun
             // 
-            buttonUsun.Location = new Point(412, 297);
+            buttonUsun.Location = new Point(471, 396);
+            buttonUsun.Margin = new Padding(3, 4, 3, 4);
             buttonUsun.Name = "buttonUsun";
-            buttonUsun.Size = new Size(75, 23);
+            buttonUsun.Size = new Size(86, 31);
             buttonUsun.TabIndex = 5;
             buttonUsun.Text = "Usuń";
             buttonUsun.UseVisualStyleBackColor = true;
@@ -133,9 +133,10 @@
             // 
             // buttonSort
             // 
-            buttonSort.Location = new Point(525, 297);
+            buttonSort.Location = new Point(600, 396);
+            buttonSort.Margin = new Padding(3, 4, 3, 4);
             buttonSort.Name = "buttonSort";
-            buttonSort.Size = new Size(75, 23);
+            buttonSort.Size = new Size(86, 31);
             buttonSort.TabIndex = 6;
             buttonSort.Text = "Sortuj";
             buttonSort.UseVisualStyleBackColor = true;
@@ -144,56 +145,60 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(669, 32);
+            label1.Location = new Point(765, 43);
             label1.Name = "label1";
-            label1.Size = new Size(69, 15);
+            label1.Size = new Size(86, 20);
             label1.TabIndex = 7;
             label1.Text = "Podaj Imię :";
             // 
             // textBoxImie
             // 
-            textBoxImie.Location = new Point(655, 59);
+            textBoxImie.Location = new Point(749, 79);
+            textBoxImie.Margin = new Padding(3, 4, 3, 4);
             textBoxImie.Name = "textBoxImie";
-            textBoxImie.Size = new Size(100, 23);
+            textBoxImie.Size = new Size(114, 27);
             textBoxImie.TabIndex = 8;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(659, 126);
+            label2.Location = new Point(753, 168);
             label2.Name = "label2";
-            label2.Size = new Size(96, 15);
+            label2.Size = new Size(120, 20);
             label2.TabIndex = 7;
             label2.Text = "Podaj Nazwisko :";
             // 
             // textBoxNazwisko
             // 
-            textBoxNazwisko.Location = new Point(655, 144);
+            textBoxNazwisko.Location = new Point(749, 192);
+            textBoxNazwisko.Margin = new Padding(3, 4, 3, 4);
             textBoxNazwisko.Name = "textBoxNazwisko";
-            textBoxNazwisko.Size = new Size(100, 23);
+            textBoxNazwisko.Size = new Size(114, 27);
             textBoxNazwisko.TabIndex = 8;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(616, 204);
+            label3.Location = new Point(704, 272);
             label3.Name = "label3";
-            label3.Size = new Size(178, 15);
+            label3.Size = new Size(221, 20);
             label3.TabIndex = 7;
             label3.Text = "Podaj ilość przeczytanych stron :";
             // 
             // textBoxPrzeczytaneStrony
             // 
-            textBoxPrzeczytaneStrony.Location = new Point(655, 226);
+            textBoxPrzeczytaneStrony.Location = new Point(749, 301);
+            textBoxPrzeczytaneStrony.Margin = new Padding(3, 4, 3, 4);
             textBoxPrzeczytaneStrony.Name = "textBoxPrzeczytaneStrony";
-            textBoxPrzeczytaneStrony.Size = new Size(100, 23);
+            textBoxPrzeczytaneStrony.Size = new Size(114, 27);
             textBoxPrzeczytaneStrony.TabIndex = 8;
             // 
             // buttonNazwisko
             // 
-            buttonNazwisko.Location = new Point(651, 173);
+            buttonNazwisko.Location = new Point(744, 231);
+            buttonNazwisko.Margin = new Padding(3, 4, 3, 4);
             buttonNazwisko.Name = "buttonNazwisko";
-            buttonNazwisko.Size = new Size(118, 23);
+            buttonNazwisko.Size = new Size(135, 31);
             buttonNazwisko.TabIndex = 10;
             buttonNazwisko.Text = "Sprawdź";
             buttonNazwisko.UseVisualStyleBackColor = true;
@@ -201,9 +206,10 @@
             // 
             // buttonWiek
             // 
-            buttonWiek.Location = new Point(651, 266);
+            buttonWiek.Location = new Point(744, 355);
+            buttonWiek.Margin = new Padding(3, 4, 3, 4);
             buttonWiek.Name = "buttonWiek";
-            buttonWiek.Size = new Size(118, 23);
+            buttonWiek.Size = new Size(135, 31);
             buttonWiek.TabIndex = 11;
             buttonWiek.Text = "Sprawdź";
             buttonWiek.UseVisualStyleBackColor = true;
@@ -211,9 +217,10 @@
             // 
             // buttonImie
             // 
-            buttonImie.Location = new Point(651, 94);
+            buttonImie.Location = new Point(744, 125);
+            buttonImie.Margin = new Padding(3, 4, 3, 4);
             buttonImie.Name = "buttonImie";
-            buttonImie.Size = new Size(118, 23);
+            buttonImie.Size = new Size(135, 31);
             buttonImie.TabIndex = 12;
             buttonImie.Text = "Sprawdź";
             buttonImie.UseVisualStyleBackColor = true;
@@ -221,9 +228,9 @@
             // 
             // Lista
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(804, 396);
+            ClientSize = new Size(983, 532);
             Controls.Add(buttonImie);
             Controls.Add(buttonWiek);
             Controls.Add(buttonNazwisko);
@@ -242,7 +249,6 @@
             Controls.Add(pictureZdjecie2);
             Controls.Add(buttonNastępny);
             Controls.Add(listBox1);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Lista";
             Text = "Lista";
             ((System.ComponentModel.ISupportInitialize)pictureZdjecie2).EndInit();

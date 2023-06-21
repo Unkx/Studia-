@@ -6,6 +6,8 @@ using System.Windows.Forms;
 
 public abstract class Bookstore : IComparable<Bookstore>
 {
+    private static int counter = 0; // Static counter to track the id
+    protected int id;
     protected string Imie;
     protected string Nazwisko;
     protected int Wiek;
@@ -20,6 +22,7 @@ public abstract class Bookstore : IComparable<Bookstore>
 
     public Bookstore(string Imie, string Nazwisko, int Wiek, string Adres, int Koszyk, string UlubionyAutor, string UlubionaKsiazka, string KupionaKsiazka, int RokWydania, int PrzeczytaneStrony, DateTime Data)
     {
+        this.id = ++counter;
         this.Imie = Imie;
         this.Nazwisko = Nazwisko;
         this.Wiek = Wiek;
@@ -35,6 +38,7 @@ public abstract class Bookstore : IComparable<Bookstore>
 
     public Bookstore()
     {
+       
         this.Imie = "";
         this.Nazwisko = "";
         this.Wiek = 0;
@@ -49,6 +53,7 @@ public abstract class Bookstore : IComparable<Bookstore>
 
     public Bookstore(Bookstore o)
     {
+        this.id = o.id;
         this.Imie = o.Imie;
         this.Nazwisko = o.Nazwisko;
         this.Wiek = o.Wiek;
@@ -65,6 +70,7 @@ public abstract class Bookstore : IComparable<Bookstore>
     public virtual void Wypisz(ListBox ls)
     {
         ls.Items.Add("==================================");
+        ls.Items.Add("\tid : ");
         ls.Items.Add("\tTwoje dane : ");
         ls.Items.Add("Imię :\t" + Imie);
         ls.Items.Add("Nazwisko :\t" + Nazwisko);
