@@ -68,13 +68,14 @@ namespace WinFormsApp1
             txtEmail.Clear();
 
         }
-
+        public int id;
         private void buttonZatwierdz_Click(object sender, EventArgs e)
         {
             if (ValidateData())
             {
                 Store s1 = new Store(txtImie.Text, txtNazwisko.Text, Convert.ToInt32(this.txtWiek.Text), txtAdres.Text, Convert.ToInt32(this.txtKoszyk.Text), txtUlubionyAutor.Text, txtUlubionaKsiazka.Text, txtKupionaKsiazka.Text, Convert.ToInt32(this.txtRokWydania.Text), Convert.ToInt32(this.txtPrzeczytaneStrony.Text), dateCzas.Value, Convert.ToInt32(txtKsiazki.Text), Convert.ToInt32(txtPracownicy.Text), txtPracownicy.Text, txtEmail.Text);
 
+                this.id = id;
                 Lista form4 = new Lista();
 
                 Okno.listP.Add(s1); // dodanie obiektu do listy

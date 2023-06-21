@@ -2,7 +2,7 @@
 
 class Book : Bookstore
 {
-    int id;
+    //int id;
     string imieAutora;
     string nazwiskoAutora;
     string tytul;
@@ -43,7 +43,7 @@ class Book : Bookstore
         this.tytul = tytul;
         this.rokWydania = rokWydania;
         this.przeczytaneStrony = przeczytaneStrony;
-        this.id = id;
+        //this.id = id;
         this.Tytul = tytul;
 
 }
@@ -60,6 +60,7 @@ class Book : Bookstore
     public override void Wypisz(ListBox ls)
     {
         base.Wypisz(ls);
+       // ls.Items.Add("\tId :" + id);
         ls.Items.Add("Imie Autora:\t" + imieAutora);
         ls.Items.Add("Nazwisko Autora:\t" + nazwiskoAutora);
         ls.Items.Add("Tytuł Książki\t" + tytul);

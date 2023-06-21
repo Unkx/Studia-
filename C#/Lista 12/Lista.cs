@@ -16,10 +16,16 @@ namespace WinFormsApp1
 {
     public partial class Lista : Form
     {
+
         public static List<string> listBoxData { get; set; }
         public static List<string> listBoxData2 { get; set; }
 
         private List<MyClass> objectList;
+        public int Id { get; set; }
+        public string Imie { get; set; }
+        public string Nazwisko { get; set; }
+        public int Wiek { get; set; }
+
         public Lista()
         {
             InitializeComponent();
@@ -192,8 +198,6 @@ namespace WinFormsApp1
 
             public int CompareTo(MyClass other)
             {
-                // Implement comparison logic based on the selected field (name, surname, or age)
-                // Modify the conditions as per your sorting requirements
 
                 if (other == null)
                     return 1;
@@ -254,30 +258,20 @@ namespace WinFormsApp1
                 MessageBox.Show("Nie wybrano żadnego obiektu do usunięcia.");
             }
         }
-        private void buttonSort_Click(object sender, EventArgs e)
+        private void buttonSortId_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Button button = (System.Windows.Forms.Button)sender;
-            switch (button.Name)
-            {
-                case "buttonSortImie":
-                    objectList = objectList.OrderBy(obj => obj.Imie).ToList();
-                    break;
-                case "buttonSortNazwisko":
-                    objectList = objectList.OrderBy(obj => obj.Nazwisko).ToList();
-                    break;
-                case "buttonSortWiek":
-                    objectList = objectList.OrderBy(obj => obj.Wiek).ToList();
-                    break;
-                default:
-                    break;
-            }
-            RefreshList();
+            Okno.listP.Sort();
+            //listBoxData.Sort();
+            listBoxData2.Sort();
+
         }
+
         private void RefreshList()
         {
             listBox1.Items.Clear();
             listBox1.Items.AddRange(objectList.Select(obj => $"{obj.Imie} {obj.Nazwisko} ({obj.Wiek})").ToArray());
         }
+
         private void buttonImie_Click(object sender, EventArgs e)
         {
             string searchPhrase = textBoxImie.Text;
@@ -342,6 +336,14 @@ namespace WinFormsApp1
                 listBox1.Items.Clear();
                 MessageBox.Show("Brak obiektów pasujących do ilości przeczytanych stron.");
             }
+        }
+
+        private void buttonSort_Click(object sender, EventArgs e)
+        {
+            listBoxData.Sort(); //sortowanie elementów listy (działa dzięki temu, że klasa
+                           //metody CompareTo)
+            listBox1.Items.Clear();
+
         }
 
     }

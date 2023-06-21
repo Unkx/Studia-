@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 public abstract class Bookstore : IComparable<Bookstore>
 {
-    private static int counter = 0; // Static counter to track the id
+    protected static int nextId = 1; // Static variable to track the next ID to be assigned
     protected int id;
     protected string Imie;
     protected string Nazwisko;
@@ -22,7 +22,7 @@ public abstract class Bookstore : IComparable<Bookstore>
 
     public Bookstore(string Imie, string Nazwisko, int Wiek, string Adres, int Koszyk, string UlubionyAutor, string UlubionaKsiazka, string KupionaKsiazka, int RokWydania, int PrzeczytaneStrony, DateTime Data)
     {
-        this.id = ++counter;
+        this.id = nextId++;
         this.Imie = Imie;
         this.Nazwisko = Nazwisko;
         this.Wiek = Wiek;
@@ -35,8 +35,37 @@ public abstract class Bookstore : IComparable<Bookstore>
         this.PrzeczytaneStrony = PrzeczytaneStrony;
         this.Data = Data;
     }
+    public int CompareTo(Bookstore bookstore)
+    {
+        if (bookstore == null)
+            return 1;
+        //Będziemy chcieli sortować obiekty według nazwiska
+        if (String.Compare(this.Nazwisko, bookstore.Nazwisko) == 1)
+            return 1;
+        else if (String.Compare(this.Nazwisko, bookstore.Nazwisko) == -1)
+            return -1;
+        else
+        {
+            //Obiekty o takich samych nazwiskach będziemy chcieli sortować (dodatkowo) według imienia
+            if (String.Compare(this.Imie, bookstore.Imie) == 1)
+                return 1;
+            else if (String.Compare(this.Imie, bookstore.Imie) == -1)
+                return -1;
+            else
+            {
+                //Obiekty o takich samych nazwiskach i imionach będziemy chcieli sortować (dodatkowo)
+                //według daty urodzenia
+                if (this.id > bookstore.id)
+                    return 1;
+                else if (this.id < bookstore.id)
+                    return -1;
+                return 0;
+            }
+        }
+    }
 
-    public Bookstore()
+
+public Bookstore()
     {
        
         this.Imie = "";
@@ -53,7 +82,7 @@ public abstract class Bookstore : IComparable<Bookstore>
 
     public Bookstore(Bookstore o)
     {
-        this.id = o.id;
+     
         this.Imie = o.Imie;
         this.Nazwisko = o.Nazwisko;
         this.Wiek = o.Wiek;
@@ -70,7 +99,7 @@ public abstract class Bookstore : IComparable<Bookstore>
     public virtual void Wypisz(ListBox ls)
     {
         ls.Items.Add("==================================");
-        ls.Items.Add("\tid : ");
+        ls.Items.Add("\tId : " + id);
         ls.Items.Add("\tTwoje dane : ");
         ls.Items.Add("Imię :\t" + Imie);
         ls.Items.Add("Nazwisko :\t" + Nazwisko);
@@ -162,23 +191,7 @@ public abstract class Bookstore : IComparable<Bookstore>
         DateTime.TryParse(reader.ReadLine(), out DateTime date);
         Data = date;
     }
-    public int CompareTo(Bookstore other)
-    {
-        int lastNameComparison = string.Compare(this.Nazwisko, other.Nazwisko, StringComparison.CurrentCulture);
-        if (lastNameComparison != 0)
-        {
-            return lastNameComparison;
-        }
 
-        int firstNameComparison = string.Compare(this.Imie, other.Imie, StringComparison.CurrentCulture);
-        if (firstNameComparison != 0)
-        {
-            return firstNameComparison;
-        }
-
-        return this.Data.CompareTo(other.Data);
-        
-    }
 
 
 }

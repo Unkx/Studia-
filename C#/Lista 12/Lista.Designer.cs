@@ -140,7 +140,7 @@
             buttonSort.TabIndex = 6;
             buttonSort.Text = "Sortuj";
             buttonSort.UseVisualStyleBackColor = true;
-            buttonSort.Click += buttonSort_Click;
+            buttonSort.Click += buttonSortId_Click;
             // 
             // label1
             // 

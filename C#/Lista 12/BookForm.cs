@@ -19,7 +19,6 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
-        private int identifier = 0;
         private void buttonUzupelnij_Click(object sender, EventArgs e)
         {
             txtImie.Text = "Jan";
