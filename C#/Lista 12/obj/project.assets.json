@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\C#\\Lista 12\\Lista 10.csproj",
-      "projectName": "Lista 10",
-      "projectPath": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\C#\\Lista 12\\Lista 10.csproj",
+      "projectUniqueName": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\C#\\Lista 12\\Lista 12.csproj",
+      "projectName": "Lista 12",
+      "projectPath": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\C#\\Lista 12\\Lista 12.csproj",
       "packagesPath": "C:\\Users\\mi140\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\C#\\Lista 12\\obj\\",
       "projectStyle": "PackageReference",
@@ -64,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
