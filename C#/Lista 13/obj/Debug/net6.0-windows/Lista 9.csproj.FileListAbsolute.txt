@@ -1,0 +1,44 @@
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\Lista 8\bin\Debug\net6.0-windows\Lista 9.exe
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\Lista 8\bin\Debug\net6.0-windows\Lista 9.deps.json
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\Lista 8\bin\Debug\net6.0-windows\Lista 9.runtimeconfig.json
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\Lista 8\bin\Debug\net6.0-windows\Lista 9.dll
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\Lista 8\bin\Debug\net6.0-windows\Lista 9.pdb
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\Lista 8\obj\Debug\net6.0-windows\Lista 9.csproj.AssemblyReference.cache
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\Lista 8\obj\Debug\net6.0-windows\WinFormsApp1.BookForm.resources
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\Lista 8\obj\Debug\net6.0-windows\WinFormsApp1.Lista.resources
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\Lista 8\obj\Debug\net6.0-windows\WinFormsApp1.Okno.resources
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\Lista 8\obj\Debug\net6.0-windows\Lista_5.Porownanie.resources
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\Lista 8\obj\Debug\net6.0-windows\Lista_9.Properties.Resources.resources
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\Lista 8\obj\Debug\net6.0-windows\WinFormsApp1.Sklep.resources
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\Lista 8\obj\Debug\net6.0-windows\Lista 9.csproj.GenerateResource.cache
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\Lista 8\obj\Debug\net6.0-windows\Lista 9.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\Lista 8\obj\Debug\net6.0-windows\Lista 9.AssemblyInfoInputs.cache
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\Lista 8\obj\Debug\net6.0-windows\Lista 9.AssemblyInfo.cs
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\Lista 8\obj\Debug\net6.0-windows\Lista 9.csproj.CoreCompileInputs.cache
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\Lista 8\obj\Debug\net6.0-windows\Lista 9.dll
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\Lista 8\obj\Debug\net6.0-windows\refint\Lista 9.dll
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\Lista 8\obj\Debug\net6.0-windows\Lista 9.pdb
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\Lista 8\obj\Debug\net6.0-windows\Lista 9.genruntimeconfig.cache
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\Lista 8\obj\Debug\net6.0-windows\ref\Lista 9.dll
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\bin\Debug\net6.0-windows\Lista 9.exe
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\bin\Debug\net6.0-windows\Lista 9.deps.json
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\bin\Debug\net6.0-windows\Lista 9.runtimeconfig.json
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\bin\Debug\net6.0-windows\Lista 9.dll
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\bin\Debug\net6.0-windows\Lista 9.pdb
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\obj\Debug\net6.0-windows\Lista 9.csproj.AssemblyReference.cache
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\obj\Debug\net6.0-windows\WinFormsApp1.BookForm.resources
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\obj\Debug\net6.0-windows\WinFormsApp1.Lista.resources
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\obj\Debug\net6.0-windows\WinFormsApp1.Okno.resources
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\obj\Debug\net6.0-windows\Lista_5.Porownanie.resources
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\obj\Debug\net6.0-windows\Lista_9.Properties.Resources.resources
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\obj\Debug\net6.0-windows\WinFormsApp1.Sklep.resources
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\obj\Debug\net6.0-windows\Lista 9.csproj.GenerateResource.cache
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\obj\Debug\net6.0-windows\Lista 9.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\obj\Debug\net6.0-windows\Lista 9.AssemblyInfoInputs.cache
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\obj\Debug\net6.0-windows\Lista 9.AssemblyInfo.cs
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\obj\Debug\net6.0-windows\Lista 9.csproj.CoreCompileInputs.cache
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\obj\Debug\net6.0-windows\Lista 9.dll
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\obj\Debug\net6.0-windows\refint\Lista 9.dll
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\obj\Debug\net6.0-windows\Lista 9.pdb
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\obj\Debug\net6.0-windows\Lista 9.genruntimeconfig.cache
+C:\Users\mi140\source\repos\Unkx\Studia-\C#\Lista 9\obj\Debug\net6.0-windows\ref\Lista 9.dll
