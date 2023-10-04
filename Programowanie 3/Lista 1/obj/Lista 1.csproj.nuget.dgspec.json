@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\Programowanie 3\\WpfApp1\\WpfApp1.csproj": {}
+    "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\Programowanie 3\\Lista 1\\Lista 1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\Programowanie 3\\WpfApp1\\WpfApp1.csproj": {
+    "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\Programowanie 3\\Lista 1\\Lista 1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\Programowanie 3\\WpfApp1\\WpfApp1.csproj",
-        "projectName": "WpfApp1",
-        "projectPath": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\Programowanie 3\\WpfApp1\\WpfApp1.csproj",
+        "projectUniqueName": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\Programowanie 3\\Lista 1\\Lista 1.csproj",
+        "projectName": "Lista 1",
+        "projectPath": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\Programowanie 3\\Lista 1\\Lista 1.csproj",
         "packagesPath": "C:\\Users\\mi140\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\Programowanie 3\\WpfApp1\\obj\\",
+        "outputPath": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\Programowanie 3\\Lista 1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mi140\\AppData\\Roaming\\NuGet\\NuGet.Config",
