@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\mi140\\.nuget\\packages\\": {}
+    "C:\\Users\\134742\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\Programowanie 3\\Lista 1\\Lista 1.csproj",
+      "projectUniqueName": "C:\\Users\\134742\\Source\\Repos\\Studia-\\Programowanie 3\\Lista 1\\Lista 1.csproj",
       "projectName": "Lista 1",
-      "projectPath": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\Programowanie 3\\Lista 1\\Lista 1.csproj",
-      "packagesPath": "C:\\Users\\mi140\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mi140\\source\\repos\\Unkx\\Studia-\\Programowanie 3\\Lista 1\\obj\\",
+      "projectPath": "C:\\Users\\134742\\Source\\Repos\\Studia-\\Programowanie 3\\Lista 1\\Lista 1.csproj",
+      "packagesPath": "C:\\Users\\134742\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\134742\\Source\\Repos\\Studia-\\Programowanie 3\\Lista 1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mi140\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\134742\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
