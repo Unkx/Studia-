@@ -1,0 +1,20 @@
+C:\Users\134742\Source\Repos\Studia-\Programowanie 3\Lista 1\bin\Debug\net6.0-windows\Lista 1.exe
+C:\Users\134742\Source\Repos\Studia-\Programowanie 3\Lista 1\bin\Debug\net6.0-windows\Lista 1.deps.json
+C:\Users\134742\Source\Repos\Studia-\Programowanie 3\Lista 1\bin\Debug\net6.0-windows\Lista 1.runtimeconfig.json
+C:\Users\134742\Source\Repos\Studia-\Programowanie 3\Lista 1\bin\Debug\net6.0-windows\Lista 1.dll
+C:\Users\134742\Source\Repos\Studia-\Programowanie 3\Lista 1\bin\Debug\net6.0-windows\Lista 1.pdb
+C:\Users\134742\Source\Repos\Studia-\Programowanie 3\Lista 1\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\134742\Source\Repos\Studia-\Programowanie 3\Lista 1\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\134742\Source\Repos\Studia-\Programowanie 3\Lista 1\obj\Debug\net6.0-windows\Lista 1_MarkupCompile.cache
+C:\Users\134742\Source\Repos\Studia-\Programowanie 3\Lista 1\obj\Debug\net6.0-windows\Lista 1_MarkupCompile.lref
+C:\Users\134742\Source\Repos\Studia-\Programowanie 3\Lista 1\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\134742\Source\Repos\Studia-\Programowanie 3\Lista 1\obj\Debug\net6.0-windows\Lista 1.g.resources
+C:\Users\134742\Source\Repos\Studia-\Programowanie 3\Lista 1\obj\Debug\net6.0-windows\Lista 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\134742\Source\Repos\Studia-\Programowanie 3\Lista 1\obj\Debug\net6.0-windows\Lista 1.AssemblyInfoInputs.cache
+C:\Users\134742\Source\Repos\Studia-\Programowanie 3\Lista 1\obj\Debug\net6.0-windows\Lista 1.AssemblyInfo.cs
+C:\Users\134742\Source\Repos\Studia-\Programowanie 3\Lista 1\obj\Debug\net6.0-windows\Lista 1.csproj.CoreCompileInputs.cache
+C:\Users\134742\Source\Repos\Studia-\Programowanie 3\Lista 1\obj\Debug\net6.0-windows\Lista 1.dll
+C:\Users\134742\Source\Repos\Studia-\Programowanie 3\Lista 1\obj\Debug\net6.0-windows\refint\Lista 1.dll
+C:\Users\134742\Source\Repos\Studia-\Programowanie 3\Lista 1\obj\Debug\net6.0-windows\Lista 1.pdb
+C:\Users\134742\Source\Repos\Studia-\Programowanie 3\Lista 1\obj\Debug\net6.0-windows\Lista 1.genruntimeconfig.cache
+C:\Users\134742\Source\Repos\Studia-\Programowanie 3\Lista 1\obj\Debug\net6.0-windows\ref\Lista 1.dll
