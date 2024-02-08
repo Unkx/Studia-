@@ -1,0 +1,48 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <Rectangle HorizontalAlignment="Left" Height="434" VerticalAlignment="Center" Width="121">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF16AF1A" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button Click="MainButton_Click" Margin="0,61,679,269" Content="Witamy" FontSize="25" Background="{x:Null}" BorderBrush="{x:Null}" >
+            <Button.Foreground>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF367BA1"/>
+                    <GradientStop Color="#FF3CA71C" Offset="1"/>
+                </RadialGradientBrush>
+            </Button.Foreground>
+        </Button>
+        <Button Click="DevicesButton_Click" Margin="0,165,679,173" Content="Magazyn" FontSize="25" Background="{x:Null}" BorderBrush="{x:Null}" >
+            <Button.Foreground>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF367BA1"/>
+                    <GradientStop Color="#FF3CA71C" Offset="1"/>
+                </RadialGradientBrush>
+            </Button.Foreground>
+        </Button>
+        <Button Click="ShopButton_Click" Margin="0,266,679,83" Background="{x:Null}" FontSize="26" Content="Sklep" BorderBrush="{x:Null}">
+            <Button.Foreground>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF367BA1"/>
+                    <GradientStop Color="#FF3CA71C" Offset="1"/>
+                </RadialGradientBrush>
+            </Button.Foreground>
+        </Button>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="200,0"  >
+            <TextBlock Text="Witaj w Naszym Serwisie Komputerowym" FontSize="20" FontWeight="Bold" Margin="0,0,0,20" />
+            <TextBlock Text="Jesteśmy doświadczonym serwisem komputerowym, specjalizującym się w naprawie i konserwacji sprzętu komputerowego." TextWrapping="Wrap" Margin="0,0,0,10"/>
+            <TextBlock Text="Nasi wykwalifikowani specjaliści są gotowi pomóc Ci rozwiązać wszelkie problemy związane z Twoim komputerem." TextWrapping="Wrap" Margin="0,0,0,20"/>
+        </StackPanel>
+    </Grid>
+</Window>
