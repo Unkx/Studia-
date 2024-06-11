@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
+body {
+    font-family: 'Roboto Mono', monospace;    
+    border-radius: 25px;
+    height: 100px;
+    color: #2c3e50;
+    text-align: center;
+    font-size: 4em;
+    background: rgb(66,11,35);
+	background: radial-gradient(circle, rgba(66,11,35,1) 0%, rgba(15,102,204,1) 100%);
+}
+
+#glowny {
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+}
+
+#site_name_div {
+    border-radius: 25px;
+    background-color: #3498db; /* Blue background color */
+    height: 120px;
+    color: #2c3e50; /* Dark text color */
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 6rem;
+    text-shadow: 2px 2px 2px #FFFFFF;
+}
+
+#top {
+    /* Add your styles for the top section here */
+}
+
+#bottom {
+    /* Add your styles for the bottom section here */
+}
+
+#content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+    flex-wrap: wrap; /* Elastyczny layout przy mniejszych ekranach */
+}
+
+
+#left {
+    height: 32rem;
+    width: 24%;
+	background: #CAF569;
+    padding: 100px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+#right {
+    width: 70%;
+    margin-left: 0;
+    border-radius: 10px; /* Zaokrągla rogi */
+    padding: 10px; /* Dodaje trochę przestrzeni wewnątrz pól */
+    background: rgb(238,174,202);
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+#right_title {
+    color: #f39c12; /* Orange text color */
+    text-align: center;
+    font-family: 'Tilt Neon', sans-serif;
+    font-size: 6rem;
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);
+
+}
+
+#right_content {
+	padding:1rem;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    
+    /* Add your styles for the right content here */
+}
+
+table.navi_table {
+    border-spacing: 0px 2rem;
+    text-align: center;
+   	text-decoration: none;
+}
+
+a.navi {
+    /* Add your styles for navigation links here */
+}
+
+
+a.naviWybrane {
+    text-decoration: none;
+    font-family: 'Young Serif', serif;
+    color: #2c3e50; /* Dark text color */
+    font-size: 120%;
+}
+
+a.naviWybrane:hover {
+    color: #73c7c0; /* Biały tekstowy kolor przy najechaniu */
+    background: #b473c7; /* Gradient kolorów od lightblue do blue */
+    border-radius: 5px; /* Zaokrąglony kształt */
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out; /* Gładki efekt przejścia */
+}
+
+a.navi:hover {
+    transform: scale(1.1); /* Powiększ link przy najechaniu */
+    transition: transform 0.3s ease-in-out;
+}
+
+#footer_div {
+    border-radius: 25px;
+    background-color: #e74c3c; /* Red background color */
+    margin-top: 5%;
+    padding: 20px;
+    border: 1px solid #c0392b; /* Dark red border */
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+#footer_text_div {
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+.footer_text {
+    /* Add your styles for footer text here */
+}
+
+.header_class {
+    text-align: center;
+    background-color: #ecf0f1; /* Efekt podświetlenia na najechaniu */
+    /* Add your styles for the header class here */
+}
+form {
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    margin-top: -1rem;
+    letter-spacing: 0.4rem;
+    font-family: 'Roboto Slab', serif;
+}
+span {
+	text-align: center;
+}
+

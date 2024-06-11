@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+      
+
+    <ui:composition template="/templates/szablon.xhtml">
+         <ui:define name="windowTitle">
+             <h:outputText value="Sklep"/>
+         </ui:define>
+         
+         <ui:define name="content"> 
+      
+
+      
+            <h:form id="shop_table_form">
+            
+           		<p:dataTable id="shop_table" var="shop" value="#{ShopController.shops}"
+                    			 paginator="true" rows="7" paginatorPosition="bottom" rowsPerPageTemplate="5,7,10"
+                                 rowKey="#{shop.id}" selection="#{ShopController.selectedShop}" selectionMode="single">                                    
+                
+                                 
+                <p:ajax event="rowSelect" process="@this" update="@this"/>	
+                <p:ajax event="rowUnselect" process="@this" update="@this"/>
+                
+                <f:facet name="header">
+
+
+    				<p:commandButton value="Dodaj" id="add_button" update=":shop_dialog_form:shop_data" 
+                     oncomplete="PF('shop_dialog').show()" actionListener="#{ShopController.add()}" style="margin-right: 5px;"/>
+
+    				<p:commandButton value="Edytuj" id="edit_button" update=":shop_dialog_form:shop_data" 
+                     oncomplete="PF('shop_dialog').show()" actionListener="#{ShopController.edit()}" style="margin-right: 5px;"/>
+                     
+                     <p:commandButton value="Usuń" id="delete_button" update=":shop_table_form" 
+                     oncomplete="PF('shop_table_form').show()" actionListener="#{ShopController.delete()}" style="margin-right: 5px;"/>
+                     
+                   
+   
+				</f:facet>
+
+                    <p:column>
+                        <f:facet name="header">Nazwa</f:facet>
+                        <h:outputText value="#{shop.nazwa}"/>
+                    </p:column>
+                    
+                    <p:column>
+                        <f:facet name="header">Symbol</f:facet>
+                        <h:outputText value="#{shop.symbol}" />
+                    </p:column>                 
+                                        
+                    <p:column>
+                        <f:facet name="header">Cena (PLN)</f:facet>
+                        <h:outputText value="#{shop.cena}"/>
+                    </p:column>
+                    
+                    <p:column>
+                        <f:facet name="header">Wiek</f:facet>
+                        <h:outputText value="#{shop.cena}"/>
+                    </p:column>
+               	</p:dataTable>
+            </h:form>
+            
+            <h:form id="shop_dialog_form">
+	        	<p:dialog header="Dane przedmiotu" widgetVar="shop_dialog" resizable="false"
+                       width="400px" modal="true">
+		        	<h:panelGrid columns="2" id="shop_data">
+	                     	                 			  
+	                     
+	                     	<p:outputLabel for="name" value="Nazwa: " />
+	                     	<p:inputText id="name" value="#{ShopController.selectedShop.nazwa}"/>
+	                     	
+	                     
+	                     	<p:outputLabel for="symbol" value="Symbol: " />
+	                     	<p:inputText id="symbol" value="#{ShopController.selectedShop.symbol}" />
+	                        
+	                        <p:outputLabel for="cena" value="Cena: " />
+							<p:inputText id="cena" value="#{ShopController.selectedShop.cena}" currencySymbol="$" decimalPlaces="0" onkeypress="if(event.which &lt; 48 || event.which &gt; 57) return false;"/>
+
+	                     	
+	                     	 <p:outputLabel for="wiek" value="Wiek: " />
+	                     	<p:inputText id="wiek" value="#{ShopController.selectedShop.wiek}" onkeypress="if(event.which &lt; 48 || event.which &gt; 57) return false;"/>
+	                                          	                                                   			                    
+	                        <p:commandButton id="save_button" value="Zapisz" actionListener="#{ShopController.save()}"
+                 							 process="shop_data" update=":shop_table_form:shop_table"
+                 							 oncomplete="PF('shop_dialog').hide()" onclick="checkAge()"/>
+    
+	                                         
+	                        <p:commandButton id="delete_button" value="Usuń" actionListener="#{ShopController.delete()}"
+	                                         process="shop_data" update=":shop_table_form:shop_table"
+	                                         oncomplete="PF('shop_dialog').hide()"/>                                                         
+	                    	
+	                 </h:panelGrid>
+	        	</p:dialog> 
+	        </h:form>   	                    
+         </ui:define>
+         
+      </ui:composition>  
+
+</html>

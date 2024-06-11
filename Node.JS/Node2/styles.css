@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+
+}
+#todoForm {
+  
+}
+
+#taskList {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#taskList li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+}
+.text{
+  height: 3rem;
+  box-shadow: 2px 2px 2px #000;
+  cursor:grab;
+}
+
+.background {
+  background: rgb(2,0,36);
+  background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(1,68,106,1) 48%, rgba(0,212,255,1) 100%);
+}
+.taskList {
+  font-size: 1.4rem;
+
+}
+.text{
+    text-align: center;
+    text-decoration: dashed;
+    width: 60%;
+    font-size: 0.8rem;
+    font-family: 'Kanit', sans-serif;
+   
+}
+
+
+/* CSS */
+.button-54 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}

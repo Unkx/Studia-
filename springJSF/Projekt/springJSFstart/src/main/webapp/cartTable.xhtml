@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+      
+
+    <ui:composition template="/templates/szablon.xhtml">
+         <ui:define name="windowTitle">
+             <h:outputText value="Koszyk"/>
+         </ui:define>
+         
+<ui:define name="content">
+    <h:form>
+        <h:panelGrid columns="2">
+            <h:outputLabel for="Firstname" value="Imię*:" />
+            <h:inputText id="Firstname" value="#{cartBean.selectedCart.imie}" required="true" label="Imię"/>
+            <h:message for="Firstname" style="color: red" />
+		</h:panelGrid>
+		<h:panelGrid columns="2">
+            <h:outputLabel for="surname" value="Nazwisko*:" />
+            <h:inputText id="surname" value="#{cartBean.selectedCart.nazwisko}" required="true" label="Nazwisko" />
+            <h:message for="surname" style="color: red" />
+         </h:panelGrid>
+		<h:panelGrid columns="2">
+            <h:outputLabel for="age" value="Wiek*:" />
+            <h:inputText id="age" value="#{cartBean.selectedCart.wiek}" required="true" label="Wiek" />
+            <h:message for="age" style="color: red" />
+            </h:panelGrid>
+		<h:panelGrid columns="2">
+            <h:outputLabel for="street" value="Ulica*:" />
+            <h:inputText id="street" value="#{cartBean.selectedCart.ulica}" required="true" label="Ulica" />
+            <h:message for="street" style="color: red" />
+            </h:panelGrid>
+		<h:panelGrid columns="2">
+            <h:outputLabel for="postalcode" value="Kod pocztowy*:" />
+            <h:inputText id="postalcode" value="#{cartBean.selectedCart.kodpocztowy}" required="true" label="Kod pocztowy" />
+            <h:message for="postalcode" style="color: red" />
+            </h:panelGrid>
+		<h:panelGrid columns="2">
+            <h:outputLabel for="phone" value="Telefon:" />
+            <h:inputText id="phone" value="#{cartBean.selectedCart.telefon}" label="Telefon" />
+            <h:message for="phone" style="color: red" />
+            </h:panelGrid>
+		<h:panelGrid columns="2">
+            
+            <h:outputLabel for="email" value="Email:" />
+            <h:inputText id="email" value="#{cartBean.selectedCart.imie}" label="Email" />
+            <h:message for="email" style="color: red" />
+            </h:panelGrid>
+		<h:panelGrid columns="2">
+
+	<h:dataTable value="#{myBean.shopCartDTOList}" var="shopCartDTO">
+    	<h:column>
+        	#{shopCartDTO.shopName}
+    	</h:column>
+    	<h:column>
+        	<h:dataTable value="#{shopCartDTO.cartItemNames}" var="cartItemName">
+            	<!-- Display cart item names -->
+            	<label>Mario</label>
+            	<h:column>
+                	#{cartItemName}
+            	</h:column>
+        	</h:dataTable>
+    		</h:column>
+	</h:dataTable>
+            <h:commandButton update="panel" value="Submit" />
+        </h:panelGrid>
+    </h:form>
+    
+</ui:define>
+
+
+
+
+      </ui:composition>  
+
+</html>

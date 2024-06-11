@@ -1,0 +1,26 @@
+,<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+    <title>TODO List</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
+</head>
+<body class="background">
+    <div class="max-w-md mx-auto bg-white rounded p-4 shadow-lg width-200">
+        <h1 class="text-2xl font-bold mb-4 text-center">TODO List</h1>
+        <form id="todoForm" class="flex items-center space-x-2">
+            <input type="text" id="taskInput" placeholder="Dodaj zadanie" class="text">
+            <button type="button" onclick="addTask()" class="rounded button-54">Dodaj zadanie</button>
+            <input type="text" id="taskIdInput" placeholder="Usuń zadanie" class="text">
+            <button type="button" onclick="deleteTask()" class="button-54">Usuń zadanie</button>
+        </form>
+        <ul id="taskList" class="taskList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
